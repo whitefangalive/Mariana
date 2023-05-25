@@ -1,4 +1,5 @@
 // get input
+draw_set_font(global.font_main);
 key_w = keyboard_check_pressed(obj_settings.key_up);
 key_s = keyboard_check_pressed(obj_settings.key_down);
 key_accept = keyboard_check_pressed(obj_settings.key_select);
@@ -7,12 +8,31 @@ key_accept = keyboard_check_pressed(obj_settings.key_select);
 op_length = array_length(option[menu_level]);
 
 //move through menu
-pos += key_s - key_w;
+if (locked == false) {
+	pos += key_s - key_w;
+}
 if pos >= op_length {pos = 0};
 if pos < 0 {pos = op_length -1};
 
+if (locked == true && keyboard_check_pressed(vk_anykey)) {
+	currentControls[pos] = keyboard_lastkey;
+	locked = false;
+	option[2, pos] = controlsArray[pos] + ": " + global._fhinputKeys[currentControls[pos]];
+	
+	obj_settings.key_up = currentControls[0];
+	obj_settings.key_left = currentControls[1];
+	obj_settings.key_down = currentControls[2];
+	obj_settings.key_right = currentControls[3];
+	obj_settings.key_select = currentControls[4];
+	obj_settings.key_attack = currentControls[5];
+	obj_settings.key_map = currentControls[6];
+	obj_settings.key_dash = currentControls[7];
+	obj_settings.key_escape = currentControls[8];
+	obj_settings.key_inventory = currentControls[9];
+}
+
 //using menu
-if key_accept {
+if key_accept && locked == false {
 audio_play_sound(sfx_select, 2, false);
 	var _sml = menu_level;
 		
@@ -37,7 +57,7 @@ audio_play_sound(sfx_select, 2, false);
 			switch (pos) {
 				//window settings
 			case 0: 
-		
+				
 			break;
 				//brightness
 			case 1: 
@@ -45,7 +65,7 @@ audio_play_sound(sfx_select, 2, false);
 			break;
 				//controls
 			case 2: 
-		
+				menu_level = 2;
 			break;
 				//volume
 			case 3: 
@@ -74,6 +94,16 @@ audio_play_sound(sfx_select, 2, false);
 			menu_level = 0;
 			break;
 		
+			}
+		 break;
+		 case 2:
+			switch (pos) {
+				default:
+					alarm[0] = 1;
+				break;
+				case 10:
+					menu_level = 1;
+				break;
 			}
 		 break;
 	 

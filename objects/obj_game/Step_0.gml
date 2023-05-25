@@ -31,7 +31,7 @@ if (global.paused == false) {
 if timer >= 1 {timer -= 1}
 
 //open inventory
-if (keyboard_check_pressed(ord("I")) && global.paused == false) {
+if (keyboard_check_pressed(obj_settings.key_inventory) && global.paused == false) {
 	global.inventoried = !global.inventoried;
 }
 

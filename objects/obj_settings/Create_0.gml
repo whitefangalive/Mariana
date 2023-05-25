@@ -1,6 +1,6 @@
 global.font_main = font_add_sprite(spr_font_fundant, 32, true, 1);
 global.volume_setting = 1.00;
-
+initKeys();
 randomize();
 gamepad_set_axis_deadzone(0, 0.3);
 
@@ -14,6 +14,12 @@ key_up = ord("W");
 
 key_left = ord("A");
 key_right = ord("D");
+
+key_map = vk_tab;
+key_attack = mb_left;
+
+obj_settings.key_inventory = ord("I");
+
 
 // saying for text
 currentlySaying = [];

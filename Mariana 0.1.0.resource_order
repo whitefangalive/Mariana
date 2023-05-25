@@ -114,6 +114,7 @@
     {"name":"spr_diver_attacking_up_Steel_Harpoon","order":3,"path":"sprites/spr_diver_attacking_up_Steel_Harpoon/spr_diver_attacking_up_Steel_Harpoon.yy",},
     {"name":"spr_swimming_Steel_Harpoon","order":11,"path":"sprites/spr_swimming_Steel_Harpoon/spr_swimming_Steel_Harpoon.yy",},
     {"name":"obj_flora_crab","order":5,"path":"objects/obj_flora_crab/obj_flora_crab.yy",},
+    {"name":"initKeys","order":3,"path":"scripts/initKeys/initKeys.yy",},
     {"name":"spr_crabioli_seaweed","order":17,"path":"sprites/spr_crabioli_seaweed/spr_crabioli_seaweed.yy",},
     {"name":"m_with_baited_breath_loop","order":2,"path":"sounds/m_with_baited_breath_loop/m_with_baited_breath_loop.yy",},
     {"name":"spr_goldy_die","order":16,"path":"sprites/spr_goldy_die/spr_goldy_die.yy",},

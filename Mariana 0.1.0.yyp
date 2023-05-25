@@ -300,6 +300,7 @@
     {"id":{"name":"itemScript","path":"scripts/itemScript/itemScript.yy",},},
     {"id":{"name":"spr_swimming","path":"sprites/spr_swimming/spr_swimming.yy",},},
     {"id":{"name":"obj_flora_crab","path":"objects/obj_flora_crab/obj_flora_crab.yy",},},
+    {"id":{"name":"initKeys","path":"scripts/initKeys/initKeys.yy",},},
     {"id":{"name":"musicFallToLoop","path":"scripts/musicFallToLoop/musicFallToLoop.yy",},},
     {"id":{"name":"spr_boogly_die","path":"sprites/spr_boogly_die/spr_boogly_die.yy",},},
     {"id":{"name":"spr_ice_fish_die","path":"sprites/spr_ice_fish_die/spr_ice_fish_die.yy",},},
