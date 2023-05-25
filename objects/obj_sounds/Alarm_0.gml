@@ -1,0 +1,1 @@
+musicTimer = -120;

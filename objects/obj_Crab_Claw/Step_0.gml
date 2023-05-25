@@ -1,0 +1,1 @@
+itemScript("Crab Claw");

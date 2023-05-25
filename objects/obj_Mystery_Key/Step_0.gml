@@ -1,0 +1,1 @@
+itemScript("Mystery Key");

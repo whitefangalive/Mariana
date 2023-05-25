@@ -1,0 +1,1 @@
+particleScript(vfx_blood, true);

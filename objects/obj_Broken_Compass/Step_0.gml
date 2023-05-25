@@ -1,0 +1,1 @@
+itemScript("Broken Compass");
