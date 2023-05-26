@@ -1,4 +1,4 @@
-show_debug_message(string(instance_id) + "X: " + string(x) + " Y: " + string(y));
+
 
 if distance_to_object(obj_diver) < 350 {
 	show_debug_message(distance_to_object(obj_diver));

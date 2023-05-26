@@ -125,7 +125,7 @@
     {"name":"spr_flora_crab_seaweed","order":10,"path":"sprites/spr_flora_crab_seaweed/spr_flora_crab_seaweed.yy",},
     {"name":"spr_diver_Steel_Harpoon","order":7,"path":"sprites/spr_diver_Steel_Harpoon/spr_diver_Steel_Harpoon.yy",},
     {"name":"obj_crabioli_right_arm","order":3,"path":"objects/obj_crabioli_right_arm/obj_crabioli_right_arm.yy",},
-    {"name":"spr_diver_attacking_down_Steel_Harpon","order":1,"path":"sprites/spr_diver_attacking_down_Steel_Harpon/spr_diver_attacking_down_Steel_Harpon.yy",},
+    {"name":"spr_diver_attacking_down_Steel_Harpoon","order":1,"path":"sprites/spr_diver_attacking_down_Steel_Harpoon/spr_diver_attacking_down_Steel_Harpoon.yy",},
     {"name":"spr_crabioli_left_arm","order":3,"path":"sprites/spr_crabioli_left_arm/spr_crabioli_left_arm.yy",},
     {"name":"Room1_sideB","order":1,"path":"rooms/Room1_sideB/Room1_sideB.yy",},
   ],

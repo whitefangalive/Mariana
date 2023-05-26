@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_diver_attacking_down_Steel_Harpon",
+  "name": "spr_diver_attacking_down_Steel_Harpoon",
   "bbox_bottom": 77,
   "bbox_left": 27,
   "bbox_right": 37,
@@ -34,7 +34,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_diver_attacking_down_Steel_Harpon",
+    "name": "spr_diver_attacking_down_Steel_Harpoon",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -56,9 +56,9 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3b5847c9-09df-4635-bbbf-6324067609d6","path":"sprites/spr_diver_attacking_down_Steel_Harpon/spr_diver_attacking_down_Steel_Harpon.yy",},},},"Disabled":false,"id":"44ceee13-bd5d-4400-9c8e-650174d52ff0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e818d879-657e-4840-b4d7-badc875782f8","path":"sprites/spr_diver_attacking_down_Steel_Harpon/spr_diver_attacking_down_Steel_Harpon.yy",},},},"Disabled":false,"id":"b8621181-da52-4be3-91cb-9b31694361e5","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4ee6137f-0745-4c69-bcba-cfba3844f282","path":"sprites/spr_diver_attacking_down_Steel_Harpon/spr_diver_attacking_down_Steel_Harpon.yy",},},},"Disabled":false,"id":"5d84ff28-954e-4a88-89e7-e67ee74630f7","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3b5847c9-09df-4635-bbbf-6324067609d6","path":"sprites/spr_diver_attacking_down_Steel_Harpoon/spr_diver_attacking_down_Steel_Harpoon.yy",},},},"Disabled":false,"id":"44ceee13-bd5d-4400-9c8e-650174d52ff0","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e818d879-657e-4840-b4d7-badc875782f8","path":"sprites/spr_diver_attacking_down_Steel_Harpoon/spr_diver_attacking_down_Steel_Harpoon.yy",},},},"Disabled":false,"id":"b8621181-da52-4be3-91cb-9b31694361e5","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4ee6137f-0745-4c69-bcba-cfba3844f282","path":"sprites/spr_diver_attacking_down_Steel_Harpoon/spr_diver_attacking_down_Steel_Harpoon.yy",},},},"Disabled":false,"id":"5d84ff28-954e-4a88-89e7-e67ee74630f7","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

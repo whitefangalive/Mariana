@@ -2,6 +2,7 @@
 if (array_contains(global.bosses_beaten, "Yerino")) {
 	instance_destroy();
 } else {
+	default_swim_speed = 1 + clamp((y - 8500)/500, 0, 11)
 	if y < 0 {
 		y = y +1;
 	}

@@ -13,7 +13,6 @@ input_direction = 0;
 attacking = 0;
 attackingANI = 0;
 attacked_recently = 0;
-left_release = 1;
 ANItimer = 0;
 boosterTimer = -1
 boosterCooldown = 0;

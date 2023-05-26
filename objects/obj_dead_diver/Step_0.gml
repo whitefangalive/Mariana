@@ -10,7 +10,6 @@ if opened == true {
 for (var i = 0; i < array_length(container); i++) {
 		var randx = irandom_range(-12,12);
 		var randy = irandom_range(-12,0);
-		show_debug_message(container[i]);
 		instance_create_layer(x+randx, y+randy-10, "player_layer", convertTo("obj", container[i]));
 		if i = array_length(container)-1 {
 			container = [];
