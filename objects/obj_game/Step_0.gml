@@ -85,7 +85,7 @@ itemScript("game");
 // map
 if (room != room_shop_top) {
 	if (global.equipped[4] == "Ancient Map") {
-		if (keyboard_check_pressed(vk_tab) && global.paused == false) {
+		if (keyboard_check_pressed(obj_settings.key_map) && global.paused == false) {
 			mapOpen = !mapOpen;
 		}
 	}

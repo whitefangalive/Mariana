@@ -10,7 +10,8 @@ if (array_contains(global.bosses_beaten, "Yerino")) {
 		sharkTimer++;
 	}
 	if (instance_exists(vfx_blood) && sharkTimer >= 700) {
-		instance_create_layer(obj_diver.x + irandom_range(-200, 200), obj_diver.y - 500, "player_layer", obj_shark);
+		var shark = instance_create_layer(obj_diver.x + irandom_range(-200, 200), obj_diver.y - 500, "player_layer", obj_shark);
+		shark.age = 10000;
 		sharkTimer = 0;
 	}
 	

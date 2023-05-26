@@ -50,7 +50,7 @@ dist_y = obj_diver.y - y;
 	
 
 if (age > 12000 && laidEggs = false) {
-	var nearestSand = instance_nearest(x, y, obj_wall);
+	var nearestSand = instance_nearest(x, y, obj_collision_parent);
 	if (distance_to_object(nearestSand) > 5) {
 		move_towards_point(nearestSand.x, nearestSand.y, swim_speed);
 		layingEggsAge = age;
