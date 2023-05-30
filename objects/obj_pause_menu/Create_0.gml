@@ -8,6 +8,9 @@ op_space = 64;
 pos = 0;
 
 locked = false;
+var scale = 2;
+image_xscale = scale;
+image_yscale = scale;
 
 //pause menu
 option[0, 0] = "Resume Game";

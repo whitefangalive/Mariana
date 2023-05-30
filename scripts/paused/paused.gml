@@ -11,7 +11,7 @@ function paused(state){
 		instance_deactivate_object(obj_any_behavior_parent);
 		instance_deactivate_object(obj_diver);
 	} else {
-		instance_deactivate_object(obj_pause_menu);
+		instance_destroy(obj_pause_menu);
 		instance_activate_object(obj_diver);
 		instance_activate_object(obj_inventory);
 		instance_activate_object(obj_weapon_parent);

@@ -7,8 +7,8 @@ timer = 5;
 }
 
 
-if (global.paused == true && run = 0) {
-instance_activate_object(obj_pause_menu);
+if (global.paused == true && run = 0 && !instance_exists(obj_pause_menu)) {
+	instance_create_layer(0, 0, "menu_layer", obj_pause_menu);
 }
 
 if (global.paused == true) {
@@ -22,11 +22,11 @@ if (global.paused == true) {
 }
 
 
-if (global.paused == false) {
-	run = 0;
-	paused(false);
-	audio_resume_all()
-}
+	if (global.paused == false) {
+		run = 0;
+		paused(false);
+		audio_resume_all()
+	}
 
 if timer >= 1 {timer -= 1}
 

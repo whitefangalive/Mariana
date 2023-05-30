@@ -18,7 +18,7 @@ key_right = ord("D");
 key_map = vk_tab;
 key_attack = mb_left;
 
-obj_settings.key_inventory = ord("I");
+key_inventory = ord("I");
 
 
 // saying for text
@@ -43,3 +43,5 @@ previousRoom = Room1;
 code = "bimble";
 
 roomDiedIn = Room1;
+
+instance_create_layer(500, 500, "Instances", obj_start_menu);
