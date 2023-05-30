@@ -161,7 +161,7 @@ if (global.oxygen <= 0 && bubbleTimer == 59) {
 }
 
 
-if (mouse_check_button(obj_settings.key_attack)) {
+if (mouse_check_button_pressed(obj_settings.key_attack)) {
 	/// @description attacking
 	if (global.inventoried == false && (obj_game.mapOpen == false)) {
 	switch (global.equipped[0]) {
@@ -239,6 +239,24 @@ if (mouse_check_button(obj_settings.key_attack)) {
 		}
 	}
 }
+
+}
+
+
+if (image_index >= image_number - 0.07) {
+	if (sprite_index != spr_diver && (sprite_index != spr_floating) && sprite_index != spr_swimming) {
+		attackingANI = 0;
+
+		if ANItimer > 0 {
+			ANItimer -= 1;
+		}
+		sprite_index = spr_floating;
+		if (attacking == 1) {
+			attacking = 0;
+		}
+		swim_speed = default_move_speed;
+	}
+
 
 }
 
