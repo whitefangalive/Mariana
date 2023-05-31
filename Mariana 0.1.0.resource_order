@@ -24,6 +24,7 @@
     {"name":"obj_wood_door","order":3,"path":"objects/obj_wood_door/obj_wood_door.yy",},
     {"name":"spr_crabioli_right_arm","order":5,"path":"sprites/spr_crabioli_right_arm/spr_crabioli_right_arm.yy",},
     {"name":"stopDeadMusic","order":1,"path":"scripts/stopDeadMusic/stopDeadMusic.yy",},
+    {"name":"obj_button","order":3,"path":"objects/obj_button/obj_button.yy",},
     {"name":"m_are_there_any_crabs_in_here","order":11,"path":"sounds/m_are_there_any_crabs_in_here/m_are_there_any_crabs_in_here.yy",},
     {"name":"spr_color_coral","order":11,"path":"sprites/spr_color_coral/spr_color_coral.yy",},
     {"name":"obj_text","order":2,"path":"objects/obj_text/obj_text.yy",},

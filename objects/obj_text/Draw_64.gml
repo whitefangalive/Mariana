@@ -23,8 +23,7 @@ y = 780;
 //dr menu background
 
 if (draw_char < text_length[menu_level]) {
-	draw_char += text_speed;
-	show_debug_message(draw_char);
+	draw_char += obj_settings.textSpeed;
 }
 
 draw_sprite_ext(sprite_index, image_index, x, y, width/sprite_width*3, height/sprite_height*3, 0, c_white, 1);

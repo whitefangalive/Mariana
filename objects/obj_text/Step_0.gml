@@ -5,7 +5,7 @@ key_accept = keyboard_check_pressed(vk_anykey);
 
 //storen number of otpions
 
-if (key_accept == 1) {
+if (key_accept == 1 || mouse_check_button_pressed(mb_any)) {
 	if (draw_char >= text_length[menu_level]) {
 		menu_level++;
 		pos++;

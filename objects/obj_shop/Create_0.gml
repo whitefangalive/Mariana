@@ -5,6 +5,7 @@ op_border = 22;
 op_space = 64;
 
 pos = 0;
+once = false;
 
 //pause menu
 option[0, 0] = "Booster Core";

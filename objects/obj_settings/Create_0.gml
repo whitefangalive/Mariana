@@ -20,6 +20,8 @@ key_attack = mb_left;
 
 key_inventory = ord("I");
 
+textSpeed = 0.5;
+
 
 // saying for text
 currentlySaying = [];
@@ -33,7 +35,7 @@ loadPlayer = true;
 needsLoading = [];
 
 //a variable for waiting till you're in the room you died in
-waitForDeathRoom = false;
+
 spawnX = 0;
 spawnY = 0;
 location1 = Room1;
@@ -41,7 +43,5 @@ location1 = Room1;
 //A variable to store where you used to be so you can be moved to correct cordinates
 previousRoom = Room1;
 code = "bimble";
-
-roomDiedIn = Room1;
 
 instance_create_layer(500, 500, "Instances", obj_start_menu);

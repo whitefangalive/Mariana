@@ -99,6 +99,7 @@
     {"id":{"name":"vfx_thorium_shine","path":"objects/vfx_thorium_shine/vfx_thorium_shine.yy",},},
     {"id":{"name":"stopDeadMusic","path":"scripts/stopDeadMusic/stopDeadMusic.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"m_are_there_any_crabs_in_here","path":"sounds/m_are_there_any_crabs_in_here/m_are_there_any_crabs_in_here.yy",},},
     {"id":{"name":"spr_color_coral","path":"sprites/spr_color_coral/spr_color_coral.yy",},},
     {"id":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},},

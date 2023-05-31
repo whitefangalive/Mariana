@@ -5,7 +5,7 @@ if (instance_exists(obj_diver)) {
 
 oxygen_timer -= 1;
 
-if oxygen_timer <= 0 && global.oxygen >= 1 {
+if oxygen_timer <= 0 && global.oxygen >= 0.50{
 	oxygen_timer = oxygen_time;
 	global.oxygen -= 1;
 }

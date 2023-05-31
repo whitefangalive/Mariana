@@ -12,6 +12,21 @@ if (!instance_exists(obj_text)) {
 		pos += key_s - key_w;
 	}
 }
+
+// enable clicking
+//with (obj_button) {
+//	if (pressed == true) {
+//		if (once == false) {
+//			instance_destroy(obj_shop_accept);
+//			obj_shop.pos = index;
+//			obj_shop.key_accept = true;
+//			once = true;
+//		}
+//	} else {
+//		once = false;
+//	}
+//}
+
 if pos >= op_length {pos = 0};
 if pos < 0 {pos = op_length -1};
 

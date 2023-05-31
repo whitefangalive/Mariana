@@ -30,8 +30,15 @@ for (var i = 0; i < op_length; i++) {
 		}
 	}
   draw_text_color(x+op_border, y+op_border + op_space*i, option[menu_level, i], _c, _c, _c, _c, 1 );
-  
+  if (instance_number(obj_button) < op_length) {
+	  var button = instance_create_layer(450, 45 + (25)*i, "menu_layer", obj_button);
+	  button.image_xscale = 2;
+	  button.image_yscale = 0.3;
+	  button.index = i;
+	  show_debug_message(button.x);
+  }
 }
+
 
 //draw item images
 
