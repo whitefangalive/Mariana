@@ -42,7 +42,7 @@ if (musicTimer = 0) {
 	audio_play_sound(m_hull_sale, 1000, true);
 	}
 		break;
-	case roomStart:
+	case roomStartScreen:
 		audio_sound_gain(m_watery_grave, global.volume_setting, 4000);
 		audio_play_sound(m_watery_grave, 1000, true);
 		break;

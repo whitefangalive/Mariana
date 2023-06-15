@@ -21,7 +21,14 @@ key_attack = mb_left;
 key_inventory = ord("I");
 
 textSpeed = 0.5;
+textpos = 1;
 
+fullscreen = false;
+Resolution = [display_get_width(), display_get_height()]; 
+respos = 3;
+bloodEnable = true;
+blood = true;
+Borderless = false;
 
 // saying for text
 currentlySaying = [];

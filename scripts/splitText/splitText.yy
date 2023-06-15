@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "text",
-    "path": "folders/Scripts/text.yy",
+    "name": "string_utils",
+    "path": "folders/Scripts/string_utils.yy",
   },
 }

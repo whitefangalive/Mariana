@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "say",
+  "name": "toBoolOrBinary",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
