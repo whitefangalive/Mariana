@@ -8,8 +8,8 @@
     {"name":"placables","order":9,"path":"folders/Objects/placables.yy",},
     {"name":"sub_shop","order":10,"path":"folders/Objects/sub_shop.yy",},
     {"name":"music","order":1,"path":"folders/Scripts/music.yy",},
-    {"name":"harpoon","order":1,"path":"folders/Sprites/items/harpoon.yy",},
     {"name":"string_utils","order":4,"path":"folders/Scripts/string_utils.yy",},
+    {"name":"harpoon","order":1,"path":"folders/Sprites/items/harpoon.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_pause_menu","order":9,"path":"objects/obj_pause_menu/obj_pause_menu.yy",},

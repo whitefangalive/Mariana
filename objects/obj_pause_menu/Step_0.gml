@@ -147,6 +147,7 @@ audio_play_sound(sfx_select, 2, false);
 					window_set_size(obj_settings.Resolution[0], obj_settings.Resolution[1]);
 					obj_settings.blood = obj_settings.bloodEnable;
 					window_set_showborder(!obj_settings.Borderless);
+					window_center();
 				break;
 				case 6:
 					menu_level = 1;

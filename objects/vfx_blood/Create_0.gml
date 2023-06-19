@@ -5,3 +5,4 @@ randDir2 = irandom_range(-2,-6);
 
 maxDespawn = 5;
 despawn = maxDespawn;
+

@@ -52,3 +52,9 @@ previousRoom = Room1;
 code = "bimble";
 
 instance_create_layer(500, 500, "Instances", obj_start_menu);
+
+window_set_fullscreen(obj_settings.fullscreen);
+window_set_size(obj_settings.Resolution[0], obj_settings.Resolution[1]);
+obj_settings.blood = obj_settings.bloodEnable;
+window_set_showborder(!obj_settings.Borderless);
+window_center();
