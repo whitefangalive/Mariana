@@ -51,6 +51,8 @@ location1 = Room1;
 previousRoom = Room1;
 code = "bimble";
 
+achivements = [];
+
 instance_create_layer(500, 500, "Instances", obj_start_menu);
 
 window_set_fullscreen(obj_settings.fullscreen);

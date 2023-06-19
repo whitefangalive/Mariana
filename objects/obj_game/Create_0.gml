@@ -29,3 +29,5 @@ distanceFromDiver = 0;
 
 healthOnce = false;
 
+text_opacity = 0.5;
+
