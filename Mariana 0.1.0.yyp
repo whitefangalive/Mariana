@@ -200,6 +200,7 @@
     {"id":{"name":"obj_ice_fish","path":"objects/obj_ice_fish/obj_ice_fish.yy",},},
     {"id":{"name":"spr_crabioli_without_arm_walk","path":"sprites/spr_crabioli_without_arm_walk/spr_crabioli_without_arm_walk.yy",},},
     {"id":{"name":"m_aquifer","path":"sounds/m_aquifer/m_aquifer.yy",},},
+    {"id":{"name":"keyboard_or_mouse_check_pressed","path":"scripts/keyboard_or_mouse_check_pressed/keyboard_or_mouse_check_pressed.yy",},},
     {"id":{"name":"spr_chest_closed","path":"sprites/spr_chest_closed/spr_chest_closed.yy",},},
     {"id":{"name":"spr_black_smoker","path":"sprites/spr_black_smoker/spr_black_smoker.yy",},},
     {"id":{"name":"m_with_baited_breath_start","path":"sounds/m_with_baited_breath_start/m_with_baited_breath_start.yy",},},

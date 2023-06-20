@@ -76,6 +76,7 @@
     {"name":"obj_exit","order":17,"path":"objects/obj_exit/obj_exit.yy",},
     {"name":"spr_crabioli_without_arm_walk","order":13,"path":"sprites/spr_crabioli_without_arm_walk/spr_crabioli_without_arm_walk.yy",},
     {"name":"m_aquifer","order":7,"path":"sounds/m_aquifer/m_aquifer.yy",},
+    {"name":"keyboard_or_mouse_check_pressed","order":5,"path":"scripts/keyboard_or_mouse_check_pressed/keyboard_or_mouse_check_pressed.yy",},
     {"name":"spr_chest_closed","order":5,"path":"sprites/spr_chest_closed/spr_chest_closed.yy",},
     {"name":"spr_black_smoker","order":15,"path":"sprites/spr_black_smoker/spr_black_smoker.yy",},
     {"name":"m_with_baited_breath_start","order":6,"path":"sounds/m_with_baited_breath_start/m_with_baited_breath_start.yy",},

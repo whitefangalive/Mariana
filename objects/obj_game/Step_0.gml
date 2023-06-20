@@ -1,5 +1,11 @@
 ///@description pausing. audio pausing. opening inventory. changing room. map.
 // if paused
+if (text_counter >= 6.28) {
+	text_counter = 0;
+} else {
+	text_counter += 0.01;
+}
+text_opacity = (sin(text_counter)/4)+0.25;
 
 if (keyboard_check_pressed(obj_settings.key_escape) && timer == 0) {
 global.paused = !global.paused;

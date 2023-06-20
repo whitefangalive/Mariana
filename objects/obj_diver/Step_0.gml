@@ -132,7 +132,7 @@ if global.player_health <= 0 {
 //}
 
 if (global.equipped[1] == "Booster") {
-	if ( keyboard_check_pressed(obj_settings.key_dash) && boosterCooldown <= 0) {
+	if ( keyboard_or_mouse_check_pressed(obj_settings.key_dash) && boosterCooldown <= 0) {
 		boosterTimer = 15;
 		boosterCooldown = 30;
 	}
@@ -161,7 +161,7 @@ if (global.oxygen <= 0 && bubbleTimer == 59) {
 }
 
 
-if (mouse_check_button_pressed(obj_settings.key_attack)) {
+if (keyboard_or_mouse_check_pressed(obj_settings.key_attack)) {
 	/// @description attacking
 	if (global.inventoried == false && (obj_game.mapOpen == false)) {
 	switch (global.equipped[0]) {
