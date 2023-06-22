@@ -10,7 +10,7 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.72,
+  "duration": 0.6,
   "parent": {
     "name": "muro",
     "path": "folders/Sounds/SFX/muro.yy",

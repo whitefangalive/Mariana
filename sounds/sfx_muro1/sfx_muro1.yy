@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 0.456,
   "parent": {
     "name": "muro",
     "path": "folders/Sounds/SFX/muro.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "sfx_muro1",
+  "soundFile": "sfx_muro1.mp3",
   "type": 0,
   "volume": 1.0,
 }
