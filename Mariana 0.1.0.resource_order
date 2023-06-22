@@ -11,6 +11,7 @@
     {"name":"string_utils","order":4,"path":"folders/Scripts/string_utils.yy",},
     {"name":"harpoon","order":1,"path":"folders/Sprites/items/harpoon.yy",},
     {"name":"deepCalling","order":1,"path":"folders/Sounds/SFX/deepCalling.yy",},
+    {"name":"muro","order":2,"path":"folders/Sounds/SFX/muro.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_pause_menu","order":9,"path":"objects/obj_pause_menu/obj_pause_menu.yy",},
@@ -26,6 +27,7 @@
     {"name":"spr_seaweed","order":12,"path":"sprites/spr_seaweed/spr_seaweed.yy",},
     {"name":"splitText","order":2,"path":"scripts/splitText/splitText.yy",},
     {"name":"obj_wood_door","order":3,"path":"objects/obj_wood_door/obj_wood_door.yy",},
+    {"name":"sfx_muro2","order":1,"path":"sounds/sfx_muro2/sfx_muro2.yy",},
     {"name":"spr_crabioli_right_arm","order":5,"path":"sprites/spr_crabioli_right_arm/spr_crabioli_right_arm.yy",},
     {"name":"stopDeadMusic","order":1,"path":"scripts/stopDeadMusic/stopDeadMusic.yy",},
     {"name":"obj_button","order":3,"path":"objects/obj_button/obj_button.yy",},
@@ -125,6 +127,7 @@
     {"name":"spr_diver_Basic_Harpoon","order":6,"path":"sprites/spr_diver_Basic_Harpoon/spr_diver_Basic_Harpoon.yy",},
     {"name":"spr_floating_Crab_Claw","order":15,"path":"sprites/spr_floating_Crab_Claw/spr_floating_Crab_Claw.yy",},
     {"name":"spr_diver_attacking_up_Steel_Harpoon","order":3,"path":"sprites/spr_diver_attacking_up_Steel_Harpoon/spr_diver_attacking_up_Steel_Harpoon.yy",},
+    {"name":"sfx_muro3","order":2,"path":"sounds/sfx_muro3/sfx_muro3.yy",},
     {"name":"spr_swimming_Steel_Harpoon","order":11,"path":"sprites/spr_swimming_Steel_Harpoon/spr_swimming_Steel_Harpoon.yy",},
     {"name":"obj_flora_crab","order":5,"path":"objects/obj_flora_crab/obj_flora_crab.yy",},
     {"name":"initKeys","order":3,"path":"scripts/initKeys/initKeys.yy",},
@@ -143,5 +146,6 @@
     {"name":"spr_diver_attacking_down_Steel_Harpoon","order":1,"path":"sprites/spr_diver_attacking_down_Steel_Harpoon/spr_diver_attacking_down_Steel_Harpoon.yy",},
     {"name":"spr_crabioli_left_arm","order":3,"path":"sprites/spr_crabioli_left_arm/spr_crabioli_left_arm.yy",},
     {"name":"Room1_sideB","order":1,"path":"rooms/Room1_sideB/Room1_sideB.yy",},
+    {"name":"sfx_muro4","order":3,"path":"sounds/sfx_muro4/sfx_muro4.yy",},
   ],
 }
