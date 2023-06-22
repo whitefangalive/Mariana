@@ -1,6 +1,6 @@
 width = 220;
 height = 88;
-global.volume_setting = 1.00;
+
 
 
 locked = false;

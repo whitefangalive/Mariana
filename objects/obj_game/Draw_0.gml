@@ -25,9 +25,6 @@ if (global.paused != true) {
 				with (obj_diver) {
 				if (distance_to_object(obj_sub_shop) < 15) {
 					draw_text_color(obj_diver.x+50, obj_diver.y-25, global._fhinputKeys[obj_settings.key_select], _c, _c, _c, _c, obj_game.text_opacity);
-					if (keyboard_or_mouse_check_pressed(obj_settings.key_select)) {
-						array_push(obj_settings.achivements, "SubShopped");
-					}
 				}
 			}
 		}
@@ -35,21 +32,40 @@ if (global.paused != true) {
 			with (obj_diver) {
 				if (distance_to_object(obj_door) < 15) {
 					draw_text_color(obj_diver.x+50, obj_diver.y-25, global._fhinputKeys[obj_settings.key_select], _c, _c, _c, _c, obj_game.text_opacity);
-					if (keyboard_or_mouse_check_pressed(obj_settings.key_select)) {
-						array_push(obj_settings.achivements, "Doored");
-					}
 				}
 			}
 		}
 		if ((array_contains(obj_settings.achivements, "Attacked")) == -1) {
 			with (obj_diver) {
 				if (distance_to_object(obj_docile_behavior_parent) < 15) {
-					draw_text_color(obj_diver.x+50, obj_diver.y-45, global._fhinputKeys[obj_settings.key_attack], _c, _c, _c, _c, obj_game.text_opacity);
+					draw_text_color(obj_diver.x+60, obj_diver.y-45, global._fhinputKeys[obj_settings.key_attack], _c, _c, _c, _c, obj_game.text_opacity);
 					if (keyboard_or_mouse_check_pressed(obj_settings.key_attack)) {
 						array_push(obj_settings.achivements, "Attacked");
-						show_debug_message(obj_settings.achivements)
 					}
 				}
 			}
+		}
+		if ((array_contains(obj_settings.achivements, "Opened")) == -1) {
+			if (array_length(global.inventory) > 2) {
+				draw_text_color(obj_diver.x+50, obj_diver.y-5, global._fhinputKeys[obj_settings.key_inventory], _c, _c, _c, _c, obj_game.text_opacity);
+				if (keyboard_or_mouse_check_pressed(obj_settings.key_inventory)) {
+					array_push(obj_settings.achivements, "Opened");
+				}
+			}
+			
+		}
+		if ((array_contains(obj_settings.achivements, "LeftSub")) == -1) {
+			if (room == room_shop_top) {
+				draw_text_color(50, 5, global._fhinputKeys[obj_settings.key_escape] + " To Leave", _c, _c, _c, _c, obj_game.text_opacity);
+			}
+		}
+		if ((array_contains(obj_settings.achivements, "Boost")) == -1) {
+			if (global.equipped[1] == "Booster") {
+				draw_text_color(obj_diver.x+60, obj_diver.y-20, global._fhinputKeys[obj_settings.key_dash], _c, _c, _c, _c, obj_game.text_opacity);
+				if (keyboard_or_mouse_check_pressed(obj_settings.key_dash)) {
+					array_push(obj_settings.achivements, "Boost");
+				}
+			}
+			
 		}
 }

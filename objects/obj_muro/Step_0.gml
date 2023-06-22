@@ -2,8 +2,9 @@
 // You can write your code in this editor
 
 if (keyboard_check_pressed(obj_settings.key_escape)) {
-
-
+	if ((array_contains(obj_settings.achivements, "LeftSub")) == -1) {
+		array_push(obj_settings.achivements, "LeftSub");
+	}
 	room_goto(destination);
 	loadGame(string(destination) + ".save", false);
 	

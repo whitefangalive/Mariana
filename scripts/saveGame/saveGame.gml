@@ -86,6 +86,7 @@ function saveGame(saveName){
 						num_dead : instance_number(obj_dead_diver),
 						num_fish : instance_number(obj_creature_parent),
 						num_eggs : instance_number(obj_fish_egg),
+						achivements : obj_settings.achivements,
 						inventory : global.inventory,
 						player_health : global.player_health,
 						equipped : global.equipped,

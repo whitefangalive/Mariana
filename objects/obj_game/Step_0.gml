@@ -9,6 +9,7 @@ text_opacity = (sin(text_counter)/4)+0.25;
 
 if (keyboard_check_pressed(obj_settings.key_escape) && timer == 0) {
 global.paused = !global.paused;
+saveSettings();
 timer = 5;
 }
 

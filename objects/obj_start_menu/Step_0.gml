@@ -47,14 +47,15 @@ audio_play_sound(sfx_select, 2, false);
 			break;
 			//new game
 			case 1: 
-			switchMusicTo(m_watery_grave, sfx_pickup, false, 100);
-			room_goto(Room1);
-			for (var i = 0; i < 25; i++) {
-				if file_exists(string(i) + ".save")
-				{
-					file_delete(string(i) + ".save");
-				}
-			}
+			//switchMusicTo(m_watery_grave, sfx_pickup, false, 100);
+			//room_goto(Room1);
+			//for (var i = 0; i < 25; i++) {
+			//	if file_exists(string(i) + ".save")
+			//	{
+			//		file_delete(string(i) + ".save");
+			//	}
+			//}
+			room_goto(CutScene);
 			break;
 			//settings
 		    case 2: menu_level = 1;  break;
@@ -92,10 +93,11 @@ audio_play_sound(sfx_select, 2, false);
 				changeVolume(m_with_baited_breath_start);
 				changeVolume(m_are_there_any_crabs_in_here);
 				changeVolume(m_there_is_definitely_a_crab_in_here);
-				option[1, 3] = ("Volume: " + string(global.volume_setting*100)); 
+				option[1, 2] = ("Volume: " + string(global.volume_setting*100)); 
 			break;
 			//back
 			case 3: 
+				saveSettings();
 				menu_level = 0;
 			break;
 		

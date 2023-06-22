@@ -12,6 +12,7 @@ if (needsToBeLoaded == true) {
 			global.equipped = _loadEntity.equipped;
 			obj_settings.timesEnteredSub = _loadEntity.timesEnteredSub;
 			global.oxygen = _loadEntity.oxygen;
+			obj_settings.achivements = _loadEntity.achivements;
 			var num_chests = _loadEntity.num_chests;
 			var num_items = _loadEntity.num_items;
 			var num_dead = _loadEntity.num_dead;

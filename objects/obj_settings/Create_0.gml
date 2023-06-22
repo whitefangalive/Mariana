@@ -5,31 +5,65 @@ randomize();
 gamepad_set_axis_deadzone(0, 0.3);
 
 //Controls
-key_escape = vk_escape;
-key_select = vk_space;
-key_dash = vk_shift;
+	key_escape = vk_escape;
+	key_select = vk_space;
+	key_dash = vk_shift;
 
-key_down = ord("S");
-key_up = ord("W");
+	key_down = ord("S");
+	key_up = ord("W");
 
-key_left = ord("A");
-key_right = ord("D");
+	key_left = ord("A");
+	key_right = ord("D");
 
-key_map = vk_tab;
-key_attack = mb_left;
+	key_map = vk_tab;
+	key_attack = mb_left;
 
-key_inventory = ord("I");
+	key_inventory = ord("I");
 
-textSpeed = 0.5;
-textpos = 1;
+	textSpeed = 0.5;
+	textpos = 1;
 
-fullscreen = false;
-Resolution = [display_get_width(), display_get_height()]; 
-respos = 3;
-bloodEnable = true;
-blood = true;
-Borderless = false;
+	fullscreen = false;
+	Resolution = [display_get_width(), display_get_height()]; 
+	respos = 3;
+	bloodEnable = true;
+	blood = true;
+	Borderless = false;
 
+if (file_exists("settings.save")) {
+	var _buffer = buffer_load("settings.save");
+	var _string = buffer_read(_buffer, buffer_string);
+	buffer_delete(_buffer);
+	var _loadData = json_parse(_string);
+
+	var _loadEntity = array_pop(_loadData);	
+	if (struct_names_count(_loadEntity) == 19) {
+		global.volume_setting = _loadEntity.volume_setting;
+		key_escape = _loadEntity.key_escape;
+		key_select = _loadEntity.key_select;
+		key_dash = _loadEntity.key_dash;
+
+		key_down = _loadEntity.key_down;
+		key_up = _loadEntity.key_up;
+
+		key_left = _loadEntity.key_left;
+		key_right = _loadEntity.key_right;
+
+		key_map = _loadEntity.key_map;
+		key_attack = _loadEntity.key_attack;
+
+		key_inventory = _loadEntity.key_inventory;
+
+		textSpeed = _loadEntity.textSpeed;
+		textpos = _loadEntity.textpos;
+		fullscreen = _loadEntity.fullscreen;
+		Resolution = _loadEntity.Resolution; 
+		respos = _loadEntity.respos;
+		bloodEnable = _loadEntity.bloodEnable;
+		blood = _loadEntity.blood;
+		Borderless = _loadEntity.Borderless;
+	}
+}
 // saying for text
 currentlySaying = [];
 timesEnteredSub = 0;
