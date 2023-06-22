@@ -13,7 +13,7 @@ if (key_accept == 1 || mouse_check_button_pressed(mb_any)) {
 	} else {
 		draw_char = text_length[menu_level];
 	}
-audio_play_sound(sfx_select, 2 ,false);
+audio_play_sound(sfx_select, 2 ,false, global.volume_setting);
 	if (array_length(currentlySaying) > 3 && menu_level >= 3) {
 		for (var i = 0; i < array_length(currentlySaying) - 3; i++) {
 			currentlySaying[i] = currentlySaying[i + 3];
@@ -25,6 +25,6 @@ if (menu_level >= 3) {
 }
 
 if (pos == (array_length(currentlySaying))) {
-instance_destroy();
+	room_goto(Room1);
 }
 

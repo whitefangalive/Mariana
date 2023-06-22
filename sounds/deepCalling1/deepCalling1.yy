@@ -10,14 +10,14 @@
   "bitRate": 128,
   "compression": 0,
   "conversionMode": 0,
-  "duration": 0.0,
+  "duration": 1.176,
   "parent": {
     "name": "deepCalling",
     "path": "folders/Sounds/SFX/deepCalling.yy",
   },
   "preload": false,
   "sampleRate": 44100,
-  "soundFile": "deepCalling1",
+  "soundFile": "deepCalling1.mp3",
   "type": 0,
   "volume": 1.0,
 }

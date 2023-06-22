@@ -47,14 +47,14 @@ audio_play_sound(sfx_select, 2, false);
 			break;
 			//new game
 			case 1: 
-			//switchMusicTo(m_watery_grave, sfx_pickup, false, 100);
-			//room_goto(Room1);
-			//for (var i = 0; i < 25; i++) {
-			//	if file_exists(string(i) + ".save")
-			//	{
-			//		file_delete(string(i) + ".save");
-			//	}
-			//}
+			switchMusicTo(m_watery_grave, sfx_pickup, false, 100);
+			
+			for (var i = 0; i < 25; i++) {
+				if file_exists(string(i) + ".save")
+				{
+					file_delete(string(i) + ".save");
+				}
+			}
 			room_goto(CutScene);
 			break;
 			//settings
