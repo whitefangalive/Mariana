@@ -9,9 +9,9 @@
     {"name":"sub_shop","order":10,"path":"folders/Objects/sub_shop.yy",},
     {"name":"music","order":1,"path":"folders/Scripts/music.yy",},
     {"name":"string_utils","order":4,"path":"folders/Scripts/string_utils.yy",},
-    {"name":"harpoon","order":1,"path":"folders/Sprites/items/harpoon.yy",},
     {"name":"deepCalling","order":1,"path":"folders/Sounds/SFX/deepCalling.yy",},
     {"name":"muro","order":2,"path":"folders/Sounds/SFX/muro.yy",},
+    {"name":"harpoon","order":1,"path":"folders/Sprites/items/harpoon.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_pause_menu","order":9,"path":"objects/obj_pause_menu/obj_pause_menu.yy",},
@@ -65,6 +65,7 @@
     {"name":"spr_flora_crab_claw","order":9,"path":"sprites/spr_flora_crab_claw/spr_flora_crab_claw.yy",},
     {"name":"m_victory","order":9,"path":"sounds/m_victory/m_victory.yy",},
     {"name":"spr_bubble_pop","order":13,"path":"sprites/spr_bubble_pop/spr_bubble_pop.yy",},
+    {"name":"room_shop_mid","order":1,"path":"rooms/room_shop_mid/room_shop_mid.yy",},
     {"name":"spr_menu","order":5,"path":"sprites/spr_menu/spr_menu.yy",},
     {"name":"spr_fish_egg","order":14,"path":"sprites/spr_fish_egg/spr_fish_egg.yy",},
     {"name":"obj_death_menu","order":13,"path":"objects/obj_death_menu/obj_death_menu.yy",},

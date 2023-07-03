@@ -2,6 +2,8 @@ var hasLight = 0;
 if (array_length(global.equipped) >= 3) {
 	if (global.equipped[2] == "Luciferin") {
 		hasLight = 1;
+	} else if (global.equipped[2] == "Night Vision Goggles") {
+		hasLight = 2;
 	}
 }
 
@@ -28,6 +30,16 @@ switch(room) {
 		}
 	break;
 	case (Room1_sideB):
+		var level;
+		if (instance_exists(obj_diver)) {
+			level = obj_diver.y / 10000;
+			draw_sprite_ext(darkD, hasLight, obj_diver.x, obj_diver.y, 3, 3, 0, c_white, clamp(level, 0, 0.25));
+		} else {
+			level = 1;
+			draw_sprite_ext(darkD, 0, x, y, 500, 500, 0, c_white, clamp(level, 0, 0.5));
+		}
+	break;
+	case (Room2):
 		var level;
 		if (instance_exists(obj_diver)) {
 			level = obj_diver.y / 10000;
