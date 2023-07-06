@@ -150,7 +150,7 @@ with (obj_diver) {
 			obj_game.doScaling = false;
 		}
 	} else {
-		obj_game.cameraScale = 4;
+		obj_game.cameraScale = 10;
 	}
 	
 }
@@ -172,5 +172,5 @@ if (doScaling == true) {
 
 
 camera_set_view_border(view_camera[0], 1980, 1080);
-camera_set_view_size(view_camera[0], 756 * clamp(cameraScale, 1, 1.5), 425 * clamp(cameraScale, 1, 1.5));
+camera_set_view_size(view_camera[0], 756 * clamp(cameraScale, 1, 10), 425 * clamp(cameraScale, 1, 10));
 

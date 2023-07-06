@@ -371,6 +371,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"roomStartScreen","path":"rooms/roomStartScreen/roomStartScreen.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"roomDeath","path":"rooms/roomDeath/roomDeath.yy",},},
     {"roomId":{"name":"room_shop_top","path":"rooms/room_shop_top/room_shop_top.yy",},},
     {"roomId":{"name":"Room1_thorium","path":"rooms/Room1_thorium/Room1_thorium.yy",},},
@@ -380,7 +381,6 @@
     {"roomId":{"name":"Room1_HarpoonB","path":"rooms/Room1_HarpoonB/Room1_HarpoonB.yy",},},
     {"roomId":{"name":"Room1_hidden","path":"rooms/Room1_hidden/Room1_hidden.yy",},},
     {"roomId":{"name":"CutScene","path":"rooms/CutScene/CutScene.yy",},},
-    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"room_shop_mid","path":"rooms/room_shop_mid/room_shop_mid.yy",},},
   ],
   "TextureGroups": [

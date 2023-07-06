@@ -10,7 +10,11 @@ if (flashAlpha <= 0 && (sprite_index == spr_yerino_mouth_move)) {
 					}
 				}
 			}
-		delt(damage , x, y);
+			if (y > (room_height - 3000)) {
+				delt(damage + 1, x, y);
+			} else {
+				delt(damage , x, y);
+			}
 		}
 	}
 }

@@ -2,7 +2,7 @@
 if (array_contains(global.bosses_beaten, "Yerino")) {
 	instance_destroy();
 } else {
-	default_swim_speed = 1 + clamp((y - 8500)/500, 0, 11)
+	default_swim_speed = 1 + clamp((obj_diver.y - 8500)/500, 0, 20)
 	if y < 0 {
 		y = y +1;
 	}
@@ -18,7 +18,7 @@ if (array_contains(global.bosses_beaten, "Yerino")) {
 	// Target player
 
 	if (obj_diver.y >= 8000 && (distance_to_object(obj_diver) > 400)) {
-		move_towards_point(obj_diver.x, obj_diver.y, 3.6);
+		move_towards_point(obj_diver.x, obj_diver.y, 3.6 + clamp((obj_diver.y - 8500)/500, 0, 20));
 	} else {
 		if (!(place_meeting(x, y+swim_speed, obj_collision_parent) || (place_meeting(x, y-swim_speed, obj_collision_parent)))) {
 		speed = 0;
@@ -111,23 +111,25 @@ if (array_contains(global.bosses_beaten, "Yerino")) {
 
 	}
 	// always play
-	switch (attack) {
+	if distance_to_object(obj_diver) <= 1000 {
+		switch (attack) {
 	
-		case "diamond":
-		attackDiamond();
-		break;
+			case "diamond":
+			attackDiamond();
+			break;
 	
-		case "column":
-		attackColumn();
-		break;
+			case "column":
+			attackColumn();
+			break;
 	
-		case "screach":
-		attackDeathScreach();
-		break;
+			case "screach":
+			attackDeathScreach();
+			break;
 	
-		default:
+			default:
 
-		break;
+			break;
+		}
+
 	}
-
 }

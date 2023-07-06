@@ -4,6 +4,8 @@ switch(global.next) {
 	case 0:
 		obj_diver.x = global.previous_x
 		audio_sound_gain(m_surface_tension, 0, 5000)
+		audio_sound_gain(m_with_baited_breath_loop, 0, 5000);
+		audio_sound_gain(m_with_baited_breath_start, 0, 5000);
 		
 		
 		obj_sounds.musicTimer = 240;

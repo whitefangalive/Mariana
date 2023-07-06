@@ -24,7 +24,12 @@ if (key_accept == 1 || keyboard_or_mouse_check_pressed(mb_any)) {
 if (menu_level >= 3) {
 		menu_level = 0;
 }
-if (menu_level < 2 && (pos !=(array_length(obj_settings.currentlySaying)) -1)) {
+var length = array_length(obj_settings.currentlySaying);
+if (pos == length) {
+	instance_destroy();
+}
+
+if (menu_level < 2 && (pos != (array_length(obj_settings.currentlySaying)))) {
 	if (draw_char >= text_length[menu_level]) {
 		menu_level++;
 		pos++;
@@ -35,7 +40,4 @@ if (menu_level < 2 && (pos !=(array_length(obj_settings.currentlySaying)) -1)) {
 
 }
 
-if (pos == (array_length(obj_settings.currentlySaying))) {
-instance_destroy();
-}
 
