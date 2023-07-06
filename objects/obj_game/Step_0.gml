@@ -72,17 +72,21 @@ if (global.inventory_menu == false && object_exists(obj_inventory_use)) {
 switch(global.next) { 
 
 	case 0:
-		show_debug_message(global.previous_x)
-		if room = Room1 {
-			room_goto_next();
-		}
+		saveGame(string(curLocation) + ".save");
+		room_goto_next();
+		loadGame(string(destination) + ".save", false);
+		obj_settings.previousRoom = curLocation;
+		
+		global.next += 2;
 		break;
 	
 	case 1:
 		show_debug_message(global.previous_x)
-		if room = Room2 {
-			room_goto_previous();
-		}
+		saveGame(string(curLocation) + ".save");
+		room_goto_previous();
+		loadGame(string(room_previous(room)) + ".save", false);
+		obj_settings.previousRoom = curLocation;
+		global.next += 2;
 		break;
 	}
 
@@ -172,5 +176,5 @@ if (doScaling == true) {
 
 
 camera_set_view_border(view_camera[0], 1980, 1080);
-camera_set_view_size(view_camera[0], 756 * clamp(cameraScale, 1, 10), 425 * clamp(cameraScale, 1, 10));
+camera_set_view_size(view_camera[0], 756 * clamp(cameraScale, 1, 1.5), 425 * clamp(cameraScale, 1, 1.5));
 

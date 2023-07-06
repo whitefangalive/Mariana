@@ -1,4 +1,8 @@
-if distance_to_object(obj_diver) < 700 {
+if (distance_to_object(vfx_blood) < 1200) {
+		hostile = true;
+		range = 1200;
+}
+if distance_to_object(obj_diver) < range {
 	age++;
 	image_xscale = clamp(scale, 0.6, 2);
 	image_yscale = clamp(scale, 0.6, 2);
@@ -6,10 +10,6 @@ if distance_to_object(obj_diver) < 700 {
 
 	if (age > maxAge && age % 500 == 0) {
 		HP = HP - 1;
-	}
-
-	if (distance_to_object(vfx_blood) < 600) {
-		hostile = true;
 	}
 
 	if bTimer >= 1 {

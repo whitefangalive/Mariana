@@ -37,3 +37,4 @@ path_ended = "false";
 needsToMoveLeftRight = -1;
 
 getEggOnce = false;
+range = 700;

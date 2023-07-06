@@ -1,7 +1,10 @@
 //move to next room
+if (obj_settings.previousRoom == destination) {
+	obj_settings.previousRoom = curLocation;
+}
 switch(global.next) { 
 
-	case 0:
+	case 2:
 		obj_diver.x = global.previous_x
 		audio_sound_gain(m_surface_tension, 0, 5000)
 		audio_sound_gain(m_with_baited_breath_loop, 0, 5000);
@@ -12,7 +15,7 @@ switch(global.next) {
 		global.next = -1;
 		break;
 	
-	case 1:
+	case 3:
 		show_debug_message(global.previous_x)
 		obj_diver.x = global.previous_x
 		obj_diver.y = room_height;

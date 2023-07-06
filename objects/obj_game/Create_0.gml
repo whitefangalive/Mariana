@@ -31,4 +31,6 @@ healthOnce = false;
 
 text_opacity = 0.5;
 text_counter = 0;
+destination = room_next(room);
+curLocation = room;
 
