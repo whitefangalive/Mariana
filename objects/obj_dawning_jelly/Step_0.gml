@@ -52,10 +52,13 @@ if (flashAlpha > 0) {
 	flashAlpha -= 0.05;
 }
 
-if (flashAlpha > 0.05) {
+if (flashAlpha > 0.05 && !place_meeting(x, y, obj_collision_parent)) {
 	move_towards_point(obj_diver.x, obj_diver.y, -3);
 } else {
 	if (flashAlpha = 0.05) {
 speed = 0;
+	}
+	if (place_meeting(x, y, obj_collision_parent)) {
+		move_towards_point(obj_diver.x, obj_diver.y, 3);
 	}
 }

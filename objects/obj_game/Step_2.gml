@@ -1,6 +1,8 @@
 //move to next room
-if (obj_settings.previousRoom == destination) {
-	obj_settings.previousRoom = curLocation;
+if (instance_exists(obj_diver)) {
+	if (obj_settings.previousRoom == destination && ((obj_diver.y < 2) || obj_diver.y > room_height - 2)) {
+		obj_settings.previousRoom = curLocation;
+	}
 }
 switch(global.next) { 
 

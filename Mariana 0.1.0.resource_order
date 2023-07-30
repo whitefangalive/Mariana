@@ -7,12 +7,12 @@
     {"name":"lighting","order":8,"path":"folders/Objects/lighting.yy",},
     {"name":"placables","order":9,"path":"folders/Objects/placables.yy",},
     {"name":"sub_shop","order":10,"path":"folders/Objects/sub_shop.yy",},
+    {"name":"3middleLower","order":1,"path":"folders/Rooms/3middleLower.yy",},
     {"name":"music","order":1,"path":"folders/Scripts/music.yy",},
     {"name":"string_utils","order":4,"path":"folders/Scripts/string_utils.yy",},
     {"name":"deepCalling","order":1,"path":"folders/Sounds/SFX/deepCalling.yy",},
     {"name":"muro","order":2,"path":"folders/Sounds/SFX/muro.yy",},
     {"name":"harpoon","order":1,"path":"folders/Sprites/items/harpoon.yy",},
-    {"name":"3middleLower","order":1,"path":"folders/Rooms/3middleLower.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_pause_menu","order":9,"path":"objects/obj_pause_menu/obj_pause_menu.yy",},
