@@ -1,0 +1,10 @@
+/// @description randomize
+
+image_index = random(4);
+once = false;
+function destroy() {
+	instance_destroy();
+	for (var i = 0; i < 4; i++) {
+			instance_create_layer(x,y, "player_layer", vfx_wall_dest);
+	}
+}
