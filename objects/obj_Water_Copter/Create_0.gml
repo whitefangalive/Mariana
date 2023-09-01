@@ -5,5 +5,6 @@ randDir = irandom_range(-2,2);
 randDir2 = irandom_range(-2,2);
 
 despawn = 52000;
+pickupability = false;
 
 

@@ -30,7 +30,8 @@ function saveSettings(){
 						Resolution : Resolution,
 
 						blood : blood,
-						Borderless : Borderless
+						Borderless : Borderless,
+						Automatic_pickup : Automatic_pickup
 					}
 					array_push(_saveData, _saveEntity);
 				}

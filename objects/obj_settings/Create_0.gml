@@ -29,6 +29,8 @@ gamepad_set_axis_deadzone(0, 0.3);
 	bloodEnable = true;
 	blood = true;
 	Borderless = false;
+	
+	Automatic_pickup = true;
 
 if (file_exists("settings.save")) {
 	var _buffer = buffer_load("settings.save");
@@ -37,7 +39,7 @@ if (file_exists("settings.save")) {
 	var _loadData = json_parse(_string);
 
 	var _loadEntity = array_pop(_loadData);	
-	if (struct_names_count(_loadEntity) == 19) {
+	if (struct_names_count(_loadEntity) == 20) {
 		global.volume_setting = _loadEntity.volume_setting;
 		key_escape = _loadEntity.key_escape;
 		key_select = _loadEntity.key_select;
@@ -62,6 +64,7 @@ if (file_exists("settings.save")) {
 		bloodEnable = _loadEntity.bloodEnable;
 		blood = _loadEntity.blood;
 		Borderless = _loadEntity.Borderless;
+		Automatic_pickup = _loadEntity.Automatic_pickup;
 	}
 }
 // saying for text

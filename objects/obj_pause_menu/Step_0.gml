@@ -61,13 +61,16 @@ audio_play_sound(sfx_select, 2, false);
 			case 0: 
 				menu_level = 3;
 			break;
+			case 1:
+				menu_level = 4;
+			break;
 
 				//controls
-			case 1: 
+			case 2: 
 				menu_level = 2;
 			break;
 				//volume
-			case 2: 
+			case 3: 
 				if global.volume_setting >= 0.10 {
 					global.volume_setting -= 0.10;
 				} else {
@@ -85,10 +88,10 @@ audio_play_sound(sfx_select, 2, false);
 				changeVolume(m_with_baited_breath_start);
 				changeVolume(m_are_there_any_crabs_in_here);
 				changeVolume(m_there_is_definitely_a_crab_in_here);
-				option[1, 2] = ("Volume: " + string(global.volume_setting*100)); 
+				option[1, 3] = ("Volume: " + string(global.volume_setting*100)); 
 			break;
 			//back
-			case 3: 
+			case 4: 
 				saveSettings();
 				menu_level = 0;
 			break;
@@ -154,6 +157,17 @@ audio_play_sound(sfx_select, 2, false);
 				break;
 				case 6:
 					menu_level = 1;
+				break;
+			}
+		 break;
+		 case 4:
+			switch(pos) {
+				case 0:
+					obj_settings.Automatic_pickup = !obj_settings.Automatic_pickup;
+					option[4, 0] = "Automatic Pickup: " + toBoolOrBinary(obj_settings.Automatic_pickup);
+				break;
+				case 1:
+						menu_level = 1;
 				break;
 			}
 		 break;

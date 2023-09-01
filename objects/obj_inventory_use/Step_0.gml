@@ -109,7 +109,15 @@ audio_play_sound(sfx_select, 2, false);
 			global.inventory_menu = false;
 			break;
 			//Drop
-		    case 1: array_delete(global.inventory, obj_inventory.pos, 1); break;
+		    case 1:
+				var offset = obj_diver.image_xscale * 60;
+				with(instance_create_layer(obj_diver.x + offset, obj_diver.y, "player_layer", convertTo("obj", string(global.inventory[obj_inventory.pos])))) {
+					randDir = 0;
+					randDir2 = 0;
+				}
+				array_delete(global.inventory, obj_inventory.pos, 1); 
+				instance_destroy();
+			break;
 		    //left
 		    case 2: 
 			if !obj_inventory.pos = 0 {

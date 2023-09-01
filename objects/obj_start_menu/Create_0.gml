@@ -22,9 +22,10 @@ option[0, 3] = "Quit Game"
 
 //settings
 option[1, 0] = "Video";
-option[1, 1] = "Controls";
-option[1, 2] = ("Volume: " + (string(global.volume_setting*100)));
-option[1, 3] = "Back";
+option[1, 1] = "Gameplay";
+option[1, 2] = "Controls";
+option[1, 3] = ("Volume: " + (string(global.volume_setting*100)));
+option[1, 4] = "Back";
 
 //controls
 
@@ -49,6 +50,9 @@ option[3, 3] = "Text Speed: " + textOptions[obj_settings.textpos];
 option[3, 4] = "Blood: " + toBoolOrBinary(obj_settings.bloodEnable);
 option[3, 5] = "Apply";
 option[3, 6] = "Back";
+
+option[4, 0] = "Automatic Pickup: " + toBoolOrBinary(obj_settings.Automatic_pickup);
+option[4, 1] = "Back";
 
 op_length = 0;
 menu_level = 0;

@@ -12,8 +12,8 @@
     {"name":"string_utils","order":4,"path":"folders/Scripts/string_utils.yy",},
     {"name":"deepCalling","order":1,"path":"folders/Sounds/SFX/deepCalling.yy",},
     {"name":"muro","order":2,"path":"folders/Sounds/SFX/muro.yy",},
-    {"name":"harpoon","order":1,"path":"folders/Sprites/items/harpoon.yy",},
     {"name":"sispi","order":18,"path":"folders/Sprites/fish/sispi.yy",},
+    {"name":"harpoon","order":1,"path":"folders/Sprites/items/harpoon.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_pause_menu","order":9,"path":"objects/obj_pause_menu/obj_pause_menu.yy",},
