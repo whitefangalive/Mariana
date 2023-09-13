@@ -1,18 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_muro",
+  "name": "obj_Ancient_Map",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "sub_shop",
-    "path": "folders/Objects/sub_shop.yy",
+    "name": "items",
+    "path": "folders/Objects/items.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_item_parent",
+    "path": "objects/obj_item_parent/obj_item_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -29,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_muro_regular",
-    "path": "sprites/spr_muro_regular/spr_muro_regular.yy",
+    "name": "spr_Ancient_Map",
+    "path": "sprites/spr_Ancient_Map/spr_Ancient_Map.yy",
   },
   "spriteMaskId": null,
   "visible": true,

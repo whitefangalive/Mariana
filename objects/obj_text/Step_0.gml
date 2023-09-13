@@ -2,12 +2,14 @@
 key_w = keyboard_check_pressed(obj_settings.key_up);
 key_s = keyboard_check_pressed(obj_settings.key_down);
 key_accept = keyboard_check_pressed(vk_anykey);
+var length = array_length(obj_settings.currentlySaying);
 
-//storen number of otpions
 if (key_accept == 1 || keyboard_or_mouse_check_pressed(mb_any)) {
 	if (draw_char >= text_length[menu_level]) {
-		menu_level++;
 		pos++;
+		if (pos != length) {
+			menu_level++;
+		}
 		draw_char = 0;
 	} else {
 		draw_char = text_length[menu_level];
@@ -24,20 +26,17 @@ if (key_accept == 1 || keyboard_or_mouse_check_pressed(mb_any)) {
 if (menu_level >= 3) {
 		menu_level = 0;
 }
-var length = array_length(obj_settings.currentlySaying);
+
 if (pos == length) {
 	instance_destroy();
 }
 
-if (menu_level < 2 && (pos != (array_length(obj_settings.currentlySaying)))) {
+if (menu_level < 2 && (pos != length-1)) {
 	if (draw_char >= text_length[menu_level]) {
 		menu_level++;
 		pos++;
 		draw_char = 0;
 	} 
-	
-	
-
 }
 
 

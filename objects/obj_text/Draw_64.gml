@@ -1,12 +1,14 @@
 // draw options
 draw_set_font(global.font_main);
+
+var length = array_length(obj_settings.currentlySaying);
 if (setup == false) {
 	setup = true;
 	
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
 	
-	for (var i = 0; i < array_length(obj_settings.currentlySaying); i++) {
+	for (var i = 0; i < length; i++) {
 		text_length[i] = string_length(obj_settings.currentlySaying[i]);
 	}
 
@@ -22,9 +24,8 @@ y = 780;
  
 //dr menu background
 
-
 var textSpeed = obj_settings.textSpeed;
-if (pos != (array_length(obj_settings.currentlySaying))) {
+if (pos != length) {
 	if (draw_char < text_length[menu_level]) {
 		if (string_length(obj_settings.currentlySaying) > draw_char + 2) {
 			if (string_char_at(obj_settings.currentlySaying, draw_char + 2) == "," || string_char_at(obj_settings.currentlySaying, draw_char + 2) == ".") {

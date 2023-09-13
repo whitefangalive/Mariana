@@ -27,7 +27,8 @@ if (!instance_exists(obj_text)) {
 				switch(pos) {
 				//buy
 				case 0:
-					var price = getPrices(obj_shop.option[0, obj_shop.pos]);
+					var buyingItem = string(obj_shop.option[0, obj_shop.pos]);
+					var price = getPrices(buyingItem);
 					
 						var deepCopyPrice = [];
 						array_copy(deepCopyPrice, 0, price, 0, array_length(price));
@@ -56,30 +57,47 @@ if (!instance_exists(obj_text)) {
 										}
 									}
 								}
+								
 								buyItem(obj_shop.option[0, obj_shop.pos]);
+								say(splitText("Enjoy your new "+ buyingItem + "!"))
 							} else {
 								obj_muro.annoyance++;
-								var article = "a ";
-								var missingItem = deepCopyPrice[0];
-								var firstLetter = string_char_at(missingItem, 0);
-								if (firstLetter == "A" || firstLetter == "E" || firstLetter == "I" || firstLetter == "O") {
-									article = "an ";
+								var missingItem = string(deepCopyPrice[0]);
+								var rand = 0
+								if (obj_muro.annoyance < 7) {
+									rand = irandom_range(0, 4);
+								} else {
+									rand = irandom_range(5, 7);
 								}
-								var rand = irandom_range(0, 2);
 								if (obj_muro.annoyance < 12) {
 									switch (rand) {
-										case 0:
-											say(["Looks like you're missing " + article + string(missingItem) + " Bucko."]);
+										case 4:
+											say(["Looks like you're missing " + articleChoose(missingItem) + missingItem + " Bucko."]);
 										break;
 										case 1:
-											say(["The price says " + string(missingItem) + " You don't have that."]);
+											say(["The price says " + missingItem + " You don't have that."]);
 										break;
 										case 2:
-											say(["You need " + article + string(missingItem) + "."]);
+											say(["You need to give me " + articleChoose(missingItem) + missingItem + "."]);
+										break;
+										case 3:
+											say(["Are you trying to swindle me? I'm not going to give you " + articleChoose(buyingItem) + buyingItem + " without " + articleChoose(missingItem) + missingItem + "."]);
+										break;
+										case 0:
+											say(splitText("I'll only trade my " + buyingItem + " if you give me all the items on price tag, you're missing " + articleChoose(missingItem) + missingItem + "."));
+										break;
+										case 5:
+											say(splitText("Do you know how to read the price tag?"));
+										break;
+										case 6:
+											say(splitText("You can't afford " + articleChoose(buyingItem) + buyingItem + " you are poor."));
+										break;
+										case 7:
+											say(splitText("No " + missingItem + " no " + buyingItem + "."));
 										break;
 									}
 								} else {
-									say(["You would stop that."]);
+									say(["Would you stop that."]);
 								}
 								
 							}

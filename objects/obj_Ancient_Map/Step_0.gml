@@ -1,0 +1,1 @@
+itemScript("Ancient Map");
