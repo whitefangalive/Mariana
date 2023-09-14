@@ -6,6 +6,17 @@ key_accept = keyboard_check_pressed(obj_settings.key_select);
 //storen number of otpions
 op_length = array_length(global.inventory);
 
+
+// enable clicking
+for(var i = 0; i < array_length(buttons); i++) {
+	var object = buttons[i];
+	if (object.pressed == true) {
+		pos = object.index;
+		audio_play_sound(sfx_select, 2, false, global.volume_setting);
+		key_accept = true;
+	}
+}
+
 //move through menu
 if (!instance_exists(obj_inventory_use)) {
 pos += key_D - key_A;
@@ -17,7 +28,7 @@ if pos < 0 {pos = op_length -1};
 if !instance_exists(obj_inventory_use) && !instance_exists(obj_text) {
 	if key_accept {
 		if (array_length(global.inventory) > 0) {
-	audio_play_sound(sfx_select, 2, false);
+	audio_play_sound(sfx_select, 2, false, global.volume_setting);
 			var _sml = menu_level;
 		
 			instance_create_layer(0, 0, "menu_layer", obj_inventory_use);

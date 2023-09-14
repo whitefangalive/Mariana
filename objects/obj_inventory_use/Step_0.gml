@@ -6,6 +6,15 @@ key_accept = keyboard_check_pressed(obj_settings.key_select);
 //storen number of otpions
 op_length = array_length(option[menu_level]);
 
+
+// enable clicking
+for(var i = 0; i < array_length(buttons); i++) {
+	var object = buttons[i];
+	if (object.pressed == true) {
+		pos = object.index;
+		key_accept = true;
+	}
+}
 //move through menu
 pos += key_s - key_w;
 if pos >= op_length {pos = 0};

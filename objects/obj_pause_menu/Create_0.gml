@@ -53,3 +53,5 @@ option[4, 1] = "Back";
 op_length = 0;
 menu_level = 0;
 
+buttons = [];
+

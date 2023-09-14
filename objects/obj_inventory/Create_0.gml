@@ -12,3 +12,5 @@ pos = 0;
 
 op_length = 0;
 menu_level = 0;
+
+buttons = [];

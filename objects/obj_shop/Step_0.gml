@@ -14,18 +14,14 @@ if (!instance_exists(obj_text)) {
 }
 
 // enable clicking
-//with (obj_button) {
-//	if (pressed == true) {
-//		if (once == false) {
-//			instance_destroy(obj_shop_accept);
-//			obj_shop.pos = index;
-//			obj_shop.key_accept = true;
-//			once = true;
-//		}
-//	} else {
-//		once = false;
-//	}
-//}
+for(var i = 0; i < array_length(buttons); i++) {
+	var object = buttons[i];
+	if (object.pressed == true) {
+		pos = object.index;
+		key_accept = true;
+		audio_play_sound(sfx_select, 2, false, global.volume_setting);
+	}
+}
 
 if pos >= op_length {pos = 0};
 if pos < 0 {pos = op_length -1};

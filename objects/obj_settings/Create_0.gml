@@ -1,7 +1,7 @@
 global.font_main = font_add_sprite(spr_font_fundant, 32, true, 1);
 global.volume_setting = 1.00;
 initKeys();
-randomize();
+
 gamepad_set_axis_deadzone(0, 0.3);
 
 //Controls

@@ -80,3 +80,5 @@ switch (item) {
 					break;
 				}
 }
+
+buttons = [];

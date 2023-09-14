@@ -25,3 +25,5 @@ menu_level = 0;
 //	j++;
 //obj_inventory.pos = obj_inventory.pos + posneg;
 //}
+
+buttons = [];

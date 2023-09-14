@@ -26,11 +26,34 @@ for (var i = 0; i < op_length; i++) {
 	  //draw line 1
 		  var full_length = 0;
 		  draw_text_color(x+op_border + op_space*0, y+op_border, global.inventory[0], _c, _c, _c, _c, 1 );
+		  if (instance_number(obj_button) < array_length(global.inventory)) {
+			var button = instance_create_layer(x+op_border + op_space*0, y+op_border, "menu_layer", obj_button);
+			var stringWidth = string_width(global.inventory[i])
+			button.image_xscale = stringWidth/80;
+			button.image_yscale = 0.4;
+			button.obj = object_index;
+			button.menu_level = 0;
+			button.index = i;
+			array_set(buttons, i, button.id);
+			show_debug_message(string(buttons));
+		  }
 	  } 
 	  else {
 		  //draw other lines
 		draw_text_color(x+op_border + op_space + string_width(global.inventory[i-1]) + full_length, y+op_border, global.inventory[i], _c, _c, _c, _c, 1 );
-		full_length += (op_space + string_width(global.inventory[i-1]));
+		
+		if (instance_number(obj_button) < array_length(global.inventory)) {
+			var button = instance_create_layer(x+op_border + op_space + string_width(global.inventory[i-1]) + full_length, y+op_border, "menu_layer", obj_button);
+			var stringWidth = string_width(global.inventory[i])
+			button.image_xscale = stringWidth/80;
+			button.image_yscale = 0.4;
+			button.obj = object_index;
+			button.menu_level = 0;
+			button.index = i;
+			array_set(buttons, i, button.id);
+			show_debug_message(string(buttons));
+		  }
+		  full_length += (op_space + string_width(global.inventory[i-1]));
 	}
 }
 
