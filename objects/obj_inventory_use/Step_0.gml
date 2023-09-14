@@ -13,6 +13,9 @@ for(var i = 0; i < array_length(buttons); i++) {
 	if (object.pressed == true) {
 		pos = object.index;
 		key_accept = true;
+		buttons = [];
+		obj_inventory.buttons = [];
+		instance_destroy(obj_button);
 	}
 }
 //move through menu
@@ -63,11 +66,17 @@ audio_play_sound(sfx_select, 2, false);
 							break;
 							case "Booster":
 								instance_destroy();
+								if (global.equipped[1] != 0.0) {
+										dropItem(convertTo("obj", string(global.equipped[1])));
+								}
 								array_set(global.equipped, 1, "Booster");
 								array_delete(global.inventory, obj_inventory.pos, 1);
 							break;
 							case "Luciferin":
 								instance_destroy();
+								if (global.equipped[2] != 0.0) {
+										dropItem(convertTo("obj", string(global.equipped[2])));
+								}
 								array_set(global.equipped, 2, "Luciferin");
 								array_delete(global.inventory, obj_inventory.pos, 1) 
 							break;
@@ -79,12 +88,18 @@ audio_play_sound(sfx_select, 2, false);
 							break;
 							case "Water Copter":
 									instance_destroy();
+									if (global.equipped[3] != 0.0) {
+											dropItem(convertTo("obj", string(global.equipped[3])));
+									}									
 									array_set(global.equipped, 3, "Water Copter");
 									array_delete(global.inventory, obj_inventory.pos, 1);
 							break;
 							case "Ancient Map":
 									say(["Press " + "Tab" + " to open the map."]);
 									instance_destroy();
+									if (global.equipped[4] != 0.0) {
+											dropItem(convertTo("obj", string(global.equipped[4])));
+									}									
 									array_set(global.equipped, 4, "Ancient Map");
 									array_delete(global.inventory, obj_inventory.pos, 1);
 							break;
@@ -101,13 +116,35 @@ audio_play_sound(sfx_select, 2, false);
 							break;
 							case "Steel Harpoon":
 								instance_destroy();
+									if (global.equipped[0] != 0.0) {
+										dropItem(convertTo("obj", string(global.equipped[0])));
+									}
 									array_set(global.equipped, 0, "Steel Harpoon");
 									array_delete(global.inventory, obj_inventory.pos, 1);
 							break;
 							case "Crab Claw":
 								instance_destroy();
-									array_set(global.equipped, 0, "Crab Claw");
-									array_delete(global.inventory, obj_inventory.pos, 1);
+								if (global.equipped[0] != 0.0) {
+										dropItem(convertTo("obj", string(global.equipped[0])));
+								}
+								array_set(global.equipped, 0, "Crab Claw");
+								array_delete(global.inventory, obj_inventory.pos, 1);
+							break;
+							case "Depthometer":
+								instance_destroy();
+								if (global.equipped[5] != 0.0) {
+										dropItem(convertTo("obj", string(global.equipped[5])));
+								}
+								array_set(global.equipped, 5, "Depthometer");
+								array_delete(global.inventory, obj_inventory.pos, 1) 
+							break;
+							case "Healthometer":
+								instance_destroy();
+								if (global.equipped[6] != 0.0) {
+										dropItem(convertTo("obj", string(global.equipped[6])));
+								}
+								array_set(global.equipped, 6, "Healthometer");
+								array_delete(global.inventory, obj_inventory.pos, 1) 
 							break;
 							//Default
 							default: 
@@ -119,12 +156,7 @@ audio_play_sound(sfx_select, 2, false);
 			break;
 			//Drop
 		    case 1:
-				var offset = obj_diver.image_xscale * 60;
-				with(instance_create_layer(obj_diver.x + offset, obj_diver.y, "player_layer", convertTo("obj", string(global.inventory[obj_inventory.pos])))) {
-					randDir = 0;
-					randDir2 = 0;
-				}
-				array_delete(global.inventory, obj_inventory.pos, 1); 
+				dropItem(convertTo("obj", string(global.inventory[obj_inventory.pos])));
 				instance_destroy();
 			break;
 		    //left

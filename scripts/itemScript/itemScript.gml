@@ -11,11 +11,11 @@ function itemScript(itemName){
 		x += (randDir/3);
 		y += (randDir2/3);
 
-		despawn -= 1;
+		//despawn -= 1;
 
-		if despawn == 0 {
-			instance_destroy();
-		}
+		//if despawn == 0 {
+		//	instance_destroy();
+		//}
 	}
 
 	while_counter = 0;

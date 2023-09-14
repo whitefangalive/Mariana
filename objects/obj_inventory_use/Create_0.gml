@@ -27,3 +27,13 @@ menu_level = 0;
 //}
 
 buttons = [];
+
+function dropItem(obje) {
+	var offset = obj_diver.image_xscale * 60;
+	with(instance_create_layer(obj_diver.x + offset, obj_diver.y, "player_layer", obje)) {
+		randDir = 0;
+		randDir2 = 0;
+	}
+	array_delete(global.inventory, obj_inventory.pos, 1); 
+	
+}

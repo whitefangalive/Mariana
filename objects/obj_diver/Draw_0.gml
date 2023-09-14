@@ -21,6 +21,12 @@ draw_sprite_ext(convertTo(sprite_get_name(sprite_index), global.equipped[0]), im
 if (global.equipped[2] == "Luciferin") {
 	draw_sprite_ext(spr_Luciferin_Belt, 0, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
 }
+if (global.equipped[5] == "Depthometer") {
+	draw_sprite_ext(spr_Depthometer_Helm, 0, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
+}
+if (global.equipped[6] == "Healthometer") {
+	draw_sprite_ext(spr_Healthometer_Helm, 0, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
+}
 if (flashAlpha > 0) {
 	shader_set(shFlash);
 	

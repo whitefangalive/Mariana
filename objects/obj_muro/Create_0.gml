@@ -8,7 +8,7 @@ switch (obj_settings.timesEnteredSub) {
 	break;
 	
 	case 3:
-	say(splitText("Yeah, I remember you. You were the one who couldn't tell a jellyfish from a toaster, right? Anyway, what can I sell you?"));
+	say(splitText("Hey, do I know you from somewhere? Were you at the 15th annual fish greasing competition?"));
 	break;
 
 	case 4:
@@ -16,7 +16,7 @@ switch (obj_settings.timesEnteredSub) {
 	break;
 
 	case 5:
-	say(splitText("You look like you could use an upgrade. How about this brand-new air tank? Guaranteed to keep you breathing for at least 5 hours or your money back. Not that you'll need it."));
+	say(splitText("You look like you could use an upgrade. How about this brand-new air tank? Guaranteed to keep you breathing for at least 5 hours or your money back. That's right any money you give me, I will give right back!"));
 	break;
 
 	case 6:
@@ -36,7 +36,7 @@ switch (obj_settings.timesEnteredSub) {
 	break;
 
 	case 10:
-	say(splitText("You know, sometimes I wonder what it would be like to live on land. Do you ever miss it? The fresh air, the sunlight, the lack of fish nibbling at your toes... But then again, if we lived on land, we wouldn't be able to have adventures like this. Speaking of which, how about this rare pearl I just found? It's said to bring good luck to anyone who owns it. Don't believe me? Why?"));
+	say(splitText("You know, sometimes I wonder what it would be like to live on land again. Do you ever miss it? The fresh air, the sunlight, the lack of fish nibbling at your toes... But then again, if I lived on land, I'd have drop the word sea from my full title \"Sea Cowboy Merchant\". Speaking of which, how about this rare pearl I just found? It's said to bring good luck to anyone who owns it. Don't believe me? Why?"));
 	break;
 
 	case 11:
@@ -87,13 +87,13 @@ switch (obj_settings.timesEnteredSub) {
 	say(splitText("You know, sometimes I wonder if the new gods even know how to swim. They're always up in their fancy sky palaces, never getting their feet wet. But me, I've always been a hands-on kind of guy. That's how I ended up with this shop, you know? Inherited it from my father or some such. Although, it could have been his evil twin brother for all I know."));
 	break;
 	case 25:
-	say(splitText("You seem like a smart one. Tell me, have you ever heard of a mermaid's kiss? Supposedly, if you're lucky enough to get one, it'll grant you eternal youth. Personally, I think it's all just a bunch of nonsense. But if you happen to come across one, be sure to let me know. I could use a few more wrinkles taken care of, if you catch my drift."));
+	say(splitText("I'm a sea cowboy, Ya know, like a regular cowboy. Except I catch seacows on a seahorse. I guess this is more of my side gig."));
 	break;
 	case 26:
-	say(splitText("You know what they say, 'one person's trash is another person's treasure.' And boy, do I have some treasures for you! Like this broken compass, for example. It may not work, but it'll look great on your mantlepiece. And hey, you never know when you might need a conversation starter, am I right?"));
+	say(splitText("You know what they say, 'one person's trash is another person's treasure.' And boy, do I have some treasures for you! Like this broken compass, for example. It may not work, but it'll look great on your mantlepiece. And it probably has some use I just don't know about."));
 	break;
 	case 27:
-	say(splitText("You know, I can't help but notice that you look awfully suspicious. It's almost as if you're the protagonist of some sort of video game or something. Ha! Just kidding, don't mind me. Anyway, can I interest you in this slightly used but still functional breathing apparatus?"));
+	say(splitText("You know, I can't help but notice that you look awfully suspicious. People down here are always hiding from something on the surface. Ha! Just kidding, don't mind me. Anyway, can I interest you in this slightly used but still functional breathing apparatus?"));
 	break;
 	case 29:
 	say(splitText("Would you like to buy a map of the trench? I promise it's not outdated by more than a century."));
@@ -106,7 +106,7 @@ switch (obj_settings.timesEnteredSub) {
 	say(splitText("I know you aren't what you say you are, but can I ask you a question? Do you think my submarine looks cool? I put a lot of work into it, you know. I even added some extra rust to make it look more authentic."));
 	break;
 	case 32:
-	say(splitText("You sure do like talking to me, sheash im running out of things to talk about, uh you wanna buy my pokemon card collection?"));
+	say(splitText("You sure do like talking to me, sheash im running out of things to talk about, uh you wanna buy my cowboy card collection?"));
 	break;
 	default:
 	say(splitText("welcome back I guess."));

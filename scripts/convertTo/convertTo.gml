@@ -6,13 +6,22 @@
 function convertTo(type, name){
 	//spr and obj types
 		if (type != "name") {
-			var underScoredName = string_replace_all(name, " ", "_");
+			if (stringContains(name, "spr_") || stringContains(name, "obj_")) { 
+				var nameRemovedFirstFour = string_copy(name, 5, string_length(name));
+				var objName = asset_get_index(type + "_" + nameRemovedFirstFour);
+				if (objName == -1) {
+					show_debug_message((type + "_" + underScoredName));
+				}
+				return objName;
+			} else {
+				var underScoredName = string_replace_all(name, " ", "_");
 	
-			var objName = asset_get_index(type + "_" + underScoredName);
-			if (objName == -1) {
-				show_debug_message((type + "_" + underScoredName));
+				var objName = asset_get_index(type + "_" + underScoredName);
+				if (objName == -1) {
+					show_debug_message((type + "_" + underScoredName));
+				}
+				return objName;
 			}
-			return objName;
 		} else {
 			var nameRemovedFirstFour = string_copy(name, 5, string_length(name));
 			var underScoredName = string_replace_all(nameRemovedFirstFour, "_", " ");

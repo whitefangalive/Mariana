@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Healthometer",
-    "path": "sprites/spr_Healthometer/spr_Healthometer.yy",
+    "name": "spr_Depthometer",
+    "path": "sprites/spr_Depthometer/spr_Depthometer.yy",
   },
   "spriteMaskId": null,
   "visible": true,

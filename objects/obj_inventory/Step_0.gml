@@ -10,11 +10,16 @@ op_length = array_length(global.inventory);
 // enable clicking
 for(var i = 0; i < array_length(buttons); i++) {
 	var object = buttons[i];
-	if (object.pressed == true) {
-		pos = object.index;
-		audio_play_sound(sfx_select, 2, false, global.volume_setting);
-		key_accept = true;
-	}
+
+		if (object.pressed == true) {
+			pos = object.index;
+			audio_play_sound(sfx_select, 2, false, global.volume_setting);
+			key_accept = true;
+			buttons = [];
+			with (obj_button) {
+			instance_destroy();
+			}
+		}
 }
 
 //move through menu

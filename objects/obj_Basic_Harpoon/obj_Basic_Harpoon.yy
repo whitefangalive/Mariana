@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Healthometer",
+  "name": "obj_Basic_Harpoon",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Healthometer",
-    "path": "sprites/spr_Healthometer/spr_Healthometer.yy",
+    "name": "spr_Basic_Harpoon",
+    "path": "sprites/spr_Basic_Harpoon/spr_Basic_Harpoon.yy",
   },
   "spriteMaskId": null,
   "visible": true,
