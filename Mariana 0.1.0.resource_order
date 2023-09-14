@@ -93,6 +93,7 @@
     {"name":"spr_fire_coral","order":6,"path":"sprites/spr_fire_coral/spr_fire_coral.yy",},
     {"name":"spr_diver_attacking_up_Crab_Claw","order":19,"path":"sprites/spr_diver_attacking_up_Crab_Claw/spr_diver_attacking_up_Crab_Claw.yy",},
     {"name":"spr_jellyfish_glow","order":14,"path":"sprites/spr_jellyfish_glow/spr_jellyfish_glow.yy",},
+    {"name":"obj_depth_meter","order":19,"path":"objects/obj_depth_meter/obj_depth_meter.yy",},
     {"name":"spr_tubeworm","order":19,"path":"sprites/spr_tubeworm/spr_tubeworm.yy",},
     {"name":"spr_swimming_Basic_Harpoon","order":10,"path":"sprites/spr_swimming_Basic_Harpoon/spr_swimming_Basic_Harpoon.yy",},
     {"name":"Room1_HarpoonA","order":2,"path":"rooms/Room1_HarpoonA/Room1_HarpoonA.yy",},

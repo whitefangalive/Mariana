@@ -46,6 +46,7 @@ if (global.inventoried == true) {
 	instance_activate_object(obj_inventory);
 	if healthOnce == false {
 		instance_create_layer(0, 0, "menu_layer", obj_health_bar);
+		instance_create_layer(0, 0, "menu_layer", obj_depth_meter);
 		healthOnce = true;
 	}
 }
@@ -55,6 +56,9 @@ if (global.inventoried == false) {
 	global.inventory_menu = false;
 	healthOnce = false;
 	with (obj_health_bar) {
+		instance_destroy();
+	}
+	with (obj_depth_meter) {
 		instance_destroy();
 	}
 }

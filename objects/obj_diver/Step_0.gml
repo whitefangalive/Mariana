@@ -1,6 +1,5 @@
 if aTimer >= 1 {aTimer -= 1;}
 
-
 //floating animation
 if (attackingANI = 0 && ((sprite_index != spr_divr_attacking_side) || (sprite_index != spr_diver_attacking_up) || (sprite_index != spr_diver_attacking_down))) {
 	if ((keyboard_check(obj_settings.key_left) = 0) && (keyboard_check(obj_settings.key_right) = 0)) {

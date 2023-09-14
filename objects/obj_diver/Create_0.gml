@@ -28,6 +28,7 @@ bubbleTimer = 0;
 blindness = 0;
 
 
+
 gamepad_set_axis_deadzone(0, 0.3);
 
 
@@ -41,6 +42,7 @@ if !variable_global_exists("equipped") {
 	inventory_full = false;
 	obj_oxygen_indicator.refilling = 0;
 	global.bosses_beaten = [0.0];
+	global.oceanDepth = 425;
 }
 
 if (array_length(global.equipped) < 3) {

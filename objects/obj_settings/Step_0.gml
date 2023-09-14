@@ -13,6 +13,7 @@ if (needsToBeLoaded == true) {
 			obj_settings.timesEnteredSub = _loadEntity.timesEnteredSub;
 			global.oxygen = _loadEntity.oxygen;
 			obj_settings.achivements = _loadEntity.achivements;
+			global.oceanDepth = _loadEntity.oceanDepth;
 			var num_chests = _loadEntity.num_chests;
 			var num_items = _loadEntity.num_items;
 			var num_dead = _loadEntity.num_dead;
@@ -97,6 +98,7 @@ if (needsToBeLoaded == true) {
 // load after death
 if (needsDeathLoaded == true) {
 	global.player_health = global.max_player_health;
+	
 	global.oxygen = 60;
 	switchMusicTo(m_peace_of_mind, sfx_move_selected, false, 100);
 	if (file_exists(string(Room1) + ".save")) {
@@ -116,6 +118,7 @@ if (needsDeathLoaded == true) {
 	
 	global.inventory = [];
 	obj_diver.inventory_full = false;
+	global.oceanDepth = 425;
 	var num_chests = _loadEntity.num_chests;
 	var num_items = _loadEntity.num_items;
 	var num_dead = _loadEntity.num_dead;

@@ -25,6 +25,9 @@ if pos < 0 {pos = op_length -1};
 
 //using menu
 if (key_accept) {
+	buttons = [];
+	obj_inventory.buttons = [];
+	instance_destroy(obj_button);
 audio_play_sound(sfx_select, 2, false);
 	var _sml = menu_level;
 		

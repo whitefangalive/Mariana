@@ -197,6 +197,7 @@
     {"id":{"name":"spr_shark_hurt","path":"sprites/spr_shark_hurt/spr_shark_hurt.yy",},},
     {"id":{"name":"spr_diver_attacking_up_Crab_Claw","path":"sprites/spr_diver_attacking_up_Crab_Claw/spr_diver_attacking_up_Crab_Claw.yy",},},
     {"id":{"name":"spr_jellyfish_glow","path":"sprites/spr_jellyfish_glow/spr_jellyfish_glow.yy",},},
+    {"id":{"name":"obj_depth_meter","path":"objects/obj_depth_meter/obj_depth_meter.yy",},},
     {"id":{"name":"obj_Holy_Fish","path":"objects/obj_Holy_Fish/obj_Holy_Fish.yy",},},
     {"id":{"name":"spr_oxygen_indicator","path":"sprites/spr_oxygen_indicator/spr_oxygen_indicator.yy",},},
     {"id":{"name":"spr_tubeworm","path":"sprites/spr_tubeworm/spr_tubeworm.yy",},},

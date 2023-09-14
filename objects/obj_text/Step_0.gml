@@ -1,7 +1,7 @@
 // get input
 key_w = keyboard_check_pressed(obj_settings.key_up);
 key_s = keyboard_check_pressed(obj_settings.key_down);
-key_accept = keyboard_check_pressed(vk_anykey);
+key_accept = (keyboard_check_pressed(vk_anykey) || mouse_check_button_pressed(mb_any));
 var length = array_length(obj_settings.currentlySaying);
 
 if (key_accept == 1 || keyboard_or_mouse_check_pressed(mb_any)) {
