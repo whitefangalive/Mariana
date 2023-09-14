@@ -12,6 +12,8 @@ for(var i = 0; i < array_length(buttons); i++) {
 	if (object.pressed == true) {
 		pos = object.index;
 		key_accept = true;
+		buttons = [];
+		instance_destroy(obj_button);
 	}
 }
 

@@ -11,6 +11,17 @@ pos += key_s - key_w;
 if pos >= op_length {pos = 0};
 if pos < 0 {pos = op_length -1};
 
+// enable clicking
+for(var i = 0; i < array_length(buttons); i++) {
+	var object = buttons[i];
+	if (object.pressed == true) {
+		pos = object.index;
+		key_accept = true;
+		buttons = [];
+		instance_destroy(obj_button);
+	}
+}
+
 //using menu
 if key_accept {
 audio_play_sound(sfx_select, 2, false);
