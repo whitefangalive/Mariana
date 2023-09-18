@@ -15,7 +15,6 @@ function saveGame(saveName){
 						randDir : randDir,
 						randDir2 : randDir2,
 						image_angle : image_angle,
-						despawn : despawn,
 					}
 					array_push(_saveData, _saveItem);
 				}

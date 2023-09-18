@@ -1,17 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_map",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
-  ],
+  "name": "obj_sub_int",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Menus",
-    "path": "folders/Menus.yy",
+    "name": "sub_shop",
+    "path": "folders/Objects/sub_shop.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_map",
-    "path": "sprites/spr_map/spr_map.yy",
+    "name": "spr_sub_shop_int",
+    "path": "sprites/spr_sub_shop_int/spr_sub_shop_int.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -12,7 +12,7 @@ if oxygen_timer <= 0 && global.oxygen >= 0.50{
 
 if (refilling >= 1) {
 	global.oxygen += 0.5;
-	if global.oxygen >= 60 {
+	if global.oxygen >= max_oxygen {
 	refilling = 0;
 	}
 }

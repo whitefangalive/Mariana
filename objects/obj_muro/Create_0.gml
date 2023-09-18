@@ -44,7 +44,7 @@ switch (obj_settings.timesEnteredSub) {
 	break;
 	
 	case 12:
-	say(splitText("You know, there's a reason why they call the beast down here Yerino. It's because it'll rip yer insides right out with those razor sharp teeth. I once saw a whole crew of sailors go up against it and let's just say there wasn't much left of them after. Be careful down here, stranger."));
+	say(splitText("You know, there's a reason why they call the beast down here Yerino. It's because it'll rip yer insides right out with those razor sharp teeth. I once saw a whole crew of divers go up against it and let's just say there wasn't much left of them after. I think its cause they made one crucial mistake. The Yerino is a deep sea creature, they challenged it on its own turf deep underwater. If you want to fight the Yerino, fight it as close to the surface as possible."));
 	break;
 
 	case 13:

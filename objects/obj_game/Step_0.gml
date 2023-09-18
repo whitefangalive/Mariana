@@ -109,10 +109,11 @@ if (room != room_shop_top) {
 if (mapOpen == true && global.paused == false) {
 	instance_activate_object(obj_map);
 	if (global.paused == false && (centered == false)) {
-	var mapx = camera_get_view_x(view_camera[0]) + camera_get_view_width(view_camera[0])/2;
-	var mapy = camera_get_view_y(view_camera[0]) + camera_get_view_height(view_camera[0])/2;
-	obj_map.x = mapx - (mapx * 0.022);
-	obj_map.y = (mapy - (mapy * 0.06)) + 800;
+	var scale_number = 11.256;
+	var x_pos = obj_diver.x - ((obj_diver.x +128)/ scale_number);
+	var y_pos = obj_diver.y - ((obj_diver.y +16448)/ scale_number);
+	obj_map.x = x_pos;
+	obj_map.y = y_pos;
 	centered = true;
 }
 } 

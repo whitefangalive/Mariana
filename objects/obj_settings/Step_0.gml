@@ -89,7 +89,6 @@ if (needsToBeLoaded == true) {
 			randDir = _loadEntity.randDir;
 			randDir2 = _loadEntity.randDir2;
 			image_angle = _loadEntity.image_angle;
-			despawn = _loadEntity.despawn
 		}
 	}
 	needsToBeLoaded = false;
@@ -189,7 +188,6 @@ if (needsDeathLoaded == true) {
 			randDir = _loadEntity.randDir;
 			randDir2 = _loadEntity.randDir2;
 			image_angle = _loadEntity.image_angle;
-			despawn = _loadEntity.despawn
 		}
 	}
 	needsDeathLoaded = false;
