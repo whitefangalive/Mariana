@@ -13,14 +13,12 @@ image_xscale = scale;
 image_yscale = scale;
 
 if (distance_to_object(obj_yerino) > 600) {
-	maxHP = 8;
+	maxHP = 4;
 } else {
 	maxHP = 3;
 }
 
 HP = maxHP;
-maxInFrames = 80;
-InFrames = 0 ;
 damage = 1;
 age = 0;
 laidEggs = false;

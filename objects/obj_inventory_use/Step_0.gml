@@ -67,6 +67,13 @@ audio_play_sound(sfx_select, 2, false);
 							}
 								 array_delete(global.inventory, obj_inventory.pos, 1) 
 							break;
+							case "Wet Burrito":
+							instance_destroy();
+							if global.player_health < global.max_player_health {
+								global.player_health += 2;
+							}
+								 array_delete(global.inventory, obj_inventory.pos, 1) 
+							break;
 							case "Booster":
 								instance_destroy();
 								if (global.equipped[1] != 0.0) {

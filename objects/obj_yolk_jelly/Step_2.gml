@@ -50,9 +50,7 @@ if ((place_meeting(x+swim_speed, y, obj_collision_parent))) {
 }
 	 
 }
-if (place_meeting(x, y+swim_speed, obj_collision_parent) || (place_meeting(x, y-swim_speed, obj_collision_parent)))
-{
-    
+if (place_meeting(x, y+swim_speed, obj_collision_parent) || (place_meeting(x, y-swim_speed, obj_collision_parent))) {
 	if (place_meeting(x, y+swim_speed, obj_collision_parent))
 	{
 		y = y - swim_speed;
@@ -60,6 +58,4 @@ if (place_meeting(x, y+swim_speed, obj_collision_parent) || (place_meeting(x, y-
 	if ((place_meeting(x, y-swim_speed, obj_collision_parent))) {
 		y = y + swim_speed;
 	}
-	 
-	
 }

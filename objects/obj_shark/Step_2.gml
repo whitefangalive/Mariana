@@ -1,8 +1,9 @@
 if (distance_to_object(obj_diver) < 800) {
 // You can write your code in this editor
-var speed_x = x - xprevious;
+	var speed_x = x - xprevious;
+	var speed_y = y - yprevious;
 
-
+	var spe = sqrt(sqr(speed_x) + sqr(speed_y));
 // Get the Y speed of the fish by subtracting the current Y position
 // from the previous Y position
 
@@ -24,28 +25,28 @@ if(speed_x <= -1)
 
 }
 
-if (place_meeting(x+swim_speed, y, obj_collision_parent) || (place_meeting(x-swim_speed, y, obj_collision_parent))) {
-		if ((place_meeting(x-swim_speed, y, obj_collision_parent))) {
-		 x = x + swim_speed
+if (place_meeting(x+spe, y, obj_collision_parent) || (place_meeting(x-spe, y, obj_collision_parent))) {
+		if ((place_meeting(x-spe, y, obj_collision_parent))) {
+		 x = x + spe
 		 needsToMoveLeftRight = 1;
 		}
-		if ((place_meeting(x+swim_speed, y, obj_collision_parent))) {
-		 x = x - swim_speed;
+		if ((place_meeting(x+spe, y, obj_collision_parent))) {
+		 x = x - spe;
 		 needsToMoveLeftRight = 0;
 		}
 	 
 	} else {
 		needsToMoveLeftRight = -1;
 	}
-	if (place_meeting(x, y+swim_speed, obj_collision_parent) || (place_meeting(x, y-swim_speed, obj_collision_parent)))
+	if (place_meeting(x, y+spe, obj_collision_parent) || (place_meeting(x, y-spe, obj_collision_parent)))
 	{
 
-		if (place_meeting(x, y+swim_speed, obj_collision_parent))
+		if (place_meeting(x, y+spe, obj_collision_parent))
 		{
-			y = y - swim_speed;
+			y = y - spe;
 		}
-		if ((place_meeting(x, y-swim_speed, obj_collision_parent))) {
-			y = y + swim_speed;
+		if ((place_meeting(x, y-spe, obj_collision_parent))) {
+			y = y + spe;
 		}
 	}
 } else {

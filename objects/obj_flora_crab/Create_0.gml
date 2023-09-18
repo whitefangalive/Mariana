@@ -5,7 +5,7 @@ scale = 2;
 image_xscale = scale;
 image_yscale = scale;
 
-maxHP = 7;
+maxHP = 2;
 HP = maxHP;
 damage = 1;
 age = 0;

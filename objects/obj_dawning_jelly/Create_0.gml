@@ -23,4 +23,5 @@ layingEggsAge = 0;
 
 default_swim_speed = 1.5;
 swim_speed = default_swim_speed;
+depth = -100;
 

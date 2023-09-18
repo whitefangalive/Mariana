@@ -39,7 +39,7 @@ switch (item) {
 					break;
 					//Oxygen Tank
 					case "Air Tank":
-						return ["Ice", "Ice", "Ice", "Ice"];
+						return ["Ice", "Ice", "Ice"];
 					break;
 					// Soggy Sandwich
 					case "Soggy Sandwich":

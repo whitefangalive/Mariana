@@ -1,6 +1,8 @@
 if (distance_to_object(vfx_blood) < 1200) {
+	if (vfx_blood.from == obj_diver) {
 		hostile = true;
 		range = 1200;
+	}
 }
 if distance_to_object(obj_diver) < range {
 	age++;
@@ -57,13 +59,9 @@ if distance_to_object(obj_diver) < range {
 				path_ended = "false";
 			}
 
-			if (InFrames >= 1) {
-			 InFrames -= 1;
-			}
-	
 			//DEATH -------------------------------------- Sprite input
 			if (HP <= 0) {
-			InFrames = 200; 
+			flashAlpha = 1;
 		    swim_speed = 0;
 			sprite_index = spr_shark_die;
 			}
@@ -122,13 +120,13 @@ if distance_to_object(obj_diver) < range {
 		}
 
 	if (flashAlpha > 0) {
-		flashAlpha -= 0.05;
+		flashAlpha -= 0.02;
 	}
 
-	if (flashAlpha > 0.05) {
+	if (flashAlpha > 0.06) {
 		move_towards_point(obj_diver.x, obj_diver.y, -3);	
 	} else {
-		if (flashAlpha = 0.05) {
+		if (flashAlpha = 0.06) {
 	speed = 0;
 		}
 	}

@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Scrap",
-    "path": "sprites/spr_Scrap/spr_Scrap.yy",
+    "name": "spr_Booster_Core",
+    "path": "sprites/spr_Booster_Core/spr_Booster_Core.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -2,8 +2,10 @@ if (object_exists(obj_diver)) {
 	if (obj_diver.attacking = 1) {
 		sprite_index = harpoon;
 	x = obj_diver.x;
+	y = obj_diver.y;
 	if (!obj_diver.input_direction = 90) {
 	y = obj_diver.y;
+	x = obj_diver.x;
 	}
 
 	if (obj_diver.input_direction = 180 || obj_diver.input_direction = 0) {
@@ -13,12 +15,12 @@ if (object_exists(obj_diver)) {
 		if (obj_diver.input_direction = 90) {
 		image_angle = obj_diver.input_direction;
 		image_xscale = 1;
-		y = obj_diver.y - 40;
+		y = obj_diver.y - 20;
 		} else {
 		if (obj_diver.input_direction = 270) {
 		image_angle = obj_diver.input_direction; 
 		image_xscale = 1;
-		y = obj_diver.y + 40;
+		y = obj_diver.y + 20;
 		}
 		}
 	}

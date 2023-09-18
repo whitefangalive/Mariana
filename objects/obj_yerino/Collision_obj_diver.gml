@@ -6,7 +6,8 @@ if (flashAlpha <= 0 && (sprite_index == spr_yerino_mouth_move)) {
 			if ((global.player_health % 2) = 0) {
 				for (var i = 0; i < 2; i++) {
 					if (instance_number(vfx_blood) < 10) {
-						instance_create_layer(obj_diver.x, obj_diver.y, "behind_diver", vfx_blood);
+						var blood = instance_create_layer(obj_diver.x, obj_diver.y, "behind_diver", vfx_blood);
+						blood.from = obj_diver;
 					}
 				}
 			}

@@ -21,19 +21,27 @@ if (global.inventoried == false) {
 }
 if key_a == 1 {
 	image_xscale = -1;
-	input_direction = 180;
+	if (attacking == 0) {
+		input_direction = 180;
+	}
 }
 if key_d == 1 {
-	input_direction = 0;
+	if (attacking == 0) {
+		input_direction = 0;
+	}
 	image_xscale = 1;
 }
 if key_s == 1 {
 	if ((keyboard_check(obj_settings.key_up) = 0) && (keyboard_check(obj_settings.key_left) = 0) && (keyboard_check(obj_settings.key_right) = 0)) {
-	input_direction = 270;
+		if (attacking == 0) {
+			input_direction = 270;
+		}
 	}
 }
 if key_w == 1 {
-	input_direction = 90;
+	if (attacking == 0) {
+		input_direction = 90;
+	}
 }
 
 	var Hmove = key_d - key_a;
@@ -91,8 +99,12 @@ if (flashAlpha > 0) {
 }
 //being flung after getting hit
 if (flashAlpha > 0) {
-
-	move_towards_point(attackedFromX, attackedFromY, -6);
+	var xway = x - attackedFromX;
+	var yway = y - attackedFromY;
+	if (!place_meeting(x + xway,y + yway, obj_collision_parent)) {
+		move_towards_point(attackedFromX, attackedFromY, -6);
+	}
+	
 	if (place_meeting(x, y, obj_collision_parent)) {
 		move_towards_point(attackedFromX, attackedFromY, 7);
 	}
@@ -187,7 +199,6 @@ if (keyboard_or_mouse_check_pressed(obj_settings.key_attack)) {
 
 	attacked_recently = 120;
 	// attacking
-	if (attacking == 1) {
 		if (aTimer <= 0) {
 
 			aTimer = 58;
@@ -236,7 +247,6 @@ if (keyboard_or_mouse_check_pressed(obj_settings.key_attack)) {
 			 }
 			}
 		}
-	}
 }
 
 }

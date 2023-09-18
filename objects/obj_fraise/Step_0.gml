@@ -137,7 +137,13 @@ if (flashAlpha > 0) {
 }
 
 if (flashAlpha > 0.05) {
-	move_towards_point(obj_diver.x, obj_diver.y, -3);	
+		var xway = x - obj_diver.x;
+		var yway = y - obj_diver.y;
+		if (!place_meeting(x + xway,y + yway, obj_collision_parent)) {
+			move_towards_point(obj_diver.x, obj_diver.y, -3);	
+		} else {
+		speed = 0;
+		}	
 } else {
 	if (flashAlpha = 0.05) {
 speed = 0;

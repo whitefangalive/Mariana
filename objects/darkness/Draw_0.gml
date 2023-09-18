@@ -12,7 +12,11 @@ switch(room) {
 		var level;
 		if (instance_exists(obj_diver)) {
 			level = obj_diver.y / 1000;
-			draw_sprite_ext(darkD, hasLight, obj_diver.x, obj_diver.y, 3, 3, 0, c_white, level);
+
+				draw_sprite_ext(darkD, hasLight, obj_diver.x, obj_diver.y, 3, 3, 0, c_white, level);
+
+			
+
 			draw_sprite_ext(spr_static, image_index, obj_diver.x, obj_diver.y, 3, 3, 0, c_white, level / 10);
 		} else {
 			level = 1;
@@ -22,8 +26,8 @@ switch(room) {
 	case (Room1_sideA):
 		var level;
 		if (instance_exists(obj_diver)) {
-			level = obj_diver.y / 10000;
-			draw_sprite_ext(darkD, hasLight, obj_diver.x, obj_diver.y, 3, 3, 0, c_white, clamp(level, 0, 0.25));
+			level = obj_diver.y / 8000;
+			draw_sprite_ext(darkD, hasLight, obj_diver.x, obj_diver.y, 3, 3, 0, c_white, clamp(level, 0, 0.45));
 		} else {
 			level = 1;
 			draw_sprite_ext(darkD, 0, x, y, 500, 500, 0, c_white, clamp(level, 0, 0.5));
@@ -32,8 +36,8 @@ switch(room) {
 	case (Room1_sideB):
 		var level;
 		if (instance_exists(obj_diver)) {
-			level = obj_diver.y / 10000;
-			draw_sprite_ext(darkD, hasLight, obj_diver.x, obj_diver.y, 3, 3, 0, c_white, clamp(level, 0, 0.25));
+			level = obj_diver.y / 8000;
+			draw_sprite_ext(darkD, hasLight, obj_diver.x, obj_diver.y, 3, 3, 0, c_white, clamp(level, 0, 0.45));
 		} else {
 			level = 1;
 			draw_sprite_ext(darkD, 0, x, y, 500, 500, 0, c_white, clamp(level, 0, 0.5));
