@@ -62,7 +62,7 @@ if (array_contains(global.bosses_beaten, "Crab")) {
 					speed = 0;
 					image_xscale = scale;
 				
-					var adjustedAngle = point_direction(obj_crabioli.x, obj_crabioli.y, obj_diver.x, obj_diver.y) - 180;
+					var adjustedAngle = point_direction(obj_crabioli.x, obj_crabioli.y, obj_diver.x, obj_diver.y) - 175;
 					
 					if (rightArmRotation - adjustedAngle > 10) {
 						if ((rightArmRotation - adjustedAngle < 25)) {

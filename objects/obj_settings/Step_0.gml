@@ -4,6 +4,7 @@ if (needsToBeLoaded == true) {
 	_loadEntity = array_pop(_loadData);	
 	if (loadPlayer == true) {
 		with (obj_diver) {
+			
 			x = _loadEntity.x;
 			y = _loadEntity.y;
 			global.player_health = _loadEntity.player_health;
@@ -14,6 +15,14 @@ if (needsToBeLoaded == true) {
 			global.oxygen = _loadEntity.oxygen;
 			obj_settings.achivements = _loadEntity.achivements;
 			global.oceanDepth = _loadEntity.oceanDepth;
+			//0.1.0
+			try {
+				global.roomsWithCorpses = _loadEntity.roomsWithCorpses;
+				global.doorInRoomMain = _loadEntity.doorInRoomMain;
+			} catch(e) {
+				global.roomsWithCorpses = [];
+				global.doorInRoomMain = -1;
+			}
 			var num_chests = _loadEntity.num_chests;
 			var num_items = _loadEntity.num_items;
 			var num_dead = _loadEntity.num_dead;

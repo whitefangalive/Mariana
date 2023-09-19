@@ -149,6 +149,7 @@
     {"name":"obj_anthfish","order":4,"path":"objects/obj_anthfish/obj_anthfish.yy",},
     {"name":"CollisionBehavior","order":6,"path":"scripts/CollisionBehavior/CollisionBehavior.yy",},
     {"name":"spr_Ring","order":8,"path":"sprites/spr_Ring/spr_Ring.yy",},
+    {"name":"array_read","order":1,"path":"scripts/array_read/array_read.yy",},
     {"name":"obj_inventory","order":3,"path":"objects/obj_inventory/obj_inventory.yy",},
     {"name":"spr_wall_destructible","order":1,"path":"sprites/spr_wall_destructible/spr_wall_destructible.yy",},
     {"name":"spr_Mauler_Fin","order":7,"path":"sprites/spr_Mauler_Fin/spr_Mauler_Fin.yy",},

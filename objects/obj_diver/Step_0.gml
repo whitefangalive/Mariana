@@ -126,6 +126,7 @@ if global.player_health <= 0 {
 	saveGame(string(room) + ".save");
 	saveGame("savedgame.save");
 	show_debug_message("Died");
+	array_push(global.roomsWithCorpses, global.doorInRoomMain);
 	room_goto(roomDeath);
 }
 

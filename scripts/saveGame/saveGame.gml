@@ -92,7 +92,9 @@ function saveGame(saveName){
 						bosses_beaten : global.bosses_beaten,
 						timesEnteredSub : obj_settings.timesEnteredSub,
 						oxygen : global.oxygen,
-						oceanDepth : global.oceanDepth
+						oceanDepth : global.oceanDepth,
+						roomsWithCorpses : global.roomsWithCorpses,
+						doorInRoomMain : global.doorInRoomMain
 					}
 					array_push(_saveData, _saveEntity);
 				}

@@ -1,7 +1,6 @@
 flashAlpha = 0;
 flashColor = c_white;
 
-
 debug = false;
 aTimer = 0;
 swim_speed = 3;
@@ -27,11 +26,7 @@ bubbleTimer = 0;
 
 blindness = 0;
 
-
-
 gamepad_set_axis_deadzone(0, 0.3);
-
-
 
 if !variable_global_exists("equipped") {
 	global.max_player_health = 4;
@@ -43,6 +38,8 @@ if !variable_global_exists("equipped") {
 	obj_oxygen_indicator.refilling = 0;
 	global.bosses_beaten = [0.0];
 	global.oceanDepth = 425;
+	global.roomsWithCorpses = [];
+	global.doorInRoomMain = -1;
 }
 
 if (array_length(global.equipped) < 3) {
