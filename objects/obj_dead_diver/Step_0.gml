@@ -15,6 +15,13 @@ for (var i = 0; i < array_length(container); i++) {
 			container = [];
 		}
 	}
+	if (instance_number(object_index) == 1) {
+		array_read(global.roomsWithCorpses);
+		array_delete_element(global.roomsWithCorpses, room);
+		var otherRoom = global.doorInRoomMain[0];
+		array_delete_element(global.roomsWithCorpses, otherRoom);
+		array_read(global.roomsWithCorpses);
+	}
 	instance_destroy();
 }
 

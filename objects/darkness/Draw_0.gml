@@ -8,7 +8,7 @@ if (array_length(global.equipped) >= 3) {
 }
 
 switch(room) {
-	case (Room1_thorium):
+	case (Room1_thorium1):
 		var level;
 		if (instance_exists(obj_diver)) {
 			level = obj_diver.y / 1000;
@@ -23,7 +23,7 @@ switch(room) {
 			draw_sprite_ext(darkD, 0, x, y, 500, 500, 0, c_white, level);
 		}
 	break;
-	case (Room1_sideA):
+	case (Room1_side1):
 		var level;
 		if (instance_exists(obj_diver)) {
 			level = obj_diver.y / 8000;
@@ -33,7 +33,7 @@ switch(room) {
 			draw_sprite_ext(darkD, 0, x, y, 500, 500, 0, c_white, clamp(level, 0, 0.5));
 		}
 	break;
-	case (Room1_sideB):
+	case (Room1_side2):
 		var level;
 		if (instance_exists(obj_diver)) {
 			level = obj_diver.y / 8000;

@@ -21,7 +21,11 @@ if (needsToBeLoaded == true) {
 				global.doorInRoomMain = _loadEntity.doorInRoomMain;
 			} catch(e) {
 				global.roomsWithCorpses = [];
-				global.doorInRoomMain = -1;
+				global.doorInRoomMain = [];
+				for (var i = 0; i < real(Room3); i++) {
+					array_push(global.doorInRoomMain, 0);
+				}
+				array_set(global.doorInRoomMain, Room1, [[Room1], [0, 0]]);
 			}
 			var num_chests = _loadEntity.num_chests;
 			var num_items = _loadEntity.num_items;

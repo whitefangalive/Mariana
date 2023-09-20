@@ -110,8 +110,13 @@ if (mapOpen == true && global.paused == false) {
 	instance_activate_object(obj_map);
 	if (global.paused == false && (centered == false)) {
 	var scale_number = 11.256;
-	var x_pos = obj_diver.x - ((obj_diver.x +128)/ scale_number);
-	var y_pos = obj_diver.y - ((obj_diver.y +16448)/ scale_number);
+	if (room == Room1) {
+		var x_pos = obj_diver.x - ((obj_diver.x +128)/ scale_number);
+		var y_pos = obj_diver.y - ((obj_diver.y +16448)/ scale_number);
+	} else {
+		var x_pos = obj_diver.x - ((obj_diver.x +128 + global.doorInRoomMain[room][1][0])/ scale_number);
+		var y_pos = obj_diver.y - ((obj_diver.y +16448 + global.doorInRoomMain[room][1][1])/ scale_number);
+	}
 	obj_map.x = x_pos;
 	obj_map.y = y_pos;
 	centered = true;
@@ -129,7 +134,7 @@ switch(room) {
 			changeScaleTo = distance_to_object(obj_collision_parent) / 250;
 		}
 	break;
-	case Room1_HarpoonB:
+	case Room1_Harpoon2:
 		if (!global.paused) {
 			if (obj_diver.x > 1600) {
 			changeScaleTo = 1.5;

@@ -30,7 +30,7 @@ gamepad_set_axis_deadzone(0, 0.3);
 
 if !variable_global_exists("equipped") {
 	global.max_player_health = 4;
-	global.inventory = ["Air Tank", "Soggy Sandwich"];
+	global.inventory = ["Air Tank", "Soggy Sandwich", "Ancient Map"];
 	global.equipped = ["Basic Harpoon", 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
 	global.player_health = global.max_player_health;
 	//player_attack_damage = 1;
@@ -39,7 +39,13 @@ if !variable_global_exists("equipped") {
 	global.bosses_beaten = [0.0];
 	global.oceanDepth = 425;
 	global.roomsWithCorpses = [];
-	global.doorInRoomMain = -1;
+	
+	global.doorInRoomMain = [];
+	for (var i = 0; i < real(Room3); i++) {
+		array_push(global.doorInRoomMain, 0);
+	}
+	array_set(global.doorInRoomMain, Room1, [[Room1], [0, 0]]);
+	
 }
 
 if (array_length(global.equipped) < 3) {

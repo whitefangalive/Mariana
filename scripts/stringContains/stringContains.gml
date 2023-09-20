@@ -4,7 +4,7 @@
 function stringContains(str, substring){
 	var result = false;
 	for (var i = 0; i < string_length(str); i++) {
-		if (string_copy(str, i, i+string_length(substring)) == substring) {
+		if (string_copy(str, i, string_length(substring)) == substring) {
 			result = true;
 		}
 	}

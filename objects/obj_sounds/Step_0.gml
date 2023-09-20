@@ -46,7 +46,7 @@ if (musicTimer = 0) {
 		audio_sound_gain(m_watery_grave, global.volume_setting, 4000);
 		audio_play_sound(m_watery_grave, 1000, true);
 		break;
-	case Room1_thorium:
+	case Room1_thorium1:
 	//Standard
 	// fade music would be playing then stop dead music
 	//set volume to zero
@@ -59,7 +59,7 @@ if (musicTimer = 0) {
 			audio_play_sound(m_thorium, 1000, true);
 		}
 	break;
-	case Room1_sideA:
+	case Room1_side1:
 	//Standard
 	// fade music would be playing then stop dead music
 	//set volume to zero
@@ -72,13 +72,13 @@ if (musicTimer = 0) {
 			audio_play_sound(m_shifting_tide, 1000, true);
 		}
 	break;
-	case Room1_sideB:
+	case Room1_side2:
 		audio_sound_gain(m_shifting_tide, global.volume_setting, 2000);
 		if (audio_is_playing(m_shifting_tide) != true) {
 			audio_play_sound(m_shifting_tide, 1000, true);
 		}
 	break;
-	case Room1_HarpoonA:
+	case Room1_Harpoon1:
 		audio_sound_gain(m_there_is_definitely_a_crab_in_here, 0, 600);
 		audio_sound_gain(m_are_there_any_crabs_in_here, 0, 600);
 		audio_sound_gain(m_surface_tension, global.volume_setting, 2000);
@@ -86,7 +86,7 @@ if (musicTimer = 0) {
 			audio_play_sound(m_surface_tension, 1000, true);
 		}
 	break;
-	case Room1_HarpoonB:
+	case Room1_Harpoon2:
 	//Standard
 	// fade music would be playing then stop dead music
 	//set volume to zero
