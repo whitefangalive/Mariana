@@ -5,3 +5,7 @@ randDir2 = irandom_range(1,2);
 
 despawn = 52000;
 pickupability = false;
+
+if (!array_contains(obj_settings.achivements, "Found thorium")) {
+	array_push(obj_settings.achivements, "Found thorium");
+}

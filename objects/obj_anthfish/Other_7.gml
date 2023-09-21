@@ -5,5 +5,5 @@
 //REAL DEATH FINAL
 if (sprite_index = spr_boogly_die) {
 	instance_create_layer(x, y, "player_layer", obj_Fish_Eye);
-	instance_destroy();
+	instance_destroy(object_index, true);
 }

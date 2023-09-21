@@ -25,9 +25,8 @@ function CollisionBehavior(){
 	{
 		// Set horizontal scale to -1 to flip it
 		image_xscale = 1 * abs((image_xscale));
-		direction = 0;
 	}
-	var _div = 4;
+	var _div = 1;
 
 	if ((place_meeting(x-spe, y, obj_collision_parent))) {
 		x = x + spe/_div
@@ -36,9 +35,7 @@ function CollisionBehavior(){
 		x = x - spe/_div;
 	}
 
-
-	if (place_meeting(x, y+spe, obj_collision_parent))
-	{
+	if (place_meeting(x, y+spe, obj_collision_parent)) {
 		y = y - spe/_div;
 	}
 	if ((place_meeting(x, y-spe, obj_collision_parent))) {

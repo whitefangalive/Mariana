@@ -14,46 +14,32 @@ dist_x = obj_diver.x - x;
 dist_y = obj_diver.y - y;
 // DOCILE BEHAVIOR
 	if (obj_diver.attacked_recently >= 1) {
-		
 		// Get the distance to the player
-
 		// if right swim left
-	if((dist_x < 400 && (dist_x > 0)) && (!place_meeting(x-swim_speed, y, obj_collision_parent)))
-		{
-		path_ended = "true";
-	
+	if((dist_x < 400 && (dist_x > 0)) && (!place_meeting(x-swim_speed, y, obj_collision_parent))) {
+
 	    x = x - (swim_speed);
-		
-	
 		image_xscale = -1 * abs((image_xscale));
-		}
+	}
 	// if left swim right
 
-	if ((dist_x > -400 &&  (dist_x < 0)) && (!place_meeting(x+swim_speed, y, obj_collision_parent)))
-				{
-					path_ended = "true";
- 
-	                  x = x + (swim_speed);
-					 image_xscale = 1 * abs((image_xscale));
-				} 
+	if ((dist_x > -400 &&  (dist_x < 0)) && (!place_meeting(x+swim_speed, y, obj_collision_parent))) {
 
+	    x = x + (swim_speed);
+		image_xscale = 1 * abs((image_xscale));
+	}
 	//if below swim up
-	if(((dist_y < 400 && (dist_y > 0)) && (!place_meeting(x, y-swim_speed, obj_collision_parent))) && (y > 0))
-		{
+	if(((dist_y < 400 && (dist_y > 0)) && (!place_meeting(x, y-swim_speed, obj_collision_parent))) && (y > 0)) {
 		path_end();
-		path_ended = "true";
-		
+
 	    y = y - (swim_speed);
-		
-		} 
+	} 
 	// if above swim down
-	if ((dist_y > -400 && (dist_y < 0)) && (!place_meeting(x, y+swim_speed, obj_collision_parent)))
-				{
-					path_end();
-					path_ended = "true";
-					
-	                  y = y + (swim_speed);
-				} 
+	if ((dist_y > -400 && (dist_y < 0)) && (!place_meeting(x, y+swim_speed, obj_collision_parent))) {
+			path_end();
+
+	            y = y + (swim_speed);
+		} 
 	}
 	
 if (age > 18000 && laidEggs = false) {
@@ -76,53 +62,43 @@ if (age > 18000 && laidEggs = false) {
 	}
 	
 
-} else if (age % 2000 == 0) {
+} else if (age % 2000 <= 5) {
 	
 	var seaweed = instance_nearest(x, y-20, obj_seaweed);
 	var crab = instance_nearest(x, y, obj_flora_crab);
 	if (seaweed > crab) {
 		if (distance_to_object(seaweed) > 20) {
 			move_towards_point(seaweed.x, seaweed.y-20, swim_speed);
-			path_ended = true;
+
 		} else {
-			path_ended = false;
+
 			speed = 0;
 		}
 	} else {
 		if (distance_to_object(crab) > 10) {
 			move_towards_point(crab.x, crab.y, swim_speed);
-			path_ended = true;
+
 		} else {
-			path_ended = false;
+
 			speed = 0;
 		}
 	}
 } else if (age % 2100 == 0) {
 	speed = 0;
-	path_ended = false;
+
 	
 } else {
-	if (path_ended == false) {
-		if (age % switchDirTime == 0) {
-			direction = irandom_range(0, 360);
-			speed = swim_speed;
-			switchDirTime = irandom_range(150, 350);
-		} else if (age % (switchDirTime + 100) == 0) {
-			speed = 0;
-		}
+
+	if (age % switchDirTime == 0) {
+		direction = irandom_range(0, 360);;
+		speed = swim_speed;
+		switchDirTime = irandom_range(150, 350);
+	} else if (age % (switchDirTime + 100) == 0) {
+		speed = 0;
 	}
+	
 }
 //Resart pathing if far away
-
-	if (((abs(dist_x) >= 450 || abs(dist_y) >= 450)) && (path_ended == "true")) {
-
-	  path_ended = "false";
-	} else {
-		//reset pathing if haven't attacked in awhile
-		if ((obj_diver.attacked_recently = 0) && (path_ended == "true")) {
-			path_ended = "false";
-		}
-	}
 
 
 	if (InFrames >= 1) {

@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "fish",
-    "path": "folders/Objects/fish.yy",
+    "name": "hostile",
+    "path": "folders/Objects/fish/hostile.yy",
   },
   "parentObjectId": {
     "name": "obj_creature_accesory",

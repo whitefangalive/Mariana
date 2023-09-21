@@ -1,7 +1,7 @@
-//finds the room right before Room1 2 or 3
+//finds the room path from roomFrom to a root room like room1 2 or 3
 function find_room_path(roomFrom) {
 	if (roomFrom == Room1 || roomFrom == Room2 || roomFrom == Room3) {
-		return roomFrom;
+		return [roomFrom];
 	}
 	var path = [];
 	

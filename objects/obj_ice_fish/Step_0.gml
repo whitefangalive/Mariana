@@ -69,7 +69,7 @@ if (age > 12000 && laidEggs = false) {
 	}
 	
 
-} else if (age % 2000 == 0) {
+} else if (age % 2000 <= 5) {
 	
 	var seaweed = instance_nearest(x, y-20, obj_seaweed);
 	var crab = instance_nearest(x, y, obj_flora_crab);

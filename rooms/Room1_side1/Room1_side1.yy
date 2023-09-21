@@ -246,6 +246,7 @@
     {"name":"inst_63C43BA8","path":"rooms/Room1_side1/Room1_side1.yy",},
     {"name":"inst_2F4FE8E5","path":"rooms/Room1_side1/Room1_side1.yy",},
     {"name":"inst_4D7A8574_1","path":"rooms/Room1_side1/Room1_side1.yy",},
+    {"name":"inst_588AEFCF","path":"rooms/Room1_side1/Room1_side1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -256,6 +257,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5AA4E7F9_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_map","path":"objects/obj_map/obj_map.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3488.0,"y":2368.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_F658182_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_inventory","path":"objects/obj_inventory/obj_inventory.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-146.0,"y":25.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2AB6A585_1_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_sounds","path":"objects/obj_sounds/obj_sounds.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":-19.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_588AEFCF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_boogly","path":"objects/obj_boogly/obj_boogly.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":992.0,"y":1664.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"light","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_359EE7A6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dawning_jelly","path":"objects/obj_dawning_jelly/obj_dawning_jelly.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1415.0,"y":3533.0,},

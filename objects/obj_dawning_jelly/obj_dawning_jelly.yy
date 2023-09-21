@@ -14,8 +14,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "fish",
-    "path": "folders/Objects/fish.yy",
+    "name": "Docile",
+    "path": "folders/Objects/fish/Docile.yy",
   },
   "parentObjectId": {
     "name": "obj_creature_parent",

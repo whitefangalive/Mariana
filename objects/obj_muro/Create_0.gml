@@ -42,21 +42,45 @@ switch (obj_settings.timesEnteredSub) {
 	case 11:
 	say(splitText("You know what they say - there's always a bigger fish. But who needs a bigger fish when you can have a smaller fish? That's right, introducing the Pocket Fish - the perfect pet for any underwater adventurer. Just be sure not to put it in the same pocket as your keys or you might have a surprise on your hands. Buy one now and get a free fishbowl!"));
 	break;
-	
-	case 12:
-	say(splitText("You know, there's a reason why they call the beast down here Yerino. It's because it'll rip yer insides right out with those razor sharp teeth. I once saw a whole crew of divers go up against it and let's just say there wasn't much left of them after. I think its cause they made one crucial mistake. The Yerino is a deep sea creature, they challenged it on its own turf deep underwater. If you want to fight the Yerino, fight it as close to the surface as possible."));
+	case 10.5:
+		var rand = irandom_range(0, 1);
+		switch (rand) {
+			case 0:
+				say(splitText("If you're having trouble seeing in the dark supposedly theres a luminous jellyfish around here somewhere."));
+			break;
+			case 1:
+				say(splitText("Theres a jellyfish cave somewhere above my submarine I just know it. I always smell their jelly. It's close but not too close."));
+			break;
+		}
 	break;
+	
+	
 
-	case 13:
+	case 12:
 	say(splitText("Have you heard the rumors about the nuclear waste dumping in this trench? Some say it was the governments of the world who did it, trying to dispose of their radioactive waste where nobody would find it. Others say it was the work of some rogue corporation, trying to cover up their dirty deeds. Either way, I say its a gift! that stuff goes great with cheese dip."));
 	break;
 
-	case 14:
+	case 13:
 	say(splitText("I inherited this shop from my father, or at least I think he was my father. It's hard to tell for sure when all I found was a skeleton in a submarine. But I like to think he'd be proud of me, selling submarine sandwiches to all the brave explorers who venture down here. "));
 	break;
 
-	case 15:
+	case 14:
 	say(splitText("Nobody knows how far down this trench goes. Tons of people have gone down and never returned. Some say the trench goes all the way to the center of the Earth, but that's just crazy talk, right?"));
+	break;
+	case 13.5:
+		var rand = irandom_range(0, 1);
+		switch (rand) {
+			case 0:
+				say(splitText("I miss the old gods, powering my technology used to be so easy when they were in charge. Now with the new gods I need all this thorium. Luckily there's plenty of crystals hidden in dark areas."));
+			break;
+			case 1:
+				say(splitText("Whatever you do, don’t go into the dark cave west of here. It’s super dangerous and full of monsters. It is not my secret thorium mining grounds. If you want to trade thorium, bring it from elsewhere."));
+			break;
+		}
+	break;
+	
+	case 15:
+	say(splitText("You know, there's a reason why they call the beast down here Yerino. It's because it'll rip yer insides right out with those razor sharp teeth. I once saw a whole crew of divers go up against it and let's just say there wasn't much left of them after. I think its cause they made one crucial mistake. The Yerino is a deep sea creature, they challenged it on its own turf deep underwater. If you want to fight the Yerino, fight it as close to the surface as possible."));
 	break;
 
 	case 16:
@@ -72,7 +96,7 @@ switch (obj_settings.timesEnteredSub) {
 	break;
 
 	case 19:
-	say(splitText("New gods? Eh, those bastards, don't bring them up in my shop again"));
+	say(splitText("New gods? Eh, those bastards, with all the things they've done to the people I shudder to even call them gods."));
 	break;
 	case 21:
 	say(splitText("Oh you're back, speaking of things I don't like, have you ever heard of a sea cucumber? Disgusting little things if you ask me. And don't even get me started on seaweed, it gets everywhere! But you know what I do love? Thorium, my submarine just can't get enough of the stuff."));
@@ -120,4 +144,5 @@ destinY = y;
 curLocation = room;
 
 annoyance = 0;
+
 

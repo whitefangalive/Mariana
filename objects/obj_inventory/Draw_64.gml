@@ -21,10 +21,17 @@ for (var i = 0; i < op_length; i++) {
 	
 	var _c = c_white;
 	if pos == i {_c = c_yellow};
+	if (array_contains(equippableItems, global.inventory[i]) != -1) {
+		if pos == i {_c = make_color_rgb(117, 154, 255);};
+	}
+	if (array_contains(useableItems, global.inventory[i]) != -1) {
+		if pos == i {_c = make_color_rgb(255, 128, 171);};
+	}
+	
   if i <= 0 {
 	  //draw line 1
 		  var full_length = 0;
-		  draw_text_color(x+op_border + op_space*0, y+op_border, global.inventory[0], _c, _c, _c, _c, 1 );
+		  draw_text_color(x+op_border + op_space*0, y+op_border, global.inventory[0], _c, _c, _c, _c, 1);
 		  var maxButtons = array_length(global.inventory);
 			if (instance_exists(obj_inventory_use)) {
 				maxButtons += array_length(obj_inventory_use.option[obj_inventory_use.menu_level]);

@@ -93,7 +93,7 @@ if (age > 15000 && laidEggs = false) {
 			speed = 0;
 		}
 	}
-} else if (age % 2100 == 0) {
+} else if (age % 2100 <= 5) {
 	speed = 0;
 	path_ended = false;
 	

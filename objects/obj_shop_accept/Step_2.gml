@@ -68,7 +68,15 @@ if (!instance_exists(obj_text)) {
 								}
 								
 								buyItem(obj_shop.option[0, obj_shop.pos]);
-								say(splitText("Enjoy your new "+ buyingItem + "!"))
+								switch (buyingItem) {
+									case ("Booster"):
+										say(splitText("Enjoy your new "+ buyingItem + "!" + " Now you can boost through the current."));
+									break;
+									default:
+										say(splitText("Enjoy your new "+ buyingItem + "!"));
+									break;
+								}
+								
 							} else {
 								obj_muro.annoyance++;
 								var missingItem = string(deepCopyPrice[0]);

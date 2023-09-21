@@ -52,9 +52,16 @@ audio_play_sound(sfx_select, 2, false);
 							//secial item        
 						    case "Ice": 
 								say(["You cannot use this item.", "Also you probably shouldn't keep ice in your pockets for too long"]);
+								if (!array_contains(obj_settings.achivements, "Read ice")) {
+									array_push(obj_settings.achivements, "Read ice");
+								}
 							break;
 							case "Water":
-								say(["Hey don't look at me, I warned you"]);
+								if (array_contains(obj_settings.achivements, "Read ice")) {
+									say(["Hey don't look at me, I warned you"]);
+								} else {
+									say(["Somehow this ice became water."]);
+								}
 							break;
 						    //end game
 						    case "game": array_delete(global.inventory, obj_inventory.pos, 1);

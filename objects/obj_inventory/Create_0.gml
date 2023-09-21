@@ -14,3 +14,7 @@ op_length = 0;
 menu_level = 0;
 
 buttons = [];
+
+useableItems = ["Air Tank", "Soggy Sandwich", "Wet Burrito"];
+equippableItems = ["Depthometer", "Healthometer", "Basic Harpoon", "Steel Harpoon", "Crab Claw",
+"Ancient Map", "Luciferin", "Ring", "Water Copter", "Booster", "Mermaid Repellant"];
