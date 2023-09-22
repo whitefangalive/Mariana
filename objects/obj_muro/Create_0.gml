@@ -34,15 +34,7 @@ switch (obj_settings.timesEnteredSub) {
 	case 9:
 	say(splitText("if you're looking for some answers, I might have just what you need. How about this ancient map that allegedly leads to a lost treasure? Or this mysterious key that no one knows what it unlocks?"));
 	break;
-
-	case 10:
-	say(splitText("You know, sometimes I wonder what it would be like to live on land again. Do you ever miss it? The fresh air, the sunlight, the lack of fish nibbling at your toes... But then again, if I lived on land, I'd have drop the word sea from my full title \"Sea Cowboy Merchant\". Speaking of which, how about this rare pearl I just found? It's said to bring good luck to anyone who owns it. Don't believe me? Why?"));
-	break;
-
-	case 11:
-	say(splitText("You know what they say - there's always a bigger fish. But who needs a bigger fish when you can have a smaller fish? That's right, introducing the Pocket Fish - the perfect pet for any underwater adventurer. Just be sure not to put it in the same pocket as your keys or you might have a surprise on your hands. Buy one now and get a free fishbowl!"));
-	break;
-	case 10.5:
+	case 8.5:
 		var rand = irandom_range(0, 1);
 		switch (rand) {
 			case 0:
@@ -53,9 +45,14 @@ switch (obj_settings.timesEnteredSub) {
 			break;
 		}
 	break;
-	
-	
 
+	case 10:
+	say(splitText("You know, sometimes I wonder what it would be like to live on land again. Do you ever miss it? The fresh air, the sunlight, the lack of fish nibbling at your toes... But then again, if I lived on land, I'd have drop the word sea from my full title \"Sea Cowboy Merchant\". Speaking of which, how about this rare pearl I just found? It's said to bring good luck to anyone who owns it. Don't believe me? Why?"));
+	break;
+
+	case 11:
+	say(splitText("You know what they say - there's always a bigger fish. But who needs a bigger fish when you can have a smaller fish? That's right, introducing the Pocket Fish - the perfect pet for any underwater adventurer. Just be sure not to put it in the same pocket as your keys or you might have a surprise on your hands. Buy one now and get a free fishbowl!"));
+	break;
 	case 12:
 	say(splitText("Have you heard the rumors about the nuclear waste dumping in this trench? Some say it was the governments of the world who did it, trying to dispose of their radioactive waste where nobody would find it. Others say it was the work of some rogue corporation, trying to cover up their dirty deeds. Either way, I say its a gift! that stuff goes great with cheese dip."));
 	break;

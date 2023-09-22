@@ -36,3 +36,7 @@ needsToMoveLeftRight = -1;
 
 getEggOnce = false;
 range = 700;
+
+getPosOnce = false;
+diverx = 0;
+divery = 0;

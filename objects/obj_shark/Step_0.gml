@@ -24,39 +24,33 @@ if distance_to_object(obj_diver) < range {
 	}
 	if ((HP < maxHP) || hostile == true) {
 		if (distance_to_object(obj_diver) < 350) {
+			if (getPosOnce == false) {
+				getPosOnce = true;
+				diverx = obj_diver.x
+				divery = obj_diver.y;
+			}
 
 		dist_x = obj_diver.x - x;
 		dist_y = obj_diver.y - y;
 		// DOCILE BEHAVIOR
 			// Get the distance to the player
-			if (distance_to_object(obj_diver) < 149 || hostile == true) { 
+			if (distance_to_object(obj_diver) < 249 || hostile == true) { 
 					swim_speed = 3;
-					path_ended = "true";
-					if (!place_meeting(x,y,obj_diver)) {
+					
+					if (abs(x - diverx) > swim_speed && abs(y - divery) > swim_speed) {
 						if (bTimer < 1) {
-
-							move_towards_point(obj_diver.x, obj_diver.y, swim_speed);
+							move_towards_point(diverx, divery, swim_speed+2);
 							charge_attack = 1;
 						}
 				} else {
 				bTimer = 40;
+				getPosOnce = false;
 				randX = irandom_range(-50,50);
 				randY = irandom_range(-50,50);
 				}
 			} 
-
-		//if (!hostile) {
-		//	//Resart pathing if far away
-		//	if ((distance_to_object(obj_diver) > 149) && (path_ended == "true")) {
-		//	swim_speed = default_swim_speed;
-		
-		//		path_ended = "false";
-		//		charge_attack = 0;
-		//	} else {
-		//	//reset pathing if haven't attacked in awhile
 			if ((HP >= maxHP)) {
 				swim_speed = default_swim_speed;
-				path_ended = "false";
 			}
 
 			//DEATH -------------------------------------- Sprite input

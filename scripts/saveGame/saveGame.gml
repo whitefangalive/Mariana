@@ -58,6 +58,19 @@ function saveGame(saveName){
 					}
 					array_push(_saveData, _saveChest);
 				}
+				with (obj_destructible_parent)
+				{
+					var _saveDest = 
+					{
+						obj : object_get_name(object_index),
+						y : y,
+						x : x,
+						image_yscale : image_yscale,
+						image_xscale : image_xscale,
+						image_angle : image_angle,
+					}
+					array_push(_saveData, _saveDest);
+				}
 				with (obj_dead_diver)
 				{
 					var _saveDead = 
@@ -85,6 +98,7 @@ function saveGame(saveName){
 						num_dead : instance_number(obj_dead_diver),
 						num_fish : instance_number(obj_creature_parent),
 						num_eggs : instance_number(obj_fish_egg),
+						num_dest : instance_number(obj_destructible_parent),
 						achivements : obj_settings.achivements,
 						inventory : global.inventory,
 						player_health : global.player_health,

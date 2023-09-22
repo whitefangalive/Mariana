@@ -1,4 +1,4 @@
-if distance_to_object(obj_diver) < 550 {
+if distance_to_object(obj_diver) < 750 {
 age++;
 image_xscale = clamp(scale, 0.3, 1);
 image_yscale = clamp(scale, 0.3, 1);

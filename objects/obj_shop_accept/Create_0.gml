@@ -73,7 +73,7 @@ switch (item) {
 						return ["Thorium", "Scrap", "Ice"];
 					break;
 					case "Steel Harpoon":
-						return ["Scrap", "Scrap", "Scrap", "Scrap"];
+						return ["Scrap", "Scrap", "Scrap"];
 					break;
 					default:
 						return ["Ice"];

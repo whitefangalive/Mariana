@@ -5,6 +5,7 @@ once = false;
 function destroy() {
 	instance_destroy();
 	for (var i = 0; i < 4; i++) {
-			instance_create_layer(x,y, "player_layer", vfx_wall_dest);
+		var particle = instance_create_layer(x,y, "player_layer", vfx_wall_dest);
+		particle.sprite_index = spr_wall_destructible;
 	}
 }

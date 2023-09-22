@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_wall_destructible",
-    "path": "sprites/spr_wall_destructible/spr_wall_destructible.yy",
+    "name": "spr_wall_fall",
+    "path": "sprites/spr_wall_fall/spr_wall_fall.yy",
   },
   "spriteMaskId": null,
   "visible": true,

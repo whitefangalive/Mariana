@@ -15,8 +15,8 @@
     "path": "folders/Objects/placables.yy",
   },
   "parentObjectId": {
-    "name": "obj_collision_parent",
-    "path": "objects/obj_collision_parent/obj_collision_parent.yy",
+    "name": "obj_destructible_parent",
+    "path": "objects/obj_destructible_parent/obj_destructible_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

@@ -14,8 +14,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Docile",
-    "path": "folders/Objects/fish/Docile.yy",
+    "name": "docile",
+    "path": "folders/Objects/fish/docile.yy",
   },
   "parentObjectId": {
     "name": "obj_docile_behavior_parent",

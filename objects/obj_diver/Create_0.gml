@@ -19,8 +19,6 @@ boosterCooldown = 0;
 attackedFromX = 0;
 attackedFromY = 0;
 
-maxInFrames = 60;
-InFrames = 0;
 
 bubbleTimer = 0;
 
@@ -30,7 +28,7 @@ gamepad_set_axis_deadzone(0, 0.3);
 
 if !variable_global_exists("equipped") {
 	global.max_player_health = 4;
-	global.inventory = ["Air Tank", "Soggy Sandwich", "Ancient Map"];
+	global.inventory = ["Air Tank", "Soggy Sandwich"];
 	global.equipped = ["Basic Harpoon", 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
 	global.player_health = global.max_player_health;
 	//player_attack_damage = 1;

@@ -1,8 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function delt(deltDamage, Fx, Fy) {
-	if (obj_diver.InFrames = 0) {
-		obj_diver.InFrames = obj_diver.maxInFrames;
+	if (obj_diver.flashAlpha <= 0) {
 		global.player_health -= deltDamage;
 		obj_diver.flashAlpha = 1;
 		obj_diver.attackedFromX = Fx;

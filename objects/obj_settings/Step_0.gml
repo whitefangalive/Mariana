@@ -32,6 +32,7 @@ if (needsToBeLoaded == true) {
 			var num_dead = _loadEntity.num_dead;
 			var num_fish = _loadEntity.num_fish;
 			var num_eggs = _loadEntity.num_eggs;
+			var num_dest = _loadEntity.num_dest;
 		}
 	} else {
 		with (obj_diver) {
@@ -40,6 +41,7 @@ if (needsToBeLoaded == true) {
 			var num_dead = _loadEntity.num_dead;
 			var num_fish = _loadEntity.num_fish;
 			var num_eggs = _loadEntity.num_eggs;
+			var num_dest = _loadEntity.num_dest;
 		}
 	}
 	with (obj_dead_diver) {instance_destroy();}
@@ -51,7 +53,17 @@ if (needsToBeLoaded == true) {
 			image_xscale = _loadEntity.image_xscale;
 		}
 	}
-	
+	with (obj_destructible_parent) {instance_destroy();}
+	for (var i = 0; i < num_dest; i++) {	
+		_loadEntity = array_pop(_loadData);
+		with (instance_create_layer(0, 0, "player_layer", asset_get_index(_loadEntity.obj))) {
+			x = _loadEntity.x;
+			y = _loadEntity.y;
+			image_xscale = _loadEntity.image_xscale;
+			image_yscale = _loadEntity.image_yscale;
+			image_angle = _loadEntity.image_angle;
+		}
+	}
 	with (obj_chest) {instance_destroy();}
 	for (var i = 0; i < num_chests; i++) {	
 		_loadEntity = array_pop(_loadData);
@@ -136,6 +148,7 @@ if (needsDeathLoaded == true) {
 	var num_dead = _loadEntity.num_dead;
 	var num_fish = _loadEntity.num_fish;
 	var num_eggs = _loadEntity.num_eggs;
+	var num_dest = _loadEntity.num_dest;
 	
 	for (var i = 0; i < num_dead; i++) {
 		_loadEntity = array_pop(_loadData);
@@ -148,7 +161,17 @@ if (needsDeathLoaded == true) {
 			image_xscale = _loadEntity.image_xscale;
 		}
 	}
-	
+	with (obj_destructible_parent) {instance_destroy();}
+	for (var i = 0; i < num_dest; i++) {	
+		_loadEntity = array_pop(_loadData);
+		with (instance_create_layer(0, 0, "player_layer", asset_get_index(_loadEntity.obj))) {
+			x = _loadEntity.x;
+			y = _loadEntity.y;
+			image_xscale = _loadEntity.image_xscale;
+			image_yscale = _loadEntity.image_yscale;
+			image_angle = _loadEntity.image_angle;
+		}
+	}
 	// Do chests
 	with (obj_chest) {instance_destroy();}
 	for (var i = 0; i < num_chests; i++) {	

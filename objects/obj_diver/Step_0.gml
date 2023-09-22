@@ -95,10 +95,10 @@ audio_listener_position(x, y, 0);
 if ANItimer > 0 {ANItimer -= 1;}
 
 if (flashAlpha > 0) {
-	flashAlpha -= 0.08;
+	flashAlpha -= 0.04;
 }
 //being flung after getting hit
-if (flashAlpha > 0) {
+if (flashAlpha > 0.32) {
 	var xway = x - attackedFromX;
 	var yway = y - attackedFromY;
 	if (!place_meeting(x + xway,y + yway, obj_collision_parent)) {
@@ -110,13 +110,10 @@ if (flashAlpha > 0) {
 	}
 } 
 
-	if (flashAlpha = 0.04) {
+	if (flashAlpha = 0.32) {
 		speed = 0;
 	}
 	
-	if (InFrames >= 1) {
-	 InFrames -= 1;
-	}
 //---------------------------- TAKKING OF DAMAGE
 
 if global.player_health <= 0 {

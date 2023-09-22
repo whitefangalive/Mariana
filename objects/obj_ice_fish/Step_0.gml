@@ -1,4 +1,4 @@
-if distance_to_object(obj_diver) < 550 {
+if distance_to_object(obj_diver) < 750 {
 age++;
 image_xscale = clamp(scale, 0.3, 1);
 image_yscale = clamp(scale, 0.3, 1);
@@ -69,7 +69,7 @@ if (age > 12000 && laidEggs = false) {
 	}
 	
 
-} else if (age % 2000 <= 5) {
+} else if (age % 2000 <= 3) {
 	
 	var seaweed = instance_nearest(x, y-20, obj_seaweed);
 	var crab = instance_nearest(x, y, obj_flora_crab);
