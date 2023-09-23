@@ -9,6 +9,7 @@ if (keyboard_check_pressed(obj_settings.key_escape)) {
 	loadGame(string(destination) + ".save", false);
 	
 audio_stop_sound(m_surface_tension);
+audio_stop_sound(m_aquifer);
 audio_sound_gain(m_hull_sale, 0, 5000);
 }
 

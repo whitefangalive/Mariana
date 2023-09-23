@@ -6,7 +6,18 @@ if ((distance_to_object(obj_diver) < 15) && global.inventoried == false && globa
 		saveGame(string(curLocation) + ".save");
 		room_goto(destination);
 		loadGame(string(destination) + ".save", false);
-		obj_settings.previousRoom = room_shop_top;
+		switch (room) {
+			case Room1:
+				obj_settings.previousRoom = room_shop_top;
+			break;
+			case Room2:
+				obj_settings.previousRoom = room_shop_middle;
+			break;
+			case Room3:
+			
+			break;
+		}
+		
 		
 		obj_settings.timesEnteredSub++;
 		// Don't forget to add dialogue at last dialogue - 0.5

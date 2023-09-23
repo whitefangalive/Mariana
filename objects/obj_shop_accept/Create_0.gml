@@ -75,6 +75,9 @@ switch (item) {
 					case "Steel Harpoon":
 						return ["Scrap", "Scrap", "Scrap"];
 					break;
+					case "Night Vision Goggles":
+						return ["Pearl", "Ice"];
+					break;
 					default:
 						return ["Ice"];
 					break;

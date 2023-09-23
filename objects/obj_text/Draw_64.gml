@@ -33,7 +33,8 @@ if (pos != length) {
 				textSpeed = textSpeed * 0.1;
 			}
 			if (currentLetter == " ") {
-				if (room == room_shop_top) {
+				var room_name = string_copy(room_get_name(room), 0, 9);
+				if (room_name == "room_shop") {
 					audio_play_sound(asset_get_index("sfx_muro" + string(irandom_range(1,4))), 2 ,false, global.volume_setting);
 				}
 			}

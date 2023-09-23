@@ -23,7 +23,7 @@ if distance_to_object(obj_diver) < range {
 		charge_attack = 0;			
 	}
 	if ((HP < maxHP) || hostile == true) {
-		if (distance_to_object(obj_diver) < 350) {
+		if (distance_to_object(obj_diver) < 450) {
 			if (getPosOnce == false) {
 				getPosOnce = true;
 				diverx = obj_diver.x
@@ -34,7 +34,7 @@ if distance_to_object(obj_diver) < range {
 		dist_y = obj_diver.y - y;
 		// DOCILE BEHAVIOR
 			// Get the distance to the player
-			if (distance_to_object(obj_diver) < 249 || hostile == true) { 
+			if (distance_to_object(obj_diver) < 449 || hostile == true) { 
 					swim_speed = 3;
 					
 					if (abs(x - diverx) > swim_speed && abs(y - divery) > swim_speed) {
@@ -48,7 +48,8 @@ if distance_to_object(obj_diver) < range {
 				randX = irandom_range(-50,50);
 				randY = irandom_range(-50,50);
 				}
-			} 
+			}
+			
 			if ((HP >= maxHP)) {
 				swim_speed = default_swim_speed;
 			}
@@ -61,7 +62,7 @@ if distance_to_object(obj_diver) < range {
 			}
 		} 
 	} else {	
-			if (age > 12000 && laidEggs = false) {
+			if (age > 12000 && laidEggs = false && (HP >= maxHP)) {
 				var nearestSand = instance_nearest(x, y, obj_collision_parent);
 				if (distance_to_object(nearestSand) > 5) {
 					move_towards_point(nearestSand.x, nearestSand.y, swim_speed);
@@ -127,7 +128,7 @@ if distance_to_object(obj_diver) < range {
 	
 	//regen
 	if (HP < maxHP) {
-		if (age % 500 == 0) {
+		if (age % 2000 == 0) {
 			HP += 1;
 		}
 	}

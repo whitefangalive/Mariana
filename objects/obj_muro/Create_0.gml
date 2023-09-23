@@ -133,8 +133,11 @@ switch (obj_settings.timesEnteredSub) {
 	say(splitText("welcome back I guess."));
 	break;
 }
-
-destination = Room1;
+if (room == room_shop_top) {
+	destination = Room1;
+} else {
+	destination = Room2;
+}
 destinX = x;
 destinY = y;
 

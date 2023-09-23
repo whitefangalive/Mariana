@@ -164,7 +164,7 @@ with (obj_diver) {
 			obj_game.doScaling = false;
 		}
 	} else {
-		obj_game.cameraScale = 10;
+		obj_game.cameraScale = 20;
 	}
 	
 }

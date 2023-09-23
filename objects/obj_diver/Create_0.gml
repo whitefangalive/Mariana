@@ -39,7 +39,7 @@ if !variable_global_exists("equipped") {
 	global.roomsWithCorpses = [];
 	
 	global.doorInRoomMain = [];
-	for (var i = 0; i < real(Room3); i++) {
+	for (var i = 0; i < real(room_shop_bottom); i++) {
 		array_push(global.doorInRoomMain, 0);
 	}
 	array_set(global.doorInRoomMain, Room1, [[Room1], [0, 0]]);

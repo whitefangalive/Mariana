@@ -163,6 +163,14 @@ audio_play_sound(sfx_select, 2, false);
 								array_set(global.equipped, 6, "Healthometer");
 								array_delete(global.inventory, obj_inventory.pos, 1) 
 							break;
+							case "Night Vision Goggles":
+								instance_destroy();
+								if (global.equipped[2] != 0.0) {
+										dropItem(convertTo("obj", string(global.equipped[2])));
+								}
+								array_set(global.equipped, 2, "Night Vision Goggles");
+								array_delete(global.inventory, obj_inventory.pos, 1) 
+							break;
 							//Default
 							default: 
 							say(["You cannot use this item."]);
