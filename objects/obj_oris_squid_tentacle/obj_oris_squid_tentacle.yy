@@ -13,8 +13,8 @@
     "path": "folders/Objects/fish/hostile.yy",
   },
   "parentObjectId": {
-    "name": "obj_any_behavior_parent",
-    "path": "objects/obj_any_behavior_parent/obj_any_behavior_parent.yy",
+    "name": "obj_creature_accesory",
+    "path": "objects/obj_creature_accesory/obj_creature_accesory.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

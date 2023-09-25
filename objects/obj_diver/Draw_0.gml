@@ -27,6 +27,11 @@ if (global.equipped[5] == "Depthometer") {
 if (global.equipped[6] == "Healthometer") {
 	draw_sprite_ext(spr_Healthometer_Helm, 0, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
 }
+if (array_contains(obj_settings.achivements, "Gunked")) {
+	
+}
+
+
 if (flashAlpha > 0) {
 	shader_set(shFlash);
 	

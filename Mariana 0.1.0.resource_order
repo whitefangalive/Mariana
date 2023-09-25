@@ -16,6 +16,7 @@
     {"name":"muro","order":2,"path":"folders/Sounds/SFX/muro.yy",},
     {"name":"sispi","order":36,"path":"folders/Sprites/fish/sispi.yy",},
     {"name":"harpoon","order":24,"path":"folders/Sprites/items/harpoon.yy",},
+    {"name":"breath_animation","order":3,"path":"folders/Sprites/diver_sprites/breath_animation.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_pause_menu","order":9,"path":"objects/obj_pause_menu/obj_pause_menu.yy",},
@@ -160,6 +161,7 @@
     {"name":"obj_destructible_parent","order":14,"path":"objects/obj_destructible_parent/obj_destructible_parent.yy",},
     {"name":"spr_Healthometer","order":26,"path":"sprites/spr_Healthometer/spr_Healthometer.yy",},
     {"name":"spr_yerino_die","order":11,"path":"sprites/spr_yerino_die/spr_yerino_die.yy",},
+    {"name":"spr_breathe","order":2,"path":"sprites/spr_breathe/spr_breathe.yy",},
     {"name":"spr_sub_shop_int","order":4,"path":"sprites/spr_sub_shop_int/spr_sub_shop_int.yy",},
     {"name":"spr_crabioli","order":20,"path":"sprites/spr_crabioli/spr_crabioli.yy",},
     {"name":"spr_purple_coral","order":18,"path":"sprites/spr_purple_coral/spr_purple_coral.yy",},
@@ -230,6 +232,7 @@
     {"name":"spr_yerino","order":2,"path":"sprites/spr_yerino/spr_yerino.yy",},
     {"name":"spr_Wet_Burrito","order":29,"path":"sprites/spr_Wet_Burrito/spr_Wet_Burrito.yy",},
     {"name":"spr_goldy_die","order":34,"path":"sprites/spr_goldy_die/spr_goldy_die.yy",},
+    {"name":"spr_helm_bust","order":1,"path":"sprites/spr_helm_bust/spr_helm_bust.yy",},
     {"name":"spr_oris_squid_tentacle_end","order":39,"path":"sprites/spr_oris_squid_tentacle_end/spr_oris_squid_tentacle_end.yy",},
     {"name":"m_thorium","order":1,"path":"sounds/m_thorium/m_thorium.yy",},
     {"name":"spr_Mystery_Key","order":3,"path":"sprites/spr_Mystery_Key/spr_Mystery_Key.yy",},
