@@ -64,3 +64,44 @@ for  (var i = 0; i < irandom_range(10, 13); i++) {
 	}
 }
 
+notFarLeft = irandom_range(9, 12);
+for  (var i = 0; i < irandom_range(10, 13); i++) {
+	array_push(tentaclesFarLeft, instance_create_layer(x, y, "in_front_of_player", obj_oris_squid_tentacle));
+	tentaclesFarLeft[i].squidId = id;
+	with (tentaclesFarLeft[i]) {
+		numberOfTentacles = squidId.notFarLeft;
+		myNumber = i;
+		allTentaclesAbove = squidId.tentaclesFarLeft;
+	}
+}
+
+notBack = irandom_range(18, 21);
+for  (var i = 0; i < irandom_range(10, 13); i++) {
+	array_push(tentaclesBack, instance_create_layer(x, y, "behind_diver", obj_oris_squid_tentacle));
+	tentaclesBack[i].squidId = id;
+	with (tentaclesBack[i]) {
+		numberOfTentacles = squidId.notBack;
+		myNumber = i;
+		allTentaclesAbove = squidId.tentaclesBack;
+		scaledValue = 0.8;
+	}
+}
+
+middleRight = instance_create_layer(x, y, "in_front_of_player", obj_oris_squid_tentacle);
+middleRight.squidId = id;
+with (middleRight) {
+	numberOfTentacles = 1;
+	myNumber = 0;
+	allTentaclesAbove = [squidId.middleRight];
+	scaledValue = 1.5;
+}
+
+middleLeft = instance_create_layer(x, y, "in_front_of_player", obj_oris_squid_tentacle);
+middleLeft.squidId = id;
+with (middleLeft) {
+	numberOfTentacles = 1;
+	myNumber = 0;
+	allTentaclesAbove = [squidId.middleLeft];
+	scaledValue = 1.5;
+}
+

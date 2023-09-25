@@ -4,7 +4,6 @@
   "name": "obj_oris_squid_tentacle",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
@@ -13,7 +12,10 @@
     "name": "hostile",
     "path": "folders/Objects/fish/hostile.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_any_behavior_parent",
+    "path": "objects/obj_any_behavior_parent/obj_any_behavior_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
