@@ -1,6 +1,7 @@
 squidId = -1;
 numberOfTentacles = -1;
 myNumber = -1;
+projectAngle = 0;
 //latest one is going to be current tentacle, second to last is one right above you
 allTentaclesAbove = [];
 image_index = irandom_range(0, 1);

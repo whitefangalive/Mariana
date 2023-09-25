@@ -1,5 +1,7 @@
 image_xscale = squidId.image_xscale;
 image_yscale = squidId.image_yscale;
+
+
 if (myNumber == (array_length(allTentaclesAbove) - 1)) {
 	sprite_index = spr_oris_squid_tentacle_end;
 }
@@ -12,3 +14,6 @@ if (myNumber != 0) {
 	x = TentacleX;
 	y = TentacleY;
 }
+
+
+		

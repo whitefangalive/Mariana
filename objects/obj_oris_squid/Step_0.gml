@@ -9,6 +9,12 @@ if (distance_to_object(obj_diver) < 850) {
 tentaclesRight[0].x = x + sprite_width / 3.82;
 tentaclesRight[0].y = y + sprite_height / 2;
 
+tentaclesFarRight[0].x = x + sprite_width / 3;
+tentaclesFarRight[0].y = y + sprite_height / 2;
+
+tentaclesLeft[0].x = x - sprite_width / 3.50;
+tentaclesLeft[0].y = y + sprite_height / 2;
+
 	
 	image_xscale = clamp(scale, 1, 5.5);
 	image_yscale = clamp(scale, 1, 5.5);
