@@ -23,6 +23,10 @@ attackedFromY = 0;
 bubbleTimer = 0;
 
 blindness = 0;
+// A variable to choose the frame of the animation on the reward you get when you beat a boss
+
+bossRewardAnimationFrame = 6;
+bossRewardAnimationFrameTimer = 0;
 
 gamepad_set_axis_deadzone(0, 0.3);
 
@@ -43,7 +47,6 @@ if !variable_global_exists("equipped") {
 		array_push(global.doorInRoomMain, 0);
 	}
 	array_set(global.doorInRoomMain, Room1, [[Room1], [0, 0]]);
-	
 }
 
 if (array_length(global.equipped) < 3) {

@@ -1,6 +1,7 @@
 //move to next room
 if (instance_exists(obj_diver)) {
 	if (obj_settings.previousRoom == destination && ((obj_diver.y < 2) || obj_diver.y > room_height - 2)) {
+		array_set(global.doorInRoomMain, room, [find_room_path(room), [0, 0]]);
 		obj_settings.previousRoom = curLocation;
 	}
 }

@@ -27,8 +27,38 @@ if (global.equipped[5] == "Depthometer") {
 if (global.equipped[6] == "Healthometer") {
 	draw_sprite_ext(spr_Healthometer_Helm, 0, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
 }
+
 if (array_contains(obj_settings.achivements, "Gunked")) {
+	if (bossRewardAnimationFrame > 12) {
+		bossRewardAnimationFrame = 6;
+	}
+	switch (sprite_index) {
+		case spr_swimming:
+			draw_sprite_ext(spr_gain_gills_swim, bossRewardAnimationFrame, x, y, image_xscale, image_yscale, 0, c_white, 1);
+		break;
+		case spr_divr_attacking_side:
+			draw_sprite_ext(spr_gain_gills_side, bossRewardAnimationFrame, x, y, image_xscale, image_yscale, 0, c_white, 1);
+		break;
+		default:
+			draw_sprite_ext(spr_gain_gills, bossRewardAnimationFrame, x, y, image_xscale, image_yscale, 0, c_white, 1);
+		break;
+	}
 	
+	if (bossRewardAnimationFrame == 5 && bossRewardAnimationFrameTimer == 0) {
+		for (var i = 0; i < 4; i++) {
+			var zero = instance_create_layer(x, y, "in_front_of_player", vfx_helm_burst);
+			zero.image_xscale = image_xscale;
+			zero.image_yscale = image_yscale;
+			zero.image_index = i;
+			zero.direction = 175 * i;
+			zero.speed = 3;
+		}
+	}
+	bossRewardAnimationFrameTimer++;
+	if (bossRewardAnimationFrameTimer >= 16) {
+		bossRewardAnimationFrame++;
+		bossRewardAnimationFrameTimer = 0;
+	}
 }
 
 

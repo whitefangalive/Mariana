@@ -76,6 +76,7 @@ if (global.inventory_menu == false && object_exists(obj_inventory_use)) {
 switch(global.next) { 
 
 	case 0:
+		array_set(global.doorInRoomMain, destination, [[], [x, y]]);
 		saveGame(string(curLocation) + ".save");
 		room_goto_next();
 		loadGame(string(destination) + ".save", false);
@@ -85,11 +86,12 @@ switch(global.next) {
 		break;
 	
 	case 1:
-		show_debug_message(global.previous_x)
+		array_set(global.doorInRoomMain, room_previous(room), [[], [x, y]]);
 		saveGame(string(curLocation) + ".save");
 		room_goto_previous();
 		loadGame(string(room_previous(room)) + ".save", false);
 		obj_settings.previousRoom = curLocation;
+		
 		global.next += 2;
 		break;
 	}
@@ -98,7 +100,7 @@ switch(global.next) {
 itemScript("game");
 
 // map
-if (room != room_shop_top) {
+if (room != room_shop_top && room != room_shop_middle) {
 	if (global.equipped[4] == "Ancient Map") {
 		if (keyboard_check_pressed(obj_settings.key_map) && global.paused == false) {
 			mapOpen = !mapOpen;
