@@ -7,8 +7,10 @@ draw_set_halign(fa_left);
 
 //center
 
-x = 170;
-y = 100;
+if (room != room_shop_top) {
+	x = 170;
+	y = 100;
+}
 
 //dr menu background
 
@@ -50,6 +52,12 @@ for (var i = 0; i < op_length; i++) {
 	  else {
 		  //draw other lines
 		draw_text_color(x+op_border + op_space + string_width(global.inventory[i-1]) + full_length, y+op_border, global.inventory[i], _c, _c, _c, _c, 1 );
+		
+		//if (array_length(global.inventory) > 0) {
+		//	if (sprite_exists((convertTo("spr", global.inventory[i])))) {
+		//		draw_sprite_ext(convertTo("spr", global.inventory[i]), 0, x+op_border + op_space + string_width(global.inventory[i-1]) + full_length - 15, y+op_border + 20,1, 1, 0, c_white, 1);
+		//	}
+		//}
 		var maxButtons = array_length(global.inventory);
 		if (instance_exists(obj_inventory_use)) {
 			maxButtons += array_length(obj_inventory_use.option[obj_inventory_use.menu_level]);

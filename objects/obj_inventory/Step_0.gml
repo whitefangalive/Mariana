@@ -30,7 +30,7 @@ if pos >= op_length {pos = 0};
 if pos < 0 {pos = op_length -1};
 
 //using menu
-if !instance_exists(obj_inventory_use) && !instance_exists(obj_text) {
+if !instance_exists(obj_inventory_use) && !instance_exists(obj_text) && (string_copy(room_get_name(room), 0, 9) != "room_shop") {
 	if key_accept {
 		if (array_length(global.inventory) > 0) {
 	audio_play_sound(sfx_select, 2, false, global.volume_setting);

@@ -7,3 +7,9 @@ input_direction = 0;
 
 text_opacity = 0.5;
 text_counter = 0;
+
+mouseX = x;
+mouseY = y;
+
+prevX = x;
+prevY = y;

@@ -27,5 +27,15 @@ if (global.inventoried == false) {
 
 	x = x + hsp;
 	y = y + vsp;
+	
+	if (mouse_check_button(mb_left)) {
+		x = (prevX - (mouseX - device_mouse_x_to_gui(0)) / 2);
+		y = (prevY - (mouseY - device_mouse_y_to_gui(0)) / 2);
+	} else {
+		mouseX = device_mouse_x_to_gui(0);
+		mouseY = device_mouse_y_to_gui(0);
+		prevX = x;
+		prevY = y;
+	}
 }
 

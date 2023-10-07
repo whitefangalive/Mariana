@@ -100,7 +100,7 @@ switch(global.next) {
 itemScript("game");
 
 // map
-if (room != room_shop_top && room != room_shop_middle) {
+if (string_copy(room_get_name(room), 0, 9) != "room_shop") {
 	if (global.equipped[4] == "Ancient Map") {
 		if (keyboard_check_pressed(obj_settings.key_map) && global.paused == false) {
 			mapOpen = !mapOpen;
