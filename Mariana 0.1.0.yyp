@@ -185,6 +185,7 @@
     {"id":{"name":"obj_yerino","path":"objects/obj_yerino/obj_yerino.yy",},},
     {"id":{"name":"obj_Scrap","path":"objects/obj_Scrap/obj_Scrap.yy",},},
     {"id":{"name":"spr_goldy","path":"sprites/spr_goldy/spr_goldy.yy",},},
+    {"id":{"name":"obj_hidden_wall","path":"objects/obj_hidden_wall/obj_hidden_wall.yy",},},
     {"id":{"name":"spr_diver_attacking_up","path":"sprites/spr_diver_attacking_up/spr_diver_attacking_up.yy",},},
     {"id":{"name":"spr_bubble_pop","path":"sprites/spr_bubble_pop/spr_bubble_pop.yy",},},
     {"id":{"name":"spr_Lucky_Seashell","path":"sprites/spr_Lucky_Seashell/spr_Lucky_Seashell.yy",},},

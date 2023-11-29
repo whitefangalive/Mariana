@@ -99,6 +99,7 @@
     {"name":"obj_oris_squid","order":10,"path":"objects/obj_oris_squid/obj_oris_squid.yy",},
     {"name":"obj_yerino","order":4,"path":"objects/obj_yerino/obj_yerino.yy",},
     {"name":"spr_goldy","order":16,"path":"sprites/spr_goldy/spr_goldy.yy",},
+    {"name":"obj_hidden_wall","order":11,"path":"objects/obj_hidden_wall/obj_hidden_wall.yy",},
     {"name":"spr_bubble_pop","order":13,"path":"sprites/spr_bubble_pop/spr_bubble_pop.yy",},
     {"name":"spr_Lucky_Seashell","order":19,"path":"sprites/spr_Lucky_Seashell/spr_Lucky_Seashell.yy",},
     {"name":"spr_menu","order":5,"path":"sprites/spr_menu/spr_menu.yy",},
