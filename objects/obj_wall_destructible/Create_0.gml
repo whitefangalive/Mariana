@@ -1,5 +1,5 @@
 /// @description randomize
-
+// this object 
 image_index = random(4);
 once = false;
 function destroy() {
