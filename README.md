@@ -13,7 +13,13 @@ The most challanging part is if you died in another room. If you did I want the 
 Essentially it should lead you on a path to your body. Going door to door.
 
 
-However this means I need to know the location of each room. To do this I named each room with the prefix of the previous room Ex. "Room1_SideRoom1" where you are in SideRoom1 and Room1 is the previous room. Doing this allows me to backtrace where the previous room is from where you died.
+However this means I need to know the location of each room. To do this I named each room with the prefix of the previous room Ex.
+```
+"Room1_SideRoom1"
+```
+ where you are in SideRoom1 and Room1 is the previous room. 
+ 
+ Doing this allows me to backtrace where the previous room is from where you died.
 
 
 
