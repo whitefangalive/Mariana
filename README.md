@@ -1,6 +1,21 @@
 # Mariana
 Mariana is an underwater exploration and metroidvania indie game. In this game you dropped into an unknown trench to explore. You will find fantastical creatures and rare artifacts. Fight bosses and mini-bosses in order to dive as deep as possible.
 
+This is the map feature of the game. By buying an outdated map you can see where the bodies of "previous divers"(aka your bodies) with a sinoid glowing blue effedct.
+![d04da84d4cef8be029bf30e91e2d6a90](https://github.com/whitefangalive/Mariana/assets/49380278/58b8cc0a-6831-4b0b-b5c2-ff35f4d57cd9)
+
+To do this I had to make a project of 11.2x scale from the map to the real room.
+
+
+The most challanging part is if you died in another room. If you did I want the map to show the location of the doorway to that door. However if you died a few rooms over it will glow at the door that will lead you to the room next to the room you died.
+
+
+Essentially it should lead you on a path to your body. Going door to door.
+
+
+However this means I need to know the location of each room. To do this I named each room with the prefix of the previous room Ex. "Room1_SideRoom1" where you are in SideRoom1 and Room1 is the previous room. Doing this allows me to backtrace where the previous room is from where you died.
+
+
 
 
 This the Orsis squid on the second level of Mariana. Moving through its tentacles pushes them out of the way.
