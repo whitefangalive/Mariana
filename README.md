@@ -19,7 +19,7 @@ However this means I need to know the location of each room. To do this I named 
 ```
  where you are in SideRoom1 and Room1 is the previous room. 
  
- Doing this allows me to backtrace where the previous room is from where you died.
+ Doing this allows me to backtrace all the way to the room you respawn in and place a glow on the correct door.
 
 
 
