@@ -1,5 +1,5 @@
 /// @description randomize
-
+// is only destroyed if you attack it
 image_index = random(4);
 function destroy() {
 	instance_destroy();

@@ -1,5 +1,5 @@
 /// @description randomize
-
+// is only destroyed if there is nothing underneath
 image_index = random(4);
 once = false;
 function destroy() {

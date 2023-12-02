@@ -1,5 +1,5 @@
 /// @description randomize
-// this object 
+// this object is destroyed if you attack it, or if there is nothing underneath
 image_index = random(4);
 once = false;
 function destroy() {
