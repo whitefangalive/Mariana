@@ -9,12 +9,11 @@ if (distance_to_object(obj_diver) < 800 || x == 0) {
 			image_index = irandom_range(0, 1);
 		}
 	}
-	// calculate position based on angle and length of previous tentacle
+	// calculate position based on angle and length and angle of previous tentacle
 	if (myNumber != 0) {
 		var upperTent = allTentaclesAbove[myNumber - 1]; 
-		var math = (sprite_height * dcos(upperTent.image_angle));
 		var TentacleX = upperTent.x + (sprite_height * dsin(upperTent.image_angle));
-		var TentacleY = upperTent.y + math;
+		var TentacleY = upperTent.y + (sprite_height * dcos(upperTent.image_angle));
 		x = TentacleX;
 		y = TentacleY;
 	}
