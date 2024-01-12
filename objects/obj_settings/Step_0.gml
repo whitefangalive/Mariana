@@ -116,6 +116,7 @@ if (needsToBeLoaded == true) {
 			image_angle = _loadEntity.image_angle;
 		}
 	}
+	
 	needsToBeLoaded = false;
 }
 
@@ -225,6 +226,14 @@ if (needsDeathLoaded == true) {
 			randDir2 = _loadEntity.randDir2;
 			image_angle = _loadEntity.image_angle;
 		}
+	}
+	
+	placeholderEquippment = global.equipped;
+	global.equipped = [];
+	for (var i = 0; i < array_length(placeholderEquippment); ++i) {
+		var obj = instance_create_layer(2000 + irandom_range(-100, 100), 1000 + irandom_range(-100, 100), "in_front_of_player", vfx_flying_object);
+		obj.sprite_index = convertTo("spr", placeholderEquippment[i]);
+		array_push(global.equipped, placeholderEquippment[i]);
 	}
 	needsDeathLoaded = false;
 }

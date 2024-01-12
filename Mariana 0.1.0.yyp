@@ -105,6 +105,7 @@
     {"id":{"name":"spr_seaweed","path":"sprites/spr_seaweed/spr_seaweed.yy",},},
     {"id":{"name":"obj_current","path":"objects/obj_current/obj_current.yy",},},
     {"id":{"name":"splitText","path":"scripts/splitText/splitText.yy",},},
+    {"id":{"name":"vfx_flying_object","path":"objects/vfx_flying_object/vfx_flying_object.yy",},},
     {"id":{"name":"obj_wood_door","path":"objects/obj_wood_door/obj_wood_door.yy",},},
     {"id":{"name":"sfx_muro2","path":"sounds/sfx_muro2/sfx_muro2.yy",},},
     {"id":{"name":"sfx_damageTake1","path":"sounds/sfx_damageTake1/sfx_damageTake1.yy",},},

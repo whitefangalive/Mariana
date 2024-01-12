@@ -98,3 +98,5 @@ obj_settings.blood = obj_settings.bloodEnable;
 window_set_showborder(!obj_settings.Borderless);
 window_center();
 alarm[0] = 1;
+
+placeholderEquippment = [];
