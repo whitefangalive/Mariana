@@ -1,3 +1,4 @@
+
 if (!instance_exists(vfx_flying_object)) {
 	if (global.equipped[1] == "Booster") {
 		draw_sprite_ext(spr_Booster, 0, x, y-10, image_xscale *1.5,image_yscale * 1.5, 0, c_gray, 1);
@@ -21,7 +22,7 @@ if (!instance_exists(vfx_flying_object)) {
 		draw_sprite_ext(spr_Luciferin_Belt, 0, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
 	}
 	if (global.equipped[5] == "Depthometer") {
-		draw_sprite_ext(spr_Depthometer_Helm, 0, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
+		drawChildOf(spr_Depthometer_Helm, 0, 2, 10, 1.5, 1.5, 0, c_white, 1, obj_diver_right_arm);
 	}
 	if (global.equipped[6] == "Healthometer") {
 		draw_sprite_ext(spr_Healthometer_Helm, 0, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
