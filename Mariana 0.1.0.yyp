@@ -90,6 +90,7 @@
     {"id":{"name":"obj_Pearl","path":"objects/obj_Pearl/obj_Pearl.yy",},},
     {"id":{"name":"obj_Lucky_Seashell","path":"objects/obj_Lucky_Seashell/obj_Lucky_Seashell.yy",},},
     {"id":{"name":"obj_Ancient_Map","path":"objects/obj_Ancient_Map/obj_Ancient_Map.yy",},},
+    {"id":{"name":"spr_pirate_hat","path":"sprites/spr_pirate_hat/spr_pirate_hat.yy",},},
     {"id":{"name":"m_surface_tension","path":"sounds/m_surface_tension/m_surface_tension.yy",},},
     {"id":{"name":"spr_dead_diver","path":"sprites/spr_dead_diver/spr_dead_diver.yy",},},
     {"id":{"name":"m_there_is_definitely_a_crab_in_here","path":"sounds/m_there_is_definitely_a_crab_in_here/m_there_is_definitely_a_crab_in_here.yy",},},

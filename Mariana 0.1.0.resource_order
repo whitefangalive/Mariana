@@ -32,6 +32,7 @@
     {"name":"spr_electricity","order":17,"path":"sprites/spr_electricity/spr_electricity.yy",},
     {"name":"spr_Depthometer","order":25,"path":"sprites/spr_Depthometer/spr_Depthometer.yy",},
     {"name":"obj_Ancient_Map","order":5,"path":"objects/obj_Ancient_Map/obj_Ancient_Map.yy",},
+    {"name":"spr_pirate_hat","order":5,"path":"sprites/spr_pirate_hat/spr_pirate_hat.yy",},
     {"name":"m_surface_tension","order":10,"path":"sounds/m_surface_tension/m_surface_tension.yy",},
     {"name":"m_there_is_definitely_a_crab_in_here","order":12,"path":"sounds/m_there_is_definitely_a_crab_in_here/m_there_is_definitely_a_crab_in_here.yy",},
     {"name":"spr_anthfish","order":25,"path":"sprites/spr_anthfish/spr_anthfish.yy",},
