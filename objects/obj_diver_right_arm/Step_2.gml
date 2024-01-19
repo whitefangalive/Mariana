@@ -47,7 +47,7 @@ if (instance_exists(obj_diver)) {
 			image_angle = 35 * sign(obj_diver.image_xscale);
 		break;
 		default:
-			xOffset = 0;
+			xOffset = 4 * sign(obj_diver.image_xscale);
 			yOffset = 0;
 			image_angle = 0;
 		break;

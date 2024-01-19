@@ -9,3 +9,5 @@ function EaseInQuad(inputvalue,outputmin,outputmax,inputmax) {
 	inputvalue /= inputmax;
 	return outputmax * inputvalue * inputvalue + outputmin;
 }
+
+once = false;

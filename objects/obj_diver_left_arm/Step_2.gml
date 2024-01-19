@@ -33,7 +33,7 @@ if (instance_exists(obj_diver)) {
 		break;
 		case spr_divr_attacking_side:
 			xOffset = -1 * sign(obj_diver.image_xscale);
-			yOffset = 0;
+			yOffset = 2;
 			image_angle = 90 * sign(obj_diver.image_xscale);;
 		break;
 		case spr_diver_attacking_up:
@@ -47,7 +47,7 @@ if (instance_exists(obj_diver)) {
 			image_angle = -35 * sign(obj_diver.image_xscale);
 		break;
 		default:
-			xOffset = 0;
+			xOffset = -4 * sign(obj_diver.image_xscale);
 			yOffset = 0;
 			image_angle = 0;
 		break;

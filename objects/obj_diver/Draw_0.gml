@@ -22,10 +22,10 @@ if (!instance_exists(vfx_flying_object)) {
 		draw_sprite_ext(spr_Luciferin_Belt, 0, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
 	}
 	if (global.equipped[5] == "Depthometer") {
-		drawChildOf(spr_Depthometer_Helm, 0, 2, 10, 1.5, 1.5, 0, c_white, 1, obj_diver_right_arm);
+		drawChildOf(spr_Depthometer_Helm, 0, 4, 6, 1.5, 1.5, 0, c_white, 1, obj_diver_right_arm);
 	}
 	if (global.equipped[6] == "Healthometer") {
-		draw_sprite_ext(spr_Healthometer_Helm, 0, x, y, image_xscale, image_yscale, image_angle, c_white, 1);
+		drawChildOf(spr_Healthometer_Helm, 0, 5, 6, 1.5, 1.5, 0, c_white, 1, obj_diver_left_arm);
 	}
 }
 

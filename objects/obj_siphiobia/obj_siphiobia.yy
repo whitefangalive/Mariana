@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "spr_siphiobia",
+  "name": "obj_siphiobia",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],

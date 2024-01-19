@@ -1,6 +1,8 @@
 speed = 8;
 
 if ((place_meeting(x, y, obj_collision_parent))) {
+	audio_stop_sound(sfx_zap);
+	audio_play_sound_on(audio_emitter, sfx_zapEnd, false, 1, global.volume_setting);
 	instance_destroy();
 }
 
@@ -25,3 +27,4 @@ if (choice == 1) {
 	y = y + randY;
 	image_yscale = image_yscale + 0.3;
 }
+audio_emitter_position(audio_emitter, x, y, 0);
