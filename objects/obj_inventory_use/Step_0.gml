@@ -163,6 +163,14 @@ audio_play_sound(sfx_select, 2, false);
 								array_set(global.equipped, 6, "Healthometer");
 								array_delete(global.inventory, obj_inventory.pos, 1) 
 							break;
+							case "Pirate Hat":
+								instance_destroy();
+								if (global.equipped[7] != 0.0) {
+										dropItem(convertTo("obj", string(global.equipped[7])));
+								}
+								array_set(global.equipped, 7, "Pirate Hat");
+								array_delete(global.inventory, obj_inventory.pos, 1) 
+							break;
 							case "Night Vision Goggles":
 								instance_destroy();
 								if (global.equipped[2] != 0.0) {

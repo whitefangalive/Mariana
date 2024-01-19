@@ -12,6 +12,10 @@ draw_self();
 
 if (!instance_exists(vfx_flying_object)) {
 	draw_sprite_ext(spr_hurt1, clamp(global.max_player_health - global.player_health, 0, global.max_player_health-1), x, y, image_xscale, image_yscale, image_angle, c_white, 1);
+	if (global.equipped[7] == "Pirate Hat") {
+		drawChildOf(spr_Pirate_Hat, 0, 0, 0, 1, 1, 0, c_white, 1, obj_diver_head);
+	}
+	
 	if (array_length(global.equipped) < 3) {
 		array_push(global.equipped, 0.0);
 	}
@@ -27,6 +31,7 @@ if (!instance_exists(vfx_flying_object)) {
 	if (global.equipped[6] == "Healthometer") {
 		drawChildOf(spr_Healthometer_Helm, 0, 5, 6, 1.5, 1.5, 0, c_white, 1, obj_diver_left_arm);
 	}
+	
 }
 
 if (array_contains(obj_settings.achivements, "Gunked")) {

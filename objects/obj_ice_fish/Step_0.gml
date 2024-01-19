@@ -120,10 +120,29 @@ if (((abs(dist_x) >= 450 || abs(dist_y) >= 450)) && (path_ended == "true")) {
 	 InFrames -= 1;
 	}
 	
-	//DEATH
+	//DEATH -------------------------------------- Sprite input
 	if (HP <= 0) {
-	InFrames = 200; 
-    swim_speed = 0;
-	sprite_index = spr_ice_fish_die;
+		InFrames = 200; 
+	    swim_speed = 0;
+		sprite_index = spr_ice_fish_die;
+	}
+
+
+	if (flashAlpha > 0) {
+		flashAlpha -= 0.05;
+	}
+
+	if (flashAlpha > 0.05) {
+		var xway = x - obj_diver.x;
+		var yway = y - obj_diver.y;
+		if (!place_meeting(x + xway,y + yway, obj_collision_parent)) {
+			move_towards_point(obj_diver.x, obj_diver.y, -3);	
+		} else {
+		speed = 0;
+		}
+	} else {
+		if (flashAlpha = 0.05) {
+	speed = 0;
+		}
 	}
 }

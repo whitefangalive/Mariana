@@ -205,22 +205,16 @@ if (keyboard_or_mouse_check_pressed(obj_settings.key_attack)) {
 				image_xscale = 1;
 
 				sprite_index = spr_divr_attacking_side;
-				if sprite_index = spr_divr_attacking_side {
 				audio_sound_gain(sfx_attacking_any,global.volume_setting, 0)
 				audio_play_sound(sfx_attacking_any, 5, false);
-				}
-
 			} else {
 			 if (input_direction = 180)
 			 {
 			 image_xscale = -1;
 
 			 sprite_index = spr_divr_attacking_side;
-	 
-			 if (sprite_index = spr_divr_attacking_side) {
 			 audio_sound_gain(sfx_attacking_any,global.volume_setting, 0)
-			audio_play_sound(sfx_attacking_any, 5, false);
-			 }
+			 audio_play_sound(sfx_attacking_any, 5, false);
 			 } else {
 				 if (input_direction = 90) {
 		

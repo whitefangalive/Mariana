@@ -114,10 +114,10 @@ if (age > 18000 && laidEggs = false) {
 
 
 	if (flashAlpha > 0) {
-		flashAlpha -= 0.05;
+		flashAlpha -= 0.02;
 	}
 
-	if (flashAlpha > 0.05) {
+	if (flashAlpha > 0.06) {
 		var xway = x - obj_diver.x;
 		var yway = y - obj_diver.y;
 		if (!place_meeting(x + xway,y + yway, obj_collision_parent)) {
