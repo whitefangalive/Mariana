@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "spr_wall_back_rough",
   "bbox_bottom": 63,
-  "bbox_left": 0,
+  "bbox_left": 60,
   "bbox_right": 62,
   "bbox_top": 0,
   "bboxMode": 0,
