@@ -218,6 +218,7 @@
     {"id":{"name":"obj_Luciferin","path":"objects/obj_Luciferin/obj_Luciferin.yy",},},
     {"id":{"name":"deepCalling1","path":"sounds/deepCalling1/deepCalling1.yy",},},
     {"id":{"name":"spr_Night_Vision_Goggles","path":"sprites/spr_Night_Vision_Goggles/spr_Night_Vision_Goggles.yy",},},
+    {"id":{"name":"spr_wall_back_rough","path":"sprites/spr_wall_back_rough/spr_wall_back_rough.yy",},},
     {"id":{"name":"spr_floating_Basic_Harpoon","path":"sprites/spr_floating_Basic_Harpoon/spr_floating_Basic_Harpoon.yy",},},
     {"id":{"name":"spr_Depthometer_Helm","path":"sprites/spr_Depthometer_Helm/spr_Depthometer_Helm.yy",},},
     {"id":{"name":"spr_fire_coral","path":"sprites/spr_fire_coral/spr_fire_coral.yy",},},

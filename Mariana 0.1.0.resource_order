@@ -132,6 +132,7 @@
     {"name":"spr_Water","order":30,"path":"sprites/spr_Water/spr_Water.yy",},
     {"name":"m_hydrogen","order":8,"path":"sounds/m_hydrogen/m_hydrogen.yy",},
     {"name":"spr_Night_Vision_Goggles","order":16,"path":"sprites/spr_Night_Vision_Goggles/spr_Night_Vision_Goggles.yy",},
+    {"name":"spr_wall_back_rough","order":33,"path":"sprites/spr_wall_back_rough/spr_wall_back_rough.yy",},
     {"name":"spr_floating_Basic_Harpoon","order":4,"path":"sprites/spr_floating_Basic_Harpoon/spr_floating_Basic_Harpoon.yy",},
     {"name":"spr_Depthometer_Helm","order":26,"path":"sprites/spr_Depthometer_Helm/spr_Depthometer_Helm.yy",},
     {"name":"spr_fire_coral","order":6,"path":"sprites/spr_fire_coral/spr_fire_coral.yy",},
