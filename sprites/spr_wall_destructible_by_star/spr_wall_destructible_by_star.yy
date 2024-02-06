@@ -49,8 +49,8 @@
   },
   "origin": 4,
   "parent": {
-    "name": "placables",
-    "path": "folders/Sprites/placables.yy",
+    "name": "blocks",
+    "path": "folders/Sprites/placables/blocks.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
