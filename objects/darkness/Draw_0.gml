@@ -7,14 +7,25 @@ if (array_length(global.equipped) >= 3) {
 		
 	}
 }
+image_xscale = 3;
+image_yscale = 3;
+if (instance_exists(obj_diver)) {
+	x = obj_diver.x;
+	y = obj_diver.y;
+}
 
+if (!surface_exists(surf)) {
+	surf = surface_create(sprite_width * 3, sprite_height * 3);
+}
+surface_set_target(surf);
+//this is the black
 switch(room) {
 	case (Room1_thorium1):
 		var level;
 		if (instance_exists(obj_diver)) {
 			level = obj_diver.y / 1000;
 
-				draw_sprite_ext(darkD, hasLight, obj_diver.x, obj_diver.y, 3, 3, 0, c_white, level);
+				draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, level);
 
 			
 
@@ -70,7 +81,19 @@ switch(room) {
 	
 	break;
 }
+gpu_set_colorwriteenable(0.1, 0.1, 0.1, 1);
+gpu_set_blendmode_ext(bm_zero,bm_inv_src_color);
+for (var i = 0; i < instance_number(obj_light_parent); i++) {
+	var thorium = instance_find(obj_light_parent, i);
+	draw_sprite_ext(thorium.sprite_index, thorium.image_index,thorium.x - x + sprite_width/2, thorium.y - y + sprite_height/2, thorium.image_xscale, thorium.image_yscale, thorium.image_angle, c_white, thorium.image_alpha);
+}
+gpu_set_blendmode(bm_normal);
+gpu_set_colorwriteenable(1, 1, 1, 1);
+//draw_sprite_ext(thorium.sprite_index, thorium.image_index,thorium.x, thorium.y, thorium.image_xscale, thorium.image_yscale, thorium.image_angle, c_white, thorium.image_alpha);
+surface_reset_target();
+draw_surface(surf, x - sprite_xoffset, y - sprite_yoffset);
 
+gpu_set_colorwriteenable(1, 1, 1, 1);
 
 var dark = false;
 with (vfx_smoke) {

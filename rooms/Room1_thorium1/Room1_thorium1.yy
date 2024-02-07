@@ -318,6 +318,7 @@
     {"name":"inst_46A610E3","path":"rooms/Room1_thorium1/Room1_thorium1.yy",},
     {"name":"inst_20A133A4","path":"rooms/Room1_thorium1/Room1_thorium1.yy",},
     {"name":"inst_18CF9E2","path":"rooms/Room1_thorium1/Room1_thorium1.yy",},
+    {"name":"inst_1DD7611A","path":"rooms/Room1_thorium1/Room1_thorium1.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -340,6 +341,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_34896FC9","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_thorium_crystal","path":"objects/obj_thorium_crystal/obj_thorium_crystal.yy",},"properties":[],"rotation":-15.00185,"scaleX":1.0,"scaleY":1.0,"x":1087.0,"y":3666.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3FE6B71D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_thorium_crystal","path":"objects/obj_thorium_crystal/obj_thorium_crystal.yy",},"properties":[],"rotation":0.0,"scaleX":1.5,"scaleY":1.5,"x":1203.0,"y":3752.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2185FD99","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_thorium_crystal","path":"objects/obj_thorium_crystal/obj_thorium_crystal.yy",},"properties":[],"rotation":9.943327,"scaleX":1.0,"scaleY":1.0,"x":1196.0,"y":3760.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_1DD7611A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_thorium_crystal","path":"objects/obj_thorium_crystal/obj_thorium_crystal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1578.0,"y":1169.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"wall_over_current","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"in_front_of_player","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
