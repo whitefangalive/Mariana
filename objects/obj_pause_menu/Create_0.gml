@@ -1,4 +1,4 @@
-width = 220;
+ width = 220;
 height = 88;
 
 
