@@ -72,6 +72,7 @@
   "resources": [
     {"id":{"name":"obj_parent_test2","path":"objects/obj_parent_test2/obj_parent_test2.yy",},},
     {"id":{"name":"obj_Thorium","path":"objects/obj_Thorium/obj_Thorium.yy",},},
+    {"id":{"name":"spr_house1","path":"sprites/spr_house1/spr_house1.yy",},},
     {"id":{"name":"obj_weapon_parent","path":"objects/obj_weapon_parent/obj_weapon_parent.yy",},},
     {"id":{"name":"sfx_move_selected","path":"sounds/sfx_move_selected/sfx_move_selected.yy",},},
     {"id":{"name":"particleScript","path":"scripts/particleScript/particleScript.yy",},},
@@ -126,6 +127,7 @@
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"m_are_there_any_crabs_in_here","path":"sounds/m_are_there_any_crabs_in_here/m_are_there_any_crabs_in_here.yy",},},
     {"id":{"name":"spr_color_coral","path":"sprites/spr_color_coral/spr_color_coral.yy",},},
+    {"id":{"name":"obj_siphiobia_segment","path":"objects/obj_siphiobia_segment/obj_siphiobia_segment.yy",},},
     {"id":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},},
     {"id":{"name":"path_jump","path":"paths/path_jump/path_jump.yy",},},
     {"id":{"name":"obj_creature_accesory","path":"objects/obj_creature_accesory/obj_creature_accesory.yy",},},

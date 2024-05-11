@@ -39,7 +39,7 @@ switch(room) {
 		var level;
 		if (instance_exists(obj_diver)) {
 			level = obj_diver.y / 8000;
-			draw_sprite_ext(darkD, hasLight, obj_diver.x, obj_diver.y, 3, 3, 0, c_white, clamp(level, 0, 0.45));
+			draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 0.45));
 		} else {
 			level = 1;
 			draw_sprite_ext(darkD, 0, x, y, 500, 500, 0, c_white, clamp(level, 0, 0.5));
@@ -49,7 +49,7 @@ switch(room) {
 		var level;
 		if (instance_exists(obj_diver)) {
 			level = obj_diver.y / 8000;
-			draw_sprite_ext(darkD, hasLight, obj_diver.x, obj_diver.y, 3, 3, 0, c_white, clamp(level, 0, 0.45));
+			draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 0.45));
 		} else {
 			level = 1;
 			draw_sprite_ext(darkD, 0, x, y, 500, 500, 0, c_white, clamp(level, 0, 0.5));
@@ -60,7 +60,7 @@ switch(room) {
 		if (instance_exists(obj_diver)) {
 			level = obj_diver.y / 8000;
 
-			draw_sprite_ext(darkD, hasLight, obj_diver.x, obj_diver.y, 3, 3, 0, c_white, clamp(level, 0, 10));
+			draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 10));
 
 		} else {
 			level = 1;
@@ -71,7 +71,7 @@ switch(room) {
 		var level;
 		if (instance_exists(obj_diver)) {
 			level = 1;
-			draw_sprite_ext(darkD, hasLight, obj_diver.x, obj_diver.y, 3, 3, 0, c_white, clamp(level, 0, 10));
+			draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 10));
 		} else {
 			level = 1;
 			draw_sprite_ext(darkD, 0, x, y, 500, 500, 0, c_white, clamp(level, 0, 0.5));
@@ -89,7 +89,7 @@ for (var i = 0; i < instance_number(obj_light_parent); i++) {
 }
 gpu_set_blendmode(bm_normal);
 gpu_set_colorwriteenable(1, 1, 1, 1);
-//draw_sprite_ext(thorium.sprite_index, thorium.image_index,thorium.x, thorium.y, thorium.image_xscale, thorium.image_yscale, thorium.image_angle, c_white, thorium.image_alpha);
+
 surface_reset_target();
 draw_surface(surf, x - sprite_xoffset, y - sprite_yoffset);
 

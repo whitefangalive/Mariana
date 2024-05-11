@@ -22,6 +22,7 @@
   ],
   "ResourceOrderSettings": [
     {"name":"obj_parent_test2","order":16,"path":"objects/obj_parent_test2/obj_parent_test2.yy",},
+    {"name":"spr_house1","order":36,"path":"sprites/spr_house1/spr_house1.yy",},
     {"name":"sfx_move_selected","order":5,"path":"sounds/sfx_move_selected/sfx_move_selected.yy",},
     {"name":"sfx_zap","order":9,"path":"sounds/sfx_zap/sfx_zap.yy",},
     {"name":"obj_pause_menu","order":9,"path":"objects/obj_pause_menu/obj_pause_menu.yy",},
@@ -60,6 +61,7 @@
     {"name":"obj_button","order":3,"path":"objects/obj_button/obj_button.yy",},
     {"name":"m_are_there_any_crabs_in_here","order":11,"path":"sounds/m_are_there_any_crabs_in_here/m_are_there_any_crabs_in_here.yy",},
     {"name":"spr_color_coral","order":11,"path":"sprites/spr_color_coral/spr_color_coral.yy",},
+    {"name":"obj_siphiobia_segment","order":15,"path":"objects/obj_siphiobia_segment/obj_siphiobia_segment.yy",},
     {"name":"obj_text","order":2,"path":"objects/obj_text/obj_text.yy",},
     {"name":"path_jump","order":1,"path":"paths/path_jump/path_jump.yy",},
     {"name":"obj_creature_accesory","order":13,"path":"objects/obj_creature_accesory/obj_creature_accesory.yy",},

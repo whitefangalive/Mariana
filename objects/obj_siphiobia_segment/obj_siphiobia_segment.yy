@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_siphiobia",
+  "name": "obj_siphiobia_segment",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
@@ -26,13 +26,11 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"color","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"$FF4C99FF","varType":7,},
-  ],
+  "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_head",
-    "path": "sprites/spr_head/spr_head.yy",
+    "name": "spr_stem",
+    "path": "sprites/spr_stem/spr_stem.yy",
   },
   "spriteMaskId": null,
   "visible": true,
