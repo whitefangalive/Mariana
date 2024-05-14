@@ -301,6 +301,7 @@
     {"id":{"name":"path_default","path":"paths/path_default/path_default.yy",},},
     {"id":{"name":"vfx_helm_burst","path":"objects/vfx_helm_burst/vfx_helm_burst.yy",},},
     {"id":{"name":"obj_thorium_crystal","path":"objects/obj_thorium_crystal/obj_thorium_crystal.yy",},},
+    {"id":{"name":"obj_Zooid","path":"objects/obj_Zooid/obj_Zooid.yy",},},
     {"id":{"name":"spr_breathe","path":"sprites/spr_breathe/spr_breathe.yy",},},
     {"id":{"name":"spr_sub_shop_int","path":"sprites/spr_sub_shop_int/spr_sub_shop_int.yy",},},
     {"id":{"name":"spr_crabioli","path":"sprites/spr_crabioli/spr_crabioli.yy",},},

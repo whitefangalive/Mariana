@@ -13,5 +13,7 @@
 		var goaly = upperTent.y + (length * dcos(upperTent.image_angle + 90));
 		x = goalx;
 		y = goaly;
+	} else {
+	
 	}
 

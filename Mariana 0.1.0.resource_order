@@ -193,6 +193,7 @@
     {"name":"spr_Healthometer","order":25,"path":"sprites/spr_Healthometer/spr_Healthometer.yy",},
     {"name":"spr_yerino_die","order":11,"path":"sprites/spr_yerino_die/spr_yerino_die.yy",},
     {"name":"vfx_helm_burst","order":7,"path":"objects/vfx_helm_burst/vfx_helm_burst.yy",},
+    {"name":"obj_Zooid","order":16,"path":"objects/obj_Zooid/obj_Zooid.yy",},
     {"name":"spr_breathe","order":2,"path":"sprites/spr_breathe/spr_breathe.yy",},
     {"name":"spr_sub_shop_int","order":4,"path":"sprites/spr_sub_shop_int/spr_sub_shop_int.yy",},
     {"name":"spr_crabioli","order":20,"path":"sprites/spr_crabioli/spr_crabioli.yy",},
