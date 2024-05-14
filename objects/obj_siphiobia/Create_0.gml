@@ -1,14 +1,15 @@
 stemBody = [];
-length = sprite_width - 3;
+
 flashAlpha = 0;
 flashColor = c_white;
 randX = irandom_range(-50,50);
 randY = irandom_range(-50,50);
 
-scale = 1;
+
+scale = 1.5;
 image_xscale = scale;
 image_yscale = scale;
-
+length = sprite_width - (3 * scale);
 maxHP = 8;
 HP = maxHP;
 

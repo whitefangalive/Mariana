@@ -1,4 +1,5 @@
 if (distance_to_object(obj_diver) < 800) {
+	age++;
 	EEx = obj_diver.x;
 	EEy = obj_diver.y;
 		var pd = point_direction(x, y, EEx, EEy);
@@ -25,6 +26,7 @@ if (distance_to_object(obj_diver) < 800) {
 				var goaly = upperTent.y + (length * dcos(upperTent.image_angle + 90));
 				x = goalx;
 				y = goaly;
+				
 			}
 		}
 
