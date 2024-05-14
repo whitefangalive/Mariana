@@ -20,14 +20,18 @@ layingEggsAge = 0;
 switchDirTime = 200;
 maxAge = 70100 + irandom_range(0, 2050);
 
-default_swim_speed = 0.5;
+default_swim_speed = 4;
 swim_speed = default_swim_speed;
+rotation_speed = 1;
 
 randomTimer = 0;
 maxRandomTimer = 50;
 
-numberOfSegments = 10;
-for  (var i = 0; i < irandom_range(10, 13); i++) {
+EEx = obj_diver.x;
+EEy = obj_diver.y;
+
+numberOfSegments = irandom_range(50, 150);
+for  (var i = 0; i < numberOfSegments; i++) {
 	array_push(stemBody, instance_create_layer(x, y, "behind_diver", obj_siphiobia_segment));
 	stemBody[i].squidId = id;
 	stemBody[0].x = x + (length);

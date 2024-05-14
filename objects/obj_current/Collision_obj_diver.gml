@@ -16,19 +16,11 @@ with (obj_diver) {
 	}
 }
 
-if (obj_diver.y - y > 5) {
-	with (obj_diver) {
-		if (keyboard_check(key_s) && swim_speed != 10) {
-			//y = y - (yChange + (obj_diver.vsp + 0.1));
-			//x = x - (xChange + (obj_diver.hsp + 0.1));
-		}
-	}
-}
-
 if (underneathLine()) {
-	if (instance_exists(obj_diver)) {
-		obj_diver.y = obj_diver.y - (yChange + (obj_diver.vsp + 0.1));
-		obj_diver.x = obj_diver.x - (xChange + (obj_diver.hsp + 0.1));
+	if (instance_exists(obj_diver) && obj_diver.swim_speed != 10) {
+		obj_diver.y = obj_diver.y - ((obj_diver.vsp + 0.1));
+		obj_diver.x = obj_diver.x - ((obj_diver.hsp + 0.1));
+		show_debug_message("underline");
 	}
 }
 
