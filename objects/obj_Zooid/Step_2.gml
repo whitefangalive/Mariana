@@ -1,16 +1,18 @@
+if (squidId != -1) {
+	x = squidId.x;
+	y = squidId.y;
+}
+
 if (distance_to_object(obj_diver) < 800 || x == 0) {
-	image_xscale = squidId.image_xscale * scaledValue;
-	image_yscale = squidId.image_yscale * scaledValue;
+	if (squidId != -1) {
+		image_xscale = squidId.image_xscale * scaledValue;
+		image_yscale = squidId.image_yscale * scaledValue;
+	}
+	
 
 
 	if (distance_to_object(obj_diver) < 500) {
-		if (image_angle >= 361) {
-			image_angle = 1;
-		}
-
-		if (image_angle <= -1) {
-			image_angle = 359;
-		}
+		image_angle = (image_angle + 360) % 360;
 		
 		//rotate if player interacts
 		if (place_meeting(x, y, obj_diver)) {
@@ -34,10 +36,14 @@ if (distance_to_object(obj_diver) < 800 || x == 0) {
 			var speed_x = x - xprevious;
 			var speed_y = y - yprevious;
 
-			var spe = sqrt(sqr(speed_x) + sqr(speed_y));
+			var spe = sqrt(sqr(speed_x) + sqr(speed_y)) * -speed_x;
 			
-			if (image_angle != spe) {
-				if (image_angle >= 180) {
+			if (image_angle != ceil(spe * 4)) {
+				var angleToFlip = ceil(((ceil(spe * 4) % 360) + 180) % 360);
+				if (angleToFlip < 0) {
+					angleToFlip += 360;
+				}
+				if ((((image_angle) - angleToFlip) + 360) % 360 <= 180) {
 					image_angle += 0.5;
 				} else {
 					image_angle -= 0.5;

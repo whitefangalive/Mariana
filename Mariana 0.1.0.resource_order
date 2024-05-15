@@ -43,6 +43,7 @@
     {"name":"spr_rot2","order":28,"path":"sprites/spr_rot2/spr_rot2.yy",},
     {"name":"deepCalling2","order":1,"path":"sounds/deepCalling2/deepCalling2.yy",},
     {"name":"obj_flora_crab_arm","order":7,"path":"objects/obj_flora_crab_arm/obj_flora_crab_arm.yy",},
+    {"name":"spr_stem_end","order":3,"path":"sprites/spr_stem_end/spr_stem_end.yy",},
     {"name":"spr_swimming_Crab_Claw","order":16,"path":"sprites/spr_swimming_Crab_Claw/spr_swimming_Crab_Claw.yy",},
     {"name":"sfx_attacking_down","order":4,"path":"sounds/sfx_attacking_down/sfx_attacking_down.yy",},
     {"name":"spr_Scrap","order":22,"path":"sprites/spr_Scrap/spr_Scrap.yy",},

@@ -104,6 +104,7 @@
     {"id":{"name":"deepCalling2","path":"sounds/deepCalling2/deepCalling2.yy",},},
     {"id":{"name":"obj_Ring","path":"objects/obj_Ring/obj_Ring.yy",},},
     {"id":{"name":"obj_flora_crab_arm","path":"objects/obj_flora_crab_arm/obj_flora_crab_arm.yy",},},
+    {"id":{"name":"spr_stem_end","path":"sprites/spr_stem_end/spr_stem_end.yy",},},
     {"id":{"name":"spr_swimming_Crab_Claw","path":"sprites/spr_swimming_Crab_Claw/spr_swimming_Crab_Claw.yy",},},
     {"id":{"name":"sfx_attacking_down","path":"sounds/sfx_attacking_down/sfx_attacking_down.yy",},},
     {"id":{"name":"spr_Scrap","path":"sprites/spr_Scrap/spr_Scrap.yy",},},
