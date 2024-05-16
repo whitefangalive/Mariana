@@ -1,10 +1,12 @@
 var hasLight = 0;
+var color = 0;
 if (array_length(global.equipped) >= 3) {
 	if (global.equipped[2] == "Luciferin") {
 		hasLight = 1;
+		color = 0;
 	} else if (global.equipped[2] == "Night Vision Goggles") {
 		hasLight = 2;
-		
+		color = 1;
 	}
 }
 image_xscale = 3;
@@ -12,6 +14,10 @@ image_yscale = 3;
 if (instance_exists(obj_diver)) {
 	x = obj_diver.x;
 	y = obj_diver.y;
+}
+if (instance_exists(obj_diver)) {
+	playerX = obj_diver.x;
+	playerY = obj_diver.y;
 }
 
 if (!surface_exists(surf)) {
@@ -21,61 +27,33 @@ surface_set_target(surf);
 //this is the black
 switch(room) {
 	case (Room1_thorium1):
-		var level;
-		if (instance_exists(obj_diver)) {
-			level = obj_diver.y / 1000;
+		var level = playerY / 1000;
+		draw_sprite_ext(darkG, color, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, level);		
+		draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, level);
 
-				draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, level);
-
-			
-
-			draw_sprite_ext(spr_static, image_index, obj_diver.x, obj_diver.y, 3, 3, 0, c_white, level / 10);
-		} else {
-			level = 1;
-			draw_sprite_ext(darkD, 0, x, y, 500, 500, 0, c_white, level);
-		}
+		draw_sprite_ext(spr_static, image_index, playerX, playerY, 3, 3, 0, c_white, level / 10);
 	break;
 	case (Room1_side1):
-		var level;
-		if (instance_exists(obj_diver)) {
-			level = obj_diver.y / 8000;
-			draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 0.45));
-		} else {
-			level = 1;
-			draw_sprite_ext(darkD, 0, x, y, 500, 500, 0, c_white, clamp(level, 0, 0.5));
-		}
+		var level = playerY / 8000;
+		draw_sprite_ext(darkG, color, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 0.45));		
+		draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 0.45));
 	break;
 	case (Room1_side2):
-		var level;
-		if (instance_exists(obj_diver)) {
-			level = obj_diver.y / 8000;
-			draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 0.45));
-		} else {
-			level = 1;
-			draw_sprite_ext(darkD, 0, x, y, 500, 500, 0, c_white, clamp(level, 0, 0.5));
-		}
+		var level = playerY / 8000;
+		draw_sprite_ext(darkG, color, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 0.45));		
+		draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 0.45));
 	break;
 	case (Room2):
-		var level;
-		if (instance_exists(obj_diver)) {
-			level = obj_diver.y / 8000;
 
-			draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 10));
+		var level = playerY / 8000;
+		draw_sprite_ext(darkG, color, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 10));	
+		draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 10));
 
-		} else {
-			level = 1;
-			draw_sprite_ext(darkD, 0, x, y, 500, 500, 0, c_white, clamp(level, 0, 1));
-		}
 	break;
 	case (Room3):
-		var level;
-		if (instance_exists(obj_diver)) {
-			level = 1;
-			draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 10));
-		} else {
-			level = 1;
-			draw_sprite_ext(darkD, 0, x, y, 500, 500, 0, c_white, clamp(level, 0, 0.5));
-		}
+		var level = 1;
+		draw_sprite_ext(darkG, color, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 10));
+		draw_sprite_ext(darkD, hasLight, sprite_xoffset, sprite_yoffset, 2.5, 2.5, 0, c_white, clamp(level, 0, 10));
 	break;
 	default:
 	

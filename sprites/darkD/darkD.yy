@@ -15,7 +15,7 @@
   "frames": [
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e5e73b9c-da50-4f12-99ee-5da1645af061",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2ffc664f-05ed-4260-b415-936c766b793b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"188c3548-681e-4c50-b4c6-35d7519e68d1",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"013a228a-5ac1-4c73-aec5-b70e403546f8",},
   ],
   "gridX": 0,
   "gridY": 0,
@@ -58,7 +58,7 @@
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e5e73b9c-da50-4f12-99ee-5da1645af061","path":"sprites/darkD/darkD.yy",},},},"Disabled":false,"id":"228d4e23-7c71-4601-a9a0-11a9ac6dc1ed","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
             {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2ffc664f-05ed-4260-b415-936c766b793b","path":"sprites/darkD/darkD.yy",},},},"Disabled":false,"id":"a682ceb5-00dd-46be-89a8-f34ea6269de9","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"188c3548-681e-4c50-b4c6-35d7519e68d1","path":"sprites/darkD/darkD.yy",},},},"Disabled":false,"id":"1e3b6892-5d20-4347-9ee0-8bf8d0cad03c","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"013a228a-5ac1-4c73-aec5-b70e403546f8","path":"sprites/darkD/darkD.yy",},},},"Disabled":false,"id":"56abfae6-1cfc-4739-b53d-a9851599e488","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

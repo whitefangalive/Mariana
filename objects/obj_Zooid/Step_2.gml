@@ -3,7 +3,7 @@ if (squidId != -1) {
 	y = squidId.y;
 }
 
-if (distance_to_object(obj_diver) < 800 || x == 0) {
+if (obj_diver.y < 11300 || x == 0) {
 	if (squidId != -1) {
 		image_xscale = squidId.image_xscale * scaledValue;
 		image_yscale = squidId.image_yscale * scaledValue;

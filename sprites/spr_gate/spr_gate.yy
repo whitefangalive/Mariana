@@ -25,7 +25,7 @@
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"5b4f29e3-d8ab-4571-ab02-383e58b467c6","blendMode":0,"displayName":"Layer 1","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
-  "origin": 4,
+  "origin": 3,
   "parent": {
     "name": "placables",
     "path": "folders/Sprites/placables.yy",
@@ -61,7 +61,7 @@
     ],
     "visibleRange": null,
     "volume": 1.0,
-    "xorigin": 628,
+    "xorigin": 0,
     "yorigin": 16,
   },
   "swatchColours": null,

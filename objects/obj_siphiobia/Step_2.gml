@@ -1,4 +1,4 @@
-if (distance_to_object(obj_diver) < 800) {
+if (obj_diver.y < 11300) {
 	age++;
 	EEx = obj_diver.x;
 	EEy = obj_diver.y;

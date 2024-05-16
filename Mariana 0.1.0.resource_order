@@ -310,5 +310,6 @@
     {"name":"obj_diver_left_arm","order":3,"path":"objects/obj_diver_left_arm/obj_diver_left_arm.yy",},
     {"name":"sfx_muro4","order":3,"path":"sounds/sfx_muro4/sfx_muro4.yy",},
     {"name":"obj_dawning_jelly","order":3,"path":"objects/obj_dawning_jelly/obj_dawning_jelly.yy",},
+    {"name":"darkG","order":3,"path":"sprites/darkG/darkG.yy",},
   ],
 }

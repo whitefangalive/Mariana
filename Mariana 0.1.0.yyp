@@ -474,6 +474,7 @@
     {"id":{"name":"sfx_muro4","path":"sounds/sfx_muro4/sfx_muro4.yy",},},
     {"id":{"name":"spr_shark","path":"sprites/spr_shark/spr_shark.yy",},},
     {"id":{"name":"obj_dawning_jelly","path":"objects/obj_dawning_jelly/obj_dawning_jelly.yy",},},
+    {"id":{"name":"darkG","path":"sprites/darkG/darkG.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
