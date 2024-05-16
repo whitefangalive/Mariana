@@ -3,7 +3,7 @@ if distance_to_object(obj_diver) < range {
 	age++;
 	image_xscale = clamp(scale, 0.6, 2);
 	image_yscale = clamp(scale, 0.6, 2);
-	scale = age / 4000;
+	scale = age / 2000;
 
 	if (age > maxAge && age % 500 == 0) {
 		HP = HP - 1;
@@ -34,14 +34,14 @@ if distance_to_object(obj_diver) < range {
 					
 					if (abs(x - diverx) > swim_speed && abs(y - divery) > swim_speed) {
 						if (bTimer < 1) {
-							move_towards_point(diverx, divery, swim_speed+2);
-							if (instance_number(obj_poison) < 50 && age % 10 == 0) {
+							move_towards_point(diverx, divery, swim_speed+1);
+							if (instance_number(obj_poison) < 50 && age % 20 == 0) {
 								instance_create_layer(x, y, "player_layer", obj_poison);
 							}
 							charge_attack = 1;
 						}
 				} else {
-				bTimer = 40;
+				bTimer = 140;
 				getPosOnce = false;
 				randX = irandom_range(-50,50);
 				randY = irandom_range(-50,50);

@@ -3,7 +3,7 @@ if (squidId != -1) {
 	y = squidId.y;
 }
 
-if (instance_exists(obj_diver) && obj_diver.y < 11300 || x == 0) {
+if (instance_exists(obj_diver) && obj_diver.y > 11300 || x == 0) {
 	if (squidId != -1) {
 		image_xscale = squidId.image_xscale * scaledValue;
 		image_yscale = squidId.image_yscale * scaledValue;
