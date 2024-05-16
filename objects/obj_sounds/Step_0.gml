@@ -9,6 +9,7 @@ stopDeadMusic(m_shifting_tide);
 stopDeadMusic(m_watery_grave);
 stopDeadMusic(m_hull_sale);
 stopDeadMusic(m_are_there_any_crabs_in_here);
+stopDeadMusic(m_The_5th_Wall);
 
 //play music
 if (musicTimer = 0) {
@@ -100,6 +101,20 @@ if (musicTimer = 0) {
 			}
 		}
 	break;
+	case Room2_City1:
+	//Standard
+	// fade music would be playing then stop dead music
+	//set volume to zero
+	//set to volume setting with fade then if the song isn't already playing play it
+		audio_sound_gain(m_aquifer, 0, 600);
+		var switchto = m_The_5th_Wall;
+		if (audio_is_playing(switchto) != true) {
+			audio_sound_gain(switchto, 0, 0);
+			audio_sound_gain(switchto, global.volume_setting, 2000);
+			audio_play_sound(switchto, 1000, true);
+		}
+	break;
+	
 	
 
 	}

@@ -56,17 +56,17 @@ if (instance_exists(obj_diver)) {
 				}
 			}
 		}
-	}
-} else {
-	if (age > 300) {
-		age = 140;
-	}
-	if (age % switchDirTime == 0) {
-		direction = irandom_range(0, 360);
-		speed = 1;
-		switchDirTime = irandom_range(150, 250);
-	} else if (age % (switchDirTime + 100) == 0) {
-		speed = 0;
+	} else {
+		if (age > 300) {
+			age = 140;
+		}
+		if (age % switchDirTime == 0) {
+			direction = irandom_range(0, 360);
+			speed = 1;
+			switchDirTime = irandom_range(150, 250);
+		} else if (age % (switchDirTime + 100) == 0) {
+			speed = 0;
+		}
 	}
 }
 

@@ -193,6 +193,7 @@
     {"name":"obj_destructible_parent","order":14,"path":"objects/obj_destructible_parent/obj_destructible_parent.yy",},
     {"name":"spr_Healthometer","order":25,"path":"sprites/spr_Healthometer/spr_Healthometer.yy",},
     {"name":"spr_yerino_die","order":11,"path":"sprites/spr_yerino_die/spr_yerino_die.yy",},
+    {"name":"m_The_5th_Wall","order":13,"path":"sounds/m_The_5th_Wall/m_The_5th_Wall.yy",},
     {"name":"vfx_helm_burst","order":7,"path":"objects/vfx_helm_burst/vfx_helm_burst.yy",},
     {"name":"obj_Zooid","order":16,"path":"objects/obj_Zooid/obj_Zooid.yy",},
     {"name":"spr_breathe","order":2,"path":"sprites/spr_breathe/spr_breathe.yy",},

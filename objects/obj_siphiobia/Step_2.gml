@@ -1,4 +1,4 @@
-if (obj_diver.y < 11300) {
+if (instance_exists(obj_diver) && obj_diver.y < 11300) {
 	age++;
 	EEx = obj_diver.x;
 	EEy = obj_diver.y;

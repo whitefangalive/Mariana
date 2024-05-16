@@ -300,6 +300,7 @@
     {"id":{"name":"spr_yerino_die","path":"sprites/spr_yerino_die/spr_yerino_die.yy",},},
     {"id":{"name":"path_yerino","path":"paths/path_yerino/path_yerino.yy",},},
     {"id":{"name":"path_default","path":"paths/path_default/path_default.yy",},},
+    {"id":{"name":"m_The_5th_Wall","path":"sounds/m_The_5th_Wall/m_The_5th_Wall.yy",},},
     {"id":{"name":"vfx_helm_burst","path":"objects/vfx_helm_burst/vfx_helm_burst.yy",},},
     {"id":{"name":"obj_thorium_crystal","path":"objects/obj_thorium_crystal/obj_thorium_crystal.yy",},},
     {"id":{"name":"obj_Zooid","path":"objects/obj_Zooid/obj_Zooid.yy",},},

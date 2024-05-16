@@ -1175,6 +1175,7 @@
     {"name":"inst_415457E3","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_6A2FEF82","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_2A676E8E","path":"rooms/Room2/Room2.yy",},
+    {"name":"inst_23BDACAB","path":"rooms/Room2/Room2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -2361,6 +2362,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_415457E3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_venus_ray","path":"objects/obj_venus_ray/obj_venus_ray.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4640.0,"y":10272.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6A2FEF82","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_thorium_crystal","path":"objects/obj_thorium_crystal/obj_thorium_crystal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":4288.0,"y":11136.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_2A676E8E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_thorium_crystal","path":"objects/obj_thorium_crystal/obj_thorium_crystal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3904.0,"y":11040.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_23BDACAB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_cat_fish","path":"objects/obj_cat_fish/obj_cat_fish.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":7968.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_118D5E3D","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":2.0,"spriteId":{"name":"spr_wall_back","path":"sprites/spr_wall_back/spr_wall_back.yy",},"x":5472.0,"y":10240.0,},

@@ -24,22 +24,6 @@ if (locked == false) {
 if pos >= op_length {pos = 0};
 if pos < 0 {pos = op_length -1};
 
-if (locked == true && keyboard_check_pressed(vk_anykey)) {
-	currentControls[pos] = keyboard_lastkey;
-	locked = false;
-	option[2, pos] = controlsArray[pos] + ": " + global._fhinputKeys[currentControls[pos]];
-	
-	obj_settings.key_up = currentControls[0];
-	obj_settings.key_left = currentControls[1];
-	obj_settings.key_down = currentControls[2];
-	obj_settings.key_right = currentControls[3];
-	obj_settings.key_select = currentControls[4];
-	obj_settings.key_attack = currentControls[5];
-	obj_settings.key_map = currentControls[6];
-	obj_settings.key_dash = currentControls[7];
-	obj_settings.key_escape = currentControls[8];
-	obj_settings.key_inventory = currentControls[9];
-}
 
 //using menu
 if key_accept && locked == false {
@@ -190,6 +174,29 @@ audio_play_sound(sfx_select, 2, false);
 	//correct option length
 	op_length = array_length(option[menu_level]);
 
+}
+
+
+if (locked == true && (keyboard_check_pressed(vk_anykey) || mouse_check_button(mb_any))) {
+	if (mouse_check_button(mouse_lastbutton)) {
+		currentControls[pos] = mouse_lastbutton;
+	} else if (keyboard_check(keyboard_lastkey)) {
+		currentControls[pos] = keyboard_lastkey;
+	}
+	
+	locked = false;
+	option[2, pos] = controlsArray[pos] + ": " + global._fhinputKeys[currentControls[pos]];
+	
+	obj_settings.key_up = currentControls[0];
+	obj_settings.key_left = currentControls[1];
+	obj_settings.key_down = currentControls[2];
+	obj_settings.key_right = currentControls[3];
+	obj_settings.key_select = currentControls[4];
+	obj_settings.key_attack = currentControls[5];
+	obj_settings.key_map = currentControls[6];
+	obj_settings.key_dash = currentControls[7];
+	obj_settings.key_escape = currentControls[8];
+	obj_settings.key_inventory = currentControls[9];
 }
 
 // sound
