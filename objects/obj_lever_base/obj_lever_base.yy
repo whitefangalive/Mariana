@@ -1,20 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Zooid",
+  "name": "obj_lever_base",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"obj_weapon_parent","path":"objects/obj_weapon_parent/obj_weapon_parent.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "hostile",
-    "path": "folders/Objects/fish/hostile.yy",
+    "name": "placables",
+    "path": "folders/Objects/placables.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_collision_parent",
+    "path": "objects/obj_collision_parent/obj_collision_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_zooid",
-    "path": "sprites/spr_zooid/spr_zooid.yy",
+    "name": "spr_lever_base",
+    "path": "sprites/spr_lever_base/spr_lever_base.yy",
   },
   "spriteMaskId": null,
   "visible": true,

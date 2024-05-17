@@ -1,3 +1,4 @@
 if (opening) {
-	x = lerp(x, sprite_width, 1);
+	frame += curveSpeed;
+	x = followAnimationCurve(a_easeIntoLinear,startingX , sprite_width-500);
 }

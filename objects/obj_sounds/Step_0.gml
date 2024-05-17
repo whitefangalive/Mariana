@@ -28,6 +28,7 @@ if (musicTimer = 0) {
 		}
 		break;
 	case Room2:
+		audio_sound_gain(m_The_5th_Wall, 0, 600);
 		if (!audio_is_playing(m_aquifer)) {
 			audio_sound_gain(m_aquifer, 0, 0);
 			audio_sound_gain(m_aquifer, global.volume_setting, 4000);

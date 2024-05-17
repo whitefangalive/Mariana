@@ -1,3 +1,8 @@
+flashAlpha = 0;
+flashColor = c_white;
+
+damage = 1;
+
 squidId = -1;
 numberOfTentacles = -1;
 myNumber = -1;

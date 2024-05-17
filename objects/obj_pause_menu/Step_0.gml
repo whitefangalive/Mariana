@@ -177,13 +177,9 @@ audio_play_sound(sfx_select, 2, false);
 }
 
 
-if (locked == true && (keyboard_check_pressed(vk_anykey) || mouse_check_button(mb_any))) {
-	if (mouse_check_button(mouse_lastbutton)) {
-		currentControls[pos] = mouse_lastbutton;
-	} else if (keyboard_check(keyboard_lastkey)) {
-		currentControls[pos] = keyboard_lastkey;
-	}
-	
+if (locked == true && (keyboard_check_pressed(vk_anykey))) {
+
+	currentControls[pos] = keyboard_lastkey;
 	locked = false;
 	option[2, pos] = controlsArray[pos] + ": " + global._fhinputKeys[currentControls[pos]];
 	
