@@ -17,4 +17,4 @@ buttons = [];
 
 useableItems = ["Air Tank", "Soggy Sandwich", "Wet Burrito"];
 equippableItems = ["Depthometer", "Healthometer", "Basic Harpoon", "Steel Harpoon", "Crab Claw",
-"Ancient Map", "Luciferin", "Ring", "Water Copter", "Booster", "Mermaid Repellant", "Pirate Hat"];
+"Ancient Map", "Luciferin", "Ring", "Water Copter", "Booster", "Mermaid Repellant", "Pirate Hat", "Booster Mod"];

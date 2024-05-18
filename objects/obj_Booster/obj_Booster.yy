@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Booster_Core",
-    "path": "sprites/spr_Booster_Core/spr_Booster_Core.yy",
+    "name": "spr_Booster",
+    "path": "sprites/spr_Booster/spr_Booster.yy",
   },
   "spriteMaskId": null,
   "visible": true,

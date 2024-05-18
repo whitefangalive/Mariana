@@ -6,11 +6,11 @@ if ((distance_to_object(obj_diver) < 20) && global.inventoried == false && globa
 }
 
 if opened == true {
-	image_angle = followAnimationCurve(a_log, startingAngle , -70);
+	image_angle = followAnimationCurve(a_log, startingAngle, endingAngle - startingAngle);
 	frame += curveSpeed;
 	obj_warning_gate.opening = true;
 } else {
-	image_angle = followAnimationCurve(a_log, -35, 70);
+	image_angle = followAnimationCurve(a_log, endingAngle, startingAngle - endingAngle);
 	frame += curveSpeed;
 }
 

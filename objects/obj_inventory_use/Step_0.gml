@@ -89,6 +89,15 @@ audio_play_sound(sfx_select, 2, false);
 								array_set(global.equipped, 1, "Booster");
 								array_delete(global.inventory, obj_inventory.pos, 1);
 							break;
+							case "Booster Mod":
+								var equippmentSlot = 8;
+								instance_destroy();
+								if (global.equipped[equippmentSlot] != 0.0) {
+										dropItem(convertTo("obj", string(global.equipped[equippmentSlot])));
+								}
+								array_set(global.equipped, equippmentSlot, "Booster Mod");
+								array_delete(global.inventory, obj_inventory.pos, 1);
+							break;
 							case "Luciferin":
 								instance_destroy();
 								if (global.equipped[2] != 0.0) {

@@ -78,6 +78,12 @@ switch (item) {
 					case "Night Vision Goggles":
 						return ["Pearl", "Ice"];
 					break;
+					case "Fish Food":
+						return ["Scales", "Water", "Water"];
+					break;
+					case "Wet Burrito":
+						return ["Oris Tentacle", "Ice"];
+					break;
 					default:
 						return ["Ice"];
 					break;

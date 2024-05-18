@@ -16,7 +16,6 @@ if (musicTimer = 0) {
 	switch (room) {
 	case Room1:
 	audio_sound_gain(m_thorium, 0, 1000);
-	
 	audio_sound_gain(m_shifting_tide, 0, 1000);
 	
 		if (!audio_is_playing(m_surface_tension)) {
@@ -28,6 +27,7 @@ if (musicTimer = 0) {
 		}
 		break;
 	case Room2:
+		audio_sound_gain(m_surface_tension, 0, 600);
 		audio_sound_gain(m_The_5th_Wall, 0, 600);
 		if (!audio_is_playing(m_aquifer)) {
 			audio_sound_gain(m_aquifer, 0, 0);

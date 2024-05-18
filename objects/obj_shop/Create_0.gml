@@ -30,13 +30,14 @@ switch (room) {
 		option[0, 1] = "Air Tank";
 		option[0, 2] = "Soggy Sandwich";
 		option[0, 3] = "Ancient Map";
-		option[0, 4] = "Water Copter";
+		option[0, 4] = "Fish Food";
 		option[0, 5] = "Pearl";
-		option[0, 6] = "Mermaid Repellant";
+		option[0, 6] = "Wet Burrito";
 		option[0, 7] = "Pocket Fish";
 		option[0, 8] = "Ring";
 		option[0, 9] = "Broken Compass";
 		option[0, 10] = "Lucky Seashell";
+		option[0, 11] = "Booster Mod";
 	break;
 }
 

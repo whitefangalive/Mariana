@@ -2,6 +2,8 @@ if (y != yprevious) {
 	global.oceanDepth += sign(y - yprevious);
 }
 
+
+//create limbs
 if (!instance_exists(obj_diver_body)) {
 	instance_create_layer(x, y, "in_front_of_player", obj_diver_body);
 	instance_create_layer(x, y, "in_front_of_player", obj_diver_head);

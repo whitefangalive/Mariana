@@ -49,6 +49,7 @@ middleLeft.y = y + sprite_height / 2;
 				instance_destroy();
 			}
 		}
+		instance_create_layer(x, y, "player_layer", obj_Oris_Tentacle);
 		instance_destroy();
 		}
 

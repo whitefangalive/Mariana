@@ -4,6 +4,14 @@ flashColor = c_white;
 debug = false;
 aTimer = 0;
 swim_speed = 3;
+
+
+//for booster mod
+swimAccelerationX = 0;
+swimAccelerationY = 0;
+swimMax = 9;
+
+
 hsp = 0;
 vsp = 0;
 default_move_speed = swim_speed;
@@ -21,6 +29,8 @@ attackedFromY = 0;
 
 
 bubbleTimer = 0;
+
+debugMenu = noone;
 
 blindness = 0;
 // A variable to choose the frame of the animation on the reward you get when you beat a boss

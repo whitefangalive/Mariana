@@ -10,9 +10,9 @@ if (attackingANI = 0 && ((sprite_index != spr_divr_attacking_side) || (sprite_in
 	}
  }
 
-// You can write your code in this editor
+// get keys
 if (global.inventoried == false) {
-		if (swim_speed !=6.5 || swim_speed != 10) {
+		if (swim_speed != 6.5 || swim_speed != 10) {
 		key_w = (keyboard_check(obj_settings.key_up) || (gamepad_axis_value(0, gp_axislv) < 0));
 		key_s = (keyboard_check(obj_settings.key_down) || (gamepad_axis_value(0, gp_axislv) > 0));
 		key_a = keyboard_check(obj_settings.key_left) || (gamepad_axis_value(0, gp_axislh) < 0);
@@ -54,10 +54,10 @@ if key_w == 1 {
 
 while_counter = 0;
 
-
+//set index to normal diver
 if (place_meeting(x,y+swim_speed,obj_collision_parent)) {
 	 if attackingANI = 0 {
-  sprite_index = spr_diver;
+		sprite_index = spr_diver;
 	}
 }
 
@@ -78,11 +78,10 @@ while ((!place_meeting(x+sign(hsp),y,obj_collision_parent)) && (while_counter < 
  hsp = 0;
 }
 
+// don't move if map open or inventory open
 if (global.inventoried == false && (obj_game.mapOpen == false)) {
-
 	x = x + hsp;
 	y = y + vsp;
-
 }
 
 if (attacked_recently >= 1) {
@@ -97,6 +96,7 @@ if ANItimer > 0 {ANItimer -= 1;}
 if (flashAlpha > 0) {
 	flashAlpha -= 0.04;
 }
+
 //being flung after getting hit
 if (flashAlpha > 0.32) {
 	var xway = x - attackedFromX;
@@ -110,12 +110,11 @@ if (flashAlpha > 0.32) {
 	}
 } 
 
-	if (flashAlpha = 0.32) {
-		speed = 0;
-	}
-	
-//---------------------------- TAKKING OF DAMAGE
+if (flashAlpha = 0.32) {
+	speed = 0;
+}
 
+//---------------------------- TAKKING OF DAMAGE
 if global.player_health <= 0 {
 	with (instance_create_layer(x, y, "player_layer", obj_dead_diver)) {
 		container = global.inventory;
@@ -130,32 +129,48 @@ if global.player_health <= 0 {
 //booster
 
 //if (global.equipped[1] == "Booster") {
-//	if ( keyboard_check(obj_settings.key_dash)) {
-//		if (global.oxygen >= 1) {
-//			swim_speed = 10;
-//			global.oxygen -= 0.1;
-//		}
-//	} else {
-//		swim_speed = default_move_speed;
-//	}
+
 //}
 
 if (global.equipped[1] == "Booster") {
-	if ( keyboard_or_mouse_check_pressed(obj_settings.key_dash) && boosterCooldown <= 0) {
-		boosterTimer = 15;
-		boosterCooldown = 30;
-	}
-	if (boosterTimer > -1) {
-		boosterTimer--;
-		swim_speed = default_move_speed;
-	}
-	if (boosterCooldown > 0) {
-		boosterCooldown--;
-	}
-	if (boosterTimer > 0) {
-		swim_speed = 10;
+	if (global.equipped[8] == "Booster Mod") {
+		if ( keyboard_check(obj_settings.key_dash)) {
+			if (global.oxygen >= 1) {
+				
+				//TODO: Fix, i want it to add acceleration in the direction your mouse is
+				// so if you switch the mouse from one side of the player to another it will
+				//kill all acceleration, then decelerate when done
+				swimAccelerationX = clamp(swimAccelerationX + 0.01, 0, 9);
+				swim_speed = clamp(swim_speed + swimAccelerationX, 0, swimMax);
+				direction = point_direction(x, y, mouse_x, mouse_y);
+				speed = swim_speed;
+				
+				global.oxygen -= 0.1;
+			}
+		} else {
+			swimAccelerationX = clamp(swimAccelerationX - 0.1, 0, 9);
+			swim_speed = clamp(swim_speed + swimAccelerationX, 0, swimMax);
+			direction = point_direction(x, y, mouse_x, mouse_y);
+			speed = 0;
+			swim_speed = default_move_speed;
+		}
 	} else {
+		if ( keyboard_or_mouse_check_pressed(obj_settings.key_dash) && boosterCooldown <= 0) {
+			boosterTimer = 15;
+			boosterCooldown = 30;
+		}
+		if (boosterTimer > -1) {
+			boosterTimer--;
+			swim_speed = default_move_speed;
+		}
+		if (boosterCooldown > 0) {
+			boosterCooldown--;
+		}
+		if (boosterTimer > 0) {
+			swim_speed = 10;
+		} else {
 
+		}
 	}
 }
 
@@ -261,3 +276,10 @@ if (image_index >= image_number - 0.07) {
 
 }
 
+if (keyboard_check_pressed(vk_f1)) {
+	if (!instance_exists(obj_text_input)) {
+		debugMenu = instance_create_layer(x, y, "menu_layer", obj_text_input);
+	} else {
+		instance_destroy(debugMenu);
+	}
+}
