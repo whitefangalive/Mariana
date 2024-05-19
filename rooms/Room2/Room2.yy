@@ -1179,6 +1179,7 @@
     {"name":"inst_633233AF","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_3A9C221","path":"rooms/Room2/Room2.yy",},
     {"name":"inst_435075EB","path":"rooms/Room2/Room2.yy",},
+    {"name":"inst_4AEB003A","path":"rooms/Room2/Room2.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -2373,6 +2374,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_gear_place","path":"objects/obj_gear_place/obj_gear_place.yy",},"propertyId":{"name":"rotationSpeed","path":"objects/obj_gear_place/obj_gear_place.yy",},"value":"-1",},
           ],"rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":5403.0,"y":11026.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_435075EB","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_chest","path":"objects/obj_chest/obj_chest.yy",},"properties":[],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":835.0,"y":8610.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4AEB003A","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_thorium_crystal","path":"objects/obj_thorium_crystal/obj_thorium_crystal.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3904.0,"y":11040.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_118D5E3D","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":2.0,"spriteId":{"name":"spr_wall_back","path":"sprites/spr_wall_back/spr_wall_back.yy",},"x":5472.0,"y":10240.0,},
