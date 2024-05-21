@@ -1,19 +1,21 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Cat_Fish",
+  "name": "vfx_shine",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "docile",
-    "path": "folders/Objects/fish/docile.yy",
+    "name": "VFX",
+    "path": "folders/Objects/placables/VFX.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_light_parent",
+    "path": "objects/obj_light_parent/obj_light_parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_cat_fish_left",
-    "path": "sprites/spr_cat_fish_left/spr_cat_fish_left.yy",
+    "name": "spr_jellyfish_glow",
+    "path": "sprites/spr_jellyfish_glow/spr_jellyfish_glow.yy",
   },
   "spriteMaskId": null,
   "visible": true,

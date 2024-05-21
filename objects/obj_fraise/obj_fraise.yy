@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_fraise",
+  "name": "obj_Fraise",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
@@ -37,8 +37,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_goldy",
-    "path": "sprites/spr_goldy/spr_goldy.yy",
+    "name": "spr_Fraise",
+    "path": "sprites/spr_Fraise/spr_Fraise.yy",
   },
   "spriteMaskId": null,
   "visible": true,

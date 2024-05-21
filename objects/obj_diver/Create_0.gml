@@ -9,7 +9,9 @@ swim_speed = 3;
 //for booster mod
 swimAccelerationX = 0;
 swimAccelerationY = 0;
-swimMax = 9;
+swimMax = 12;
+speX = 0;
+speY = 0;
 
 
 hsp = 0;

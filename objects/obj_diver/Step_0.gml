@@ -131,33 +131,106 @@ if global.player_health <= 0 {
 //if (global.equipped[1] == "Booster") {
 
 //}
+var drag = 0.1;
+if (speX > 0) {
+	speX -= drag;
+} else if (speX < 0) {
+	speX += drag;
+}
+if (speY > 0) {
+	speY -= drag;
+} else if (speY < 0) {
+	speY += drag;
+}
+if (abs(speX) < drag) {
+	speX = 0;
+}
+if (abs(speY) < drag) {
+	speY = 0;
+}
+
 
 if (global.equipped[1] == "Booster") {
 	if (global.equipped[8] == "Booster Mod") {
 		if ( keyboard_check(obj_settings.key_dash)) {
+			
+			var angleBetween = point_direction(x, y, mouse_x, mouse_y) + 90;
+			var hypot = sqrt(sqr(mouse_x) + sqr(mouse_y));
+			var TentacleX = ((hypot * 1) * dsin(angleBetween + image_angle));
+			var TentacleY = ((hypot * 1) * dcos(angleBetween + image_angle));
+			var xChanged = (TentacleX / max(abs(TentacleX), abs(TentacleY)));
+			var yChanged = (TentacleY / max(abs(TentacleX), abs(TentacleY)));
+			
 			if (global.oxygen >= 1) {
-				
+				if (!audio_is_playing(sfx_boost)) {
+					audio_sound_gain(sfx_boost, global.volume_setting, 0);
+					audio_play_sound(sfx_boost, 1, true, global.volume_setting + 0.1);
+				}
+				if (delta_time & 10 == 0) {
+					instance_create_layer(x + irandom_range(-10, 10) ,y + irandom_range(-10, 10), "behind_diver", vfx_bubble);
+				}
 				//TODO: Fix, i want it to add acceleration in the direction your mouse is
 				// so if you switch the mouse from one side of the player to another it will
 				//kill all acceleration, then decelerate when done
-				swimAccelerationX = clamp(swimAccelerationX + 0.01, 0, 9);
-				swim_speed = clamp(swim_speed + swimAccelerationX, 0, swimMax);
-				direction = point_direction(x, y, mouse_x, mouse_y);
-				speed = swim_speed;
+				if ((swimAccelerationX > 0 && xChanged < 0) || (swimAccelerationX < 0 && xChanged > 0)) {
+					swimAccelerationX = 0;
+				}
+				if ((swimAccelerationY > 0 && yChanged < 0) || (swimAccelerationY < 0 && yChanged > 0)) {
+					swimAccelerationY = 0;
+				}
+				swimAccelerationX = clamp(swimAccelerationX + (xChanged * 0.02), -9, 9);
+				speX = clamp(speX + swimAccelerationX, -abs(swimMax), abs(swimMax));
 				
-				global.oxygen -= 0.1;
+				swimAccelerationY = clamp(swimAccelerationY + (yChanged * 0.02), -9, 9);
+				speY = clamp(speY + swimAccelerationY, -abs(swimMax), abs(swimMax));
+				global.oxygen -= 0.05;
+			} else {
+				
+				var Adrag = 0.1;
+				if (swimAccelerationX > 0) {
+					swimAccelerationX -= Adrag;
+				} else if (swimAccelerationX < 0) {
+					swimAccelerationX += Adrag;
+				}
+				if (swimAccelerationY > 0) {
+					swimAccelerationY -= Adrag;
+				} else if (swimAccelerationY < 0) {
+					swimAccelerationY += Adrag;
+				}
 			}
 		} else {
-			swimAccelerationX = clamp(swimAccelerationX - 0.1, 0, 9);
-			swim_speed = clamp(swim_speed + swimAccelerationX, 0, swimMax);
-			direction = point_direction(x, y, mouse_x, mouse_y);
-			speed = 0;
-			swim_speed = default_move_speed;
+			audio_sound_gain(sfx_boost, 0, 500);
+			var Adrag = 0.1;
+			if (swimAccelerationX > 0) {
+				swimAccelerationX -= Adrag;
+			} else if (swimAccelerationX < 0) {
+				swimAccelerationX += Adrag;
+			}
+			if (swimAccelerationY > 0) {
+				swimAccelerationY -= Adrag;
+			} else if (swimAccelerationY < 0) {
+				swimAccelerationY += Adrag;
+			}
+		}
+		if (!place_meeting(x+speX,y+speY,obj_collision_parent)) {
+			x += speX;
+			y += speY;
+		}
+		if (place_meeting(x+speX,y,obj_collision_parent)) {
+			swimAccelerationX = 0;
+			speX = 0;
+		}
+		if (place_meeting(x,y+speY,obj_collision_parent)) {
+			swimAccelerationY = 0;
+			speY = 0;
 		}
 	} else {
 		if ( keyboard_or_mouse_check_pressed(obj_settings.key_dash) && boosterCooldown <= 0) {
 			boosterTimer = 15;
 			boosterCooldown = 30;
+			audio_sound_gain(sfx_boost, global.volume_setting, 0);
+			audio_play_sound(sfx_boost, 1, false, global.volume_setting);
+			audio_sound_gain(sfx_boost, 0, 500);
 		}
 		if (boosterTimer > -1) {
 			boosterTimer--;
@@ -168,10 +241,14 @@ if (global.equipped[1] == "Booster") {
 		}
 		if (boosterTimer > 0) {
 			swim_speed = 10;
-		} else {
-
+			if (delta_time & 10 == 0) {
+				instance_create_layer(x + irandom_range(-10, 10) ,y + irandom_range(-10, 10), "behind_diver", vfx_bubble);
+			}
 		}
 	}
+}
+if (audio_is_playing(sfx_boost) && audio_sound_get_gain(sfx_boost) == 0 && global.volume_setting != 0) {
+	audio_stop_sound(sfx_boost);
 }
 
 bubbleTimer++;

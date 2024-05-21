@@ -1,6 +1,4 @@
-direction = 90;
 
-speed = 3.2; 
 if object_exists(obj_diver) {
 	
 	if (distance_to_object(obj_diver) > (camera_get_view_height(view_camera[0])*2))  {

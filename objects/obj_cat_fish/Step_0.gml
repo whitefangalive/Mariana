@@ -7,7 +7,7 @@ scale = (age / 30000) + 0.8;
 path_speed = swim_speed;
 	
 if (instance_exists(obj_diver)) {
-	if (array_contains(global.pets, obj_cat_fish)) {
+	if (array_contains(global.pets, obj_Cat_Fish)) {
 
 		dist_x = obj_diver.x - x;
 		dist_y = obj_diver.y - y;
@@ -17,7 +17,7 @@ if (instance_exists(obj_diver)) {
 			with (obj_creature_parent) {
 				if (HP < maxHP) {
 					if (flashAlpha > 0) {
-						var nearestCatFish = instance_nearest(x, y, obj_cat_fish);
+						var nearestCatFish = instance_nearest(x, y, obj_Cat_Fish);
 						if (ds_queue_tail(nearestCatFish.targets) != id) {
 							ds_queue_enqueue(nearestCatFish.targets, id);
 						}

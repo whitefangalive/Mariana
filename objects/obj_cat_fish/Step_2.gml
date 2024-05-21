@@ -9,7 +9,7 @@ var spe = sqrt(sqr(speed_x) + sqr(speed_y));
 // from the previous Y position
 
 if (abs(speed_x) < abs(speed_y)) {
-	sprite_index = spr_cat_fish_up;
+	sprite_index = spr_Cat_Fish;
 } else {
 	sprite_index = spr_cat_fish_left;
 }
