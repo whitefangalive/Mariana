@@ -149,7 +149,7 @@ if (abs(speY) < drag) {
 	speY = 0;
 }
 
-
+//booster stuff
 if (global.equipped[1] == "Booster") {
 	if (global.equipped[8] == "Booster Mod") {
 		if ( keyboard_check(obj_settings.key_dash)) {
@@ -169,9 +169,6 @@ if (global.equipped[1] == "Booster") {
 				if (delta_time & 10 == 0) {
 					instance_create_layer(x + irandom_range(-10, 10) ,y + irandom_range(-10, 10), "behind_diver", vfx_bubble);
 				}
-				//TODO: Fix, i want it to add acceleration in the direction your mouse is
-				// so if you switch the mouse from one side of the player to another it will
-				//kill all acceleration, then decelerate when done
 				if ((swimAccelerationX > 0 && xChanged < 0) || (swimAccelerationX < 0 && xChanged > 0)) {
 					swimAccelerationX = 0;
 				}
