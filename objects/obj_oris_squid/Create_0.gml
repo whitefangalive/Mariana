@@ -105,3 +105,12 @@ with (middleLeft) {
 	scaledValue = 1.5;
 }
 
+audio_emitter = audio_emitter_create();
+
+audio_emitter_falloff(audio_emitter, 20, 500, 2);
+
+
+voicePitch = random_range(0.3, 0.95);
+
+
+

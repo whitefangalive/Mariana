@@ -5,8 +5,8 @@ var TentacleX = ((hypot * 1) * dsin(angleBetween + image_angle));
 var TentacleY = ((hypot * 1) * dcos(angleBetween + image_angle));
 var xChange = TentacleX * 1;
 var yChange = TentacleY * 1;
-var xChanged = xChange / max(xChange, yChange) * pushSpeed;
-var yChanged = yChange / max(xChange, yChange) * pushSpeed;
+var xChanged = xChange / max(abs(xChange), abs(yChange)) * pushSpeed;
+var yChanged = yChange / max(abs(xChange), abs(yChange)) * pushSpeed;
 
 
 with (obj_diver) { 

@@ -50,6 +50,7 @@ middleLeft.y = y + sprite_height / 2;
 			}
 		}
 		instance_create_layer(x, y, "player_layer", obj_Oris_Tentacle);
+		audio_emitter_free(audio_emitter);
 		instance_destroy();
 		}
 
@@ -83,4 +84,10 @@ middleLeft.y = y + sprite_height / 2;
 	}
 } else {
 	speed = 0;
+}
+audio_emitter_position(audio_emitter, x, y, 0);
+
+var rando = irandom_range(1, 2);
+if (delta_time % 50 == 0 && rando == 1) {
+	audio_play_sound_on(audio_emitter, asset_get_index("sfx_oris_moan" + string(irandom_range(1, 3))), false, 1, global.volume_setting, 0,voicePitch + random_range(-0.10, 0.10));
 }
