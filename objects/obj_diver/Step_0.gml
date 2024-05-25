@@ -126,11 +126,6 @@ if global.player_health <= 0 {
 	room_goto(roomDeath);
 }
 
-//booster
-
-//if (global.equipped[1] == "Booster") {
-
-//}
 var drag = 0.1;
 if (speX > 0) {
 	speX -= drag;

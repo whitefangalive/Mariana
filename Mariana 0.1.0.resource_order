@@ -15,11 +15,11 @@
     {"name":"damageTake","order":6,"path":"folders/Sounds/SFX/damageTake.yy",},
     {"name":"deepCalling","order":7,"path":"folders/Sounds/SFX/deepCalling.yy",},
     {"name":"muro","order":8,"path":"folders/Sounds/SFX/muro.yy",},
+    {"name":"oris_Squid","order":13,"path":"folders/Sounds/SFX/oris_Squid.yy",},
     {"name":"breath_animation","order":3,"path":"folders/Sprites/diver_sprites/breath_animation.yy",},
     {"name":"sispi","order":36,"path":"folders/Sprites/fish/sispi.yy",},
     {"name":"harpoon","order":23,"path":"folders/Sprites/items/harpoon.yy",},
     {"name":"blocks","order":26,"path":"folders/Sprites/placables/blocks.yy",},
-    {"name":"oris_Squid","order":13,"path":"folders/Sounds/SFX/oris_Squid.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"obj_parent_test2","order":16,"path":"objects/obj_parent_test2/obj_parent_test2.yy",},

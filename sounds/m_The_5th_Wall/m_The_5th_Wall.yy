@@ -16,8 +16,8 @@
     "path": "folders/Sounds/music.yy",
   },
   "preload": false,
-  "sampleRate": 44100,
+  "sampleRate": 48000,
   "soundFile": "m_The_5th_Wall.mp3",
-  "type": 0,
+  "type": 1,
   "volume": 1.0,
 }
