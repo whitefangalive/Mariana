@@ -9,7 +9,7 @@ if (!global.paused) {
 
 	x += (randDir/5);
 	y += (randDir2/5);
-	image_alpha = image_alpha - (random_range(1.5, 2.5) / 1000);;
+	image_alpha = image_alpha - rando;
 	
 	if (image_alpha <= 0) {
 		instance_destroy();

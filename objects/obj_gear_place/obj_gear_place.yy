@@ -12,7 +12,10 @@
     "name": "placables",
     "path": "folders/Objects/placables.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_Interactable_Parent",
+    "path": "objects/obj_Interactable_Parent/obj_Interactable_Parent.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -31,8 +34,8 @@
   ],
   "solid": false,
   "spriteId": {
-    "name": "spr_gear",
-    "path": "sprites/spr_gear/spr_gear.yy",
+    "name": "spr_Gear",
+    "path": "sprites/spr_Gear/spr_Gear.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_lever",
-    "path": "sprites/spr_lever/spr_lever.yy",
+    "name": "spr_Lever",
+    "path": "sprites/spr_Lever/spr_Lever.yy",
   },
   "spriteMaskId": null,
   "visible": true,

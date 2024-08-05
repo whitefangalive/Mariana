@@ -1,4 +1,6 @@
-
+if (array_contains(obj_settings.achivements, "Lunked") && instance_exists(obj_diver)) {
+	move_towards_point(obj_diver.x, obj_diver.y, 4);
+}
 
 	// check if you are the last tentacle
 	if (myNumber == (array_length(allTentaclesAbove) - 1)) {
@@ -22,9 +24,11 @@
 			instance_destroy(zooid);
 		}
 		var upperTent = obj_siphiobia;
-		var goalx = upperTent.x + (length * dsin(upperTent.image_angle + 90));
-		var goaly = upperTent.y + (length * dcos(upperTent.image_angle + 90));
-		x = goalx;
-		y = goaly;
+		if (instance_exists(upperTent)) {
+			var goalx = upperTent.x + (length * dsin(upperTent.image_angle + 90));
+			var goaly = upperTent.y + (length * dcos(upperTent.image_angle + 90));
+			x = goalx;
+			y = goaly;
+		}
 	}
 

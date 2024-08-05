@@ -1,3 +1,6 @@
+if (array_contains(global.bosses_beaten, "Siphi")) {
+	instance_destroy();
+} else {
 if (squidId != -1) {
 	x = squidId.x;
 	y = squidId.y;
@@ -51,4 +54,5 @@ if (instance_exists(obj_diver) && obj_diver.y > 11300 || x == 0) {
 			}
 		}
 	}
+}
 }

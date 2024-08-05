@@ -1,5 +1,9 @@
 if aTimer >= 1 {aTimer -= 1;}
 
+if (!instance_exists(harpoon1)) {
+	instance_create_layer(0, 0, "player_layer", harpoon1);
+}
+
 //floating animation
 if (attackingANI = 0 && ((sprite_index != spr_divr_attacking_side) || (sprite_index != spr_diver_attacking_up) || (sprite_index != spr_diver_attacking_down))) {
 	if ((keyboard_check(obj_settings.key_left) = 0) && (keyboard_check(obj_settings.key_right) = 0)) {
@@ -271,7 +275,7 @@ if (keyboard_or_mouse_check_pressed(obj_settings.key_attack)) {
 			global.attack_damage = 1;
 		break;
 	}
-	if (attacking = 0) {
+	if (attacking == 0) {
 	image_index = 0;
 	attacking = 1;
 	}

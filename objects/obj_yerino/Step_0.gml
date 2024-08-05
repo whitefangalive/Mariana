@@ -33,7 +33,7 @@ if (array_contains(global.bosses_beaten, "Yerino")) {
 	stopDeadMusic(m_surface_tension);
 
 	if musicStart == true {
-	musicFallToLoop(m_with_baited_breath_start, m_with_baited_breath_loop);
+		musicFallToLoop(m_with_baited_breath_start, m_with_baited_breath_loop);
 	}
 
 	if distance_to_object(obj_diver) < 500 {

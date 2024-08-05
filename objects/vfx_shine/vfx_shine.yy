@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_jellyfish_glow",
-    "path": "sprites/spr_jellyfish_glow/spr_jellyfish_glow.yy",
+    "name": "spr_jellyfish_glow2",
+    "path": "sprites/spr_jellyfish_glow2/spr_jellyfish_glow2.yy",
   },
   "spriteMaskId": null,
   "visible": true,

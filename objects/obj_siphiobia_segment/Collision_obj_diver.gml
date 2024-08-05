@@ -1,4 +1,8 @@
 if (flashAlpha <= 0) {
-	delt(damage, x, y);
+	if (!array_contains(obj_settings.achivements, "Lunked")) {
+		delt(damage, x, y);
+	} else {
+		instance_destroy();
+	}
 }
 

@@ -1,3 +1,14 @@
+var bossbeaten = [];
+if (array_length(obj_settings.needsLoading) > 0) {
+	var _loadData = json_parse(obj_settings.needsLoading);
+	var _loadEntity;
+	_loadEntity = array_pop(_loadData);	
+	bossbeaten = _loadEntity.bosses_beaten;
+}
+
+if (array_contains(bossbeaten, "Siphi")) {
+	instance_destroy();
+} else {
 stemBody = [];
 
 flashAlpha = 0;
@@ -31,23 +42,35 @@ maxRandomTimer = 50;
 EEx = obj_diver.x;
 EEy = obj_diver.y;
 
-numberOfSegments = irandom_range(50, 150);
-for  (var i = 0; i < numberOfSegments; i++) {
-	array_push(stemBody, instance_create_layer(x, y, "behind_diver", obj_siphiobia_segment));
-	stemBody[i].squidId = id;
-	stemBody[0].x = x + (length);
-	stemBody[0].y = y + 0;
-	with (stemBody[i]) {
-		numberOfTentacles = squidId.numberOfSegments;
-		myNumber = i;
-		allTentaclesAbove = squidId.stemBody;
-		if (myNumber != 0) {
-			var upperTent = allTentaclesAbove[myNumber - 1]; 
-			var TentacleX = upperTent.x + (length * dcos(upperTent.image_angle));
-			var TentacleY = upperTent.y + (length * dsin(upperTent.image_angle));
-			x = TentacleX;
-			y = TentacleY;
+	numberOfSegments = irandom_range(50, 150);
+	for  (var i = 0; i < numberOfSegments; i++) {
+		array_push(stemBody, instance_create_layer(x, y, "behind_diver", obj_siphiobia_segment));
+		stemBody[i].squidId = id;
+		stemBody[0].x = x + (length);
+		stemBody[0].y = y + 0;
+		with (stemBody[i]) {
+			numberOfTentacles = squidId.numberOfSegments;
+			myNumber = i;
+			allTentaclesAbove = squidId.stemBody;
+			if (myNumber != 0) {
+				var upperTent = allTentaclesAbove[myNumber - 1]; 
+				var TentacleX = upperTent.x + (length * dcos(upperTent.image_angle));
+				var TentacleY = upperTent.y + (length * dsin(upperTent.image_angle));
+				x = TentacleX;
+				y = TentacleY;
+			}
 		}
 	}
+	musicStart = false;
+	
 }
 
+function calculateRemainingZooids() {
+		var result = 0;
+		for (var i = 0; i < array_length(stemBody); i++) {
+			if (instance_exists(stemBody[i].zooid)) {
+				result++;
+			}
+		}
+		return result;
+	}
