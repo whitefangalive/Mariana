@@ -9,7 +9,7 @@ if (key_accept) {
 			room_goto(asset_get_index(commandArray[1]));
 		break;
 		case "give":
-			if (array_length(commandArray == 2)) {
+			if (array_length(commandArray) == 2) {
 				buyItem(convertTo("name", commandArray[1]));
 			} else if (array_length(commandArray) > 2) {
 				for (var i = 0; i < commandArray[2]; i++) {

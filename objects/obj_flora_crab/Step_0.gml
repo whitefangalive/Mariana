@@ -52,9 +52,12 @@ if (distance_to_object(obj_diver) < 800) {
 				adjustedAngle = point_direction(x, y, obj_diver.x, obj_diver.y) + 270;
 			}
 		} else if (distance_to_object(obj_docile_behavior_parent < attackRange && ((place_meeting(x+25, y+2, obj_collision_parent)) && (place_meeting(x-25, y+2, obj_collision_parent))))) {
-			var instance = instance_nearest(x, y, obj_docile_behavior_parent)
-			move_towards_point(instance.x, y, swim_speed);
-			adjustedAngle = point_direction(x, y, instance.x, instance.y) + 270;
+			var instance = instance_nearest(x, y, obj_docile_behavior_parent);
+			if (!instance_exists(instance)) {
+				instance = id;
+			}
+				move_towards_point(instance.x, y, swim_speed);
+				adjustedAngle = point_direction(x, y, instance.x, instance.y) + 270;
 		} else {
 			speed = 0;
 			adjustedAngle = point_direction(x, y, instance.x, instance.y) + 270;

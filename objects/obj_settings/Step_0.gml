@@ -94,23 +94,19 @@ if (needsToBeLoaded == true) {
 	with(obj_creature_accesory) {instance_destroy();}
 	for (var i = 0; i < num_fish; i++) {	
 		_loadEntity = array_pop(_loadData);
-	
-		with (instance_create_layer(0, 0, "player_layer", asset_get_index(_loadEntity.obj))) {
-			x = _loadEntity.x;
-			y = _loadEntity.y;
+		with (instance_create_layer(_loadEntity.x, _loadEntity.y, "player_layer", asset_get_index(_loadEntity.obj))) {
 			HP = _loadEntity.HP;
 			age = _loadEntity.age;
 			laidEggs = _loadEntity.laidEggs;
 			layingEggsAge = _loadEntity.layingEggsAge;
+			
 		}
 	}
 	//Do items
 	with (obj_item_parent) {instance_destroy();}
 	for (var i = 0; i < num_items; i++) {	
 		_loadEntity = array_pop(_loadData);
-		with (instance_create_layer(0, 0, "player_layer", asset_get_index(_loadEntity.obj))) {
-			x = _loadEntity.x;
-			y = _loadEntity.y;
+		with (instance_create_layer(_loadEntity.x, _loadEntity.y, "player_layer", asset_get_index(_loadEntity.obj))) {
 			randDir = _loadEntity.randDir;
 			randDir2 = _loadEntity.randDir2;
 			image_angle = _loadEntity.image_angle;
