@@ -12,7 +12,7 @@ function CollisionBehavior(){
 
 
 	// This condition checks if the fish is moving right
-	if(speed_x >= 1)
+	if(speed_x >= 0.1)
 	{
 		// In that case we reset the horizontal scale
 		if (!place_meeting(x,y,obj_diver)) {
@@ -21,7 +21,7 @@ function CollisionBehavior(){
 	}
 
 	// If fish is moving left
-	if(speed_x <= -1)
+	if(speed_x <= -0.1)
 	{
 		// Set horizontal scale to -1 to flip it
 		image_xscale = 1 * abs((image_xscale));

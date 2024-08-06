@@ -6,6 +6,6 @@ var scale = dcos(frame) + scaled;
 image_xscale = scale;
 image_yscale = scale;
 
-if (!instance_exists(parent1)) {
+if (instance_exists(obj_diver) && !instance_exists(parent1)) {
 	instance_destroy();
 }

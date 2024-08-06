@@ -109,7 +109,8 @@ if (age > 18000 && laidEggs = false) {
 	if (HP <= 0) {
 		InFrames = 200; 
 	    swim_speed = 0;
-		sprite_index = spr_boogly_die;
+			instance_create_layer(x, y, "player_layer", obj_Fins);
+			instance_destroy();
 	}
 
 

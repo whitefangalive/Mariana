@@ -14,9 +14,9 @@
 		
 //}
 
-function childOf(cx, cy, cxs, cys, cr, parent, pxs, pys){
-		cx = cx * sign(pxs);
-		cy = cy * sign(pys);
+function childOf(cx, cy, cxs, cys, cr, parent) {
+		cx = cx * sign(parent.image_xscale);
+		cy = cy * sign(parent.image_yscale);
 		var angleBetween = point_direction(parent.x, parent.y, cx+parent.x, cy+parent.y) + 90;
 		var hypot = sqrt(sqr(cx) + sqr(cy));
 		var TentacleX = parent.x + ((hypot * 1) * dsin(angleBetween + parent.image_angle));

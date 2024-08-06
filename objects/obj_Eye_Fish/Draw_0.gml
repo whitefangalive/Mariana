@@ -12,5 +12,8 @@ if (flashAlpha > 0) {
 
 var me = id;
 with (shine) {
-	childOf(-10, -8, 1, 1, 0, me, me.image_xscale, me.image_yscale);
+	//childOf(-10, -8, 1, 1, 0, me);
+	
+	x = me.x + ((me.sprite_width / -4));
+	y = me.y + ((me.sprite_height / -5));
 }
