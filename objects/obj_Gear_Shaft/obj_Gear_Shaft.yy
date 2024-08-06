@@ -1,21 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Gear_Shaft_Slot",
+  "name": "obj_Gear_Shaft",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "placables",
-    "path": "folders/Objects/placables.yy",
+    "name": "items",
+    "path": "folders/Objects/items.yy",
   },
   "parentObjectId": {
-    "name": "obj_Interactable_Parent",
-    "path": "objects/obj_Interactable_Parent/obj_Interactable_Parent.yy",
+    "name": "obj_item_parent",
+    "path": "objects/obj_item_parent/obj_item_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Gear_Shaft",
-    "path": "sprites/spr_Gear_Shaft/spr_Gear_Shaft.yy",
+    "name": "spr_Gear",
+    "path": "sprites/spr_Gear/spr_Gear.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -1,0 +1,1 @@
+age = random_range(0, 1000);

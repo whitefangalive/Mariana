@@ -1,11 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_Gear_Shaft_Slot",
+  "name": "obj_lever_Place",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -13,10 +13,7 @@
     "name": "placables",
     "path": "folders/Objects/placables.yy",
   },
-  "parentObjectId": {
-    "name": "obj_Interactable_Parent",
-    "path": "objects/obj_Interactable_Parent/obj_Interactable_Parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -33,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_Gear_Shaft",
-    "path": "sprites/spr_Gear_Shaft/spr_Gear_Shaft.yy",
+    "name": "spr_Lever",
+    "path": "sprites/spr_Lever/spr_Lever.yy",
   },
   "spriteMaskId": null,
   "visible": true,
