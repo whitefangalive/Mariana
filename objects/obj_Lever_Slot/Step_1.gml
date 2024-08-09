@@ -10,6 +10,7 @@ if ((distance_to_object(obj_diver) < 15) && global.inventoried == false && globa
 			empty = false;
 			image_blend = c_white;
 			image_alpha = 1;
+			giveAchievement("Levered");
 		} else {
 			if (!instance_exists(obj_text)) {
 				alarm[1] = 2;
@@ -31,11 +32,20 @@ if (!empty) {
 	if opened == true {
 		image_angle = followAnimationCurve(a_log, startingAngle, endingAngle - startingAngle);
 		frame += curveSpeed;
-		obj_warning_gate.opening = true;
+		if ((array_contains(obj_settings.achivements, "Geared")) != -1 && array_contains(obj_settings.achivements, "GearShafted") != -1) {
+			obj_warning_gate.opening = true;
+			
+		}
 	} else {
 		image_angle = followAnimationCurve(a_log, endingAngle, startingAngle - endingAngle);
 		frame += curveSpeed;
 	}
 
 
+}
+
+if (array_contains(obj_settings.achivements, "Levered")) {
+	empty = false;
+	image_blend = c_white;
+	image_alpha = 1;
 }
